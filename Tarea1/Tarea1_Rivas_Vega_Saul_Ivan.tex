@@ -1,0 +1,349 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{
+	left=20mm,
+	top=20mm,
+}
+\usepackage[utf8]{inputenc}
+\usepackage[shortlabels]{enumitem}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage[spanish,es-nodecimaldot]{babel}
+ \usepackage{url}
+\usepackage[spanish, fixlanguage]{babelbib}
+\bibliographystyle{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage[linesnumbered]{algorithm2e}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+\usepackage{tikz}
+\usetikzlibrary{positioning, fit}
+\usetikzlibrary{babel}
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{5.5ex plus 1ex minus .2ex}{.3ex plus .1ex}
+\titlespacing*{\subsection}
+{0pt}{5.5ex plus 1ex minus .2ex}{2.3ex plus .1ex}
+\title{Tarea 1: Recordatorio de Probabilidad}
+
+\author{
+	Saul Ivan Rivas Vega \\
+	\\
+	Aprendizaje Automatizado\\
+}
+
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\pagebreak
+	\section{Ejercicio 1.}
+	  \paragraph{} Se usa el siguiente proceso aleatorio para meter 2 pelotas en una caja: se tira una moneda y
+	  se mete una pelota roja si sale águila o azul si sale sol. Posteriormente de esta caja se sacan
+	  repetidamente de forma aleatoria con reemplazo 3 pelotas, las cuales resultan rojas. ¿Cuál es
+	  la probabilidad de que las 2 pelotas de la caja sean rojas?.
+	  \\
+	  \paragraph{Solución: } Dado que al sacar 3 pelotas con reemplazo y que fueron rojas podemos decir que en la caja no hay dos pelotas azules. Solo es posible que haya 2 pelotas rojas o 1 roja y 1 azul.
+	  \\
+	  Inicialmente para meter la primera pelota a la caja tenemos 2 posibilidades, meter una pelota roja (Evento 1 $E_1$) o una azul (Evento 2 $E_2$).
+	  Asumiendo que la moneda es justa, es decir que hay una misma probabilidad de que salga águila o que salga sol, la probabilidad de $E_1$ y $E_2$ es $0.5$ para ambas.
+	  \begin{equation}
+	  \begin{split}
+	  	P(E_1)&=0.5\\
+	  	P(E_2)&=0.5
+	  \end{split}
+	  \end{equation}
+	  Ahora que sucede cuando revisamos las probabilidades de que la segunda pelota sea roja ($E_3$) o que sea azul ($E_4$) dado $E_1$ o $E_2$.\\
+	  \paragraph{}\textbf{Si es que la primera pelota fue roja ($E_1$)}\\ 
+	  $E_3$ requiere que la moneda caiga en águila lo cual asumimos ocurre con $0.5$ de probabilidad. Al ser independiente este evento de $E_1$ podemos calcular la probabilidad de $E_3$ dado $E_1$ de la siguiente forma:
+	  \begin{equation}\label{e31}
+	  \begin{split}
+	  P(E_3|E_1) &= \frac{P(E_3 \cap E_1)}{P(E_1)}\\
+	  &= \frac{P(E_3) * P(E_1)}{P(E_1)}\\
+	  &= \frac{0.5 * 0.5}{0.5}\\
+	  &= \frac{0.25}{0.5}\\
+	  &= 0.5\\
+	  \end{split}
+	  \end{equation}
+	  \\
+	  $E_4$ requiere que la moneda caiga en sol lo cual asumimos ocurre con $0.5$ de probabilidad. Al ser independiente este evento de $E_1$ podemos calcular la probabilidad de $E_4$ dado $E_1$ de la siguiente forma:
+	  \begin{equation}\label{e41}
+	  \begin{split}
+	  P(E_4|E_1) &= \frac{P(E_4 \cap E_1)}{P(E_1)}\\
+	  &= \frac{P(E_4) * P(E_1)}{P(E_1)}\\
+	  &= \frac{0.5 * 0.5}{0.5}\\
+	   &= \frac{0.25}{0.5}\\
+	    &= 0.5\\
+	  \end{split}
+	  \end{equation}
+	  \paragraph{}\textbf{Si es que la primera pelota fue azul ($E_2$)}\\ 
+	  Aquí es donde tomamos en cuenta la información de que al tomar 3 pelotas con reemplazo una vez que llenamos la caja y resultaron ser rojas. Concluimos que no hay posibilidad de que haya 2 pelotas azules en la caja, es decir:
+	  \begin{equation}\label{e42}
+	  \begin{split}
+	  P(E_4|E_2) &= \frac{P(E_4 \cap E_2)}{P(E_2)}\\
+	  &= \frac{0}{P(E_2)}\\
+	  &= \frac{0}{0.5}\\
+	  &= 0\\
+	  \end{split}
+	  \end{equation}\\
+	  Por lo tanto si la primera pelota fue azul no hay otra posibilidad mas que la segunda pelota sea roja, es decir:
+	  \begin{equation}\label{e32}
+	  \begin{split}
+	  P(E_3|E_2) &= 1\\
+	  \end{split}
+	  \end{equation}\\
+	 Ahora, de las ecuaciones \ref{e31}, \ref{e41}, \ref{e42}, \ref{e32} podemos despejar los posibles resultados en contenido de la caja, dos pelotas rojas (\ref{e31}), la primera roja y la segunda azul (\ref{e41}), la primera azul y la segunda roja (\ref{e32}) y las dos azules (\ref{e42}).\\
+	 \pagebreak
+	 \paragraph{}\textbf{la primera roja y la segunda roja}\\
+	  \begin{equation}\label{e31in}
+	  \begin{split}
+	  P(E_3|E_1) &= \frac{P(E_3 \cap E_1)}{P(E_1)}\\
+	  P(E_3 \cap E_1) &= P(E_3|E_1) * P(E_1)\\
+	  &= 0.5 * 0.5\\
+	  &= 0.25\\
+	  \end{split}
+	  \end{equation}
+	 \paragraph{}\textbf{la primera roja y la segunda azul}\\
+	 \begin{equation}\label{e41in}
+	 \begin{split}
+	 P(E_4|E_1) &= \frac{P(E_4 \cap E_1)}{P(E_1)}\\
+	 P(E_4 \cap E_1) &= P(E_4|E_1) * P(E_1)\\
+	 &= 0.5 * 0.5\\
+	 &= 0.25\\
+	 \end{split}
+	 \end{equation}
+	 
+	 \paragraph{}\textbf{la primera azul y la segunda roja}\\
+	 \begin{equation}\label{e32in}
+	 \begin{split}
+	 P(E_3|E_2) &= \frac{P(E_3 \cap E_2)}{P(E_2)}\\
+	 P(E_3 \cap E_2) &= P(E_3|E_2) * P(E_2)\\
+	 &= 1 * 0.5\\
+	 &= 0.5\\
+	 \end{split}
+	 \end{equation}
+	 \paragraph{}\textbf{la primera azul y la segunda azul}\\
+	 \begin{equation}\label{e42in}
+	 \begin{split}
+	 P(E_4|E_2) &= \frac{P(E_4 \cap E_2)}{P(E_2)}\\
+	 P(E_4 \cap E_2) &= P(E_4|E_2) * P(E_2)\\
+	 &= 0 * 0.5\\
+	 &= 0\\
+	 \end{split}
+	 \end{equation}\\
+	 Entonces la información adicional de sacar 3 pelotas con repetición y que fueran todas rojas solo influyó en las probabilidades que involucran a las pelotas azules. En un principio las 4 posibilidades tendrían probabilidad de $1/4$ de suceder, sin embargo sin la posibilidad de que ocurra una de las posibilidades aumentó la probabilidad condicional para la misma.\\
+	 Finalmente la probabilidad de que en la caja hubieran 2 pelotas rojas se mantiene como la probabilidad de meter la primera pelota roja y que la segunda pelota sea roja, los cuales permanecen como eventos independientes terminando con 0.25 de probabilidad de suceder.
+\section{Ejercicio 2}
+\paragraph{} En una caja hay 3 playeras rojas y 5 verdes de talla grande, además de 2 playeras rojas y 5
+verdes de talla chica. Se saca de forma aleatoria y uniforme una playera de dicha caja y resulta
+ser roja. ¿Cuál es la probabilidad de que sea de talla grande?
+\paragraph{}\textbf{Solución:}\\
+Si decimos que el evento que describe el color de la playera es roja como $E_{cr}$ y el evento de que sea de talla grande como $E_{tg}$, la pregunta puede responderse al encontrar la probabilidad condicional de que la playera sea de talla grande dado que es de color rojo, es decir:
+\begin{equation}\label{e2_1}
+\begin{split}
+P(E_{tg}|E_{cr}) &\\
+\end{split}
+\end{equation}\\
+Lo cual podemos ver como:
+\begin{equation}\label{e2_2}
+\begin{split}
+P(E_{tg}|E_{cr}) &= \frac{P(E_{tg}\cap E_{cr})}{P(E_{cr})}\\
+\end{split}
+\end{equation}\\
+Y ahora si el total de playeras son 15 podemos sustituir por fracciones las probabilidades.
+\begin{equation}\label{e2_3}
+\begin{split}
+P(E_{tg}|E_{cr}) &= \frac{P(E_{tg}\cap E_{cr})}{P(E_{cr})}\\
+&= \frac{(\frac{3}{15})}{(\frac{5}{15})}\\
+&= \frac{3*(\frac{1}{15})}{5*(\frac{1}{15})}\\
+&= \frac{3}{5}\\
+&= 0.6\\
+\end{split}
+\end{equation}\\
+\section{Ejercicio 3}
+En cierta universidad, el 60 \% de los alumnos aprueba Matemáticas, el 70 \% aprueba Química
+y solo el 50 \% aprueba ambas materias. Se selecciona un alumno al azar.
+
+\subsection{}\textbf{Si aprueba Matemáticas, ¿cuál es la probabilidad de que también apruebe Química?}\\
+Si suponemos que M representa que un alumno haya aprobado Matemáticas y Q que haya aprobado
+Química la pregunta puede verse como la probabilidad condicional de Q dado M, es decir:
+\begin{equation}
+\begin{split}
+	P(Q|M) &= \frac{P(Q\cap M)}{P(M)}\\
+	&= \frac{0.5}{0.6}\\
+	&= 0.8\overline{3}\\
+\end{split}
+\end{equation}\\
+\subsection{}\textbf{¿Cuál es la probabilidad de que apruebe Matemáticas o Química?}
+La pregunta puede modelarse como la unión de los eventos M y Q, es decir:
+\begin{equation}
+\begin{split}
+P(Q\cup M) &= P(Q) + P(M) - P(Q\cap M)\\
+&= 0.7 + 0.6 - 0.5\\
+&= 0.8\\
+\end{split}
+\end{equation}\\
+\subsection{} Si M representa que un alumno haya aprobado Matemáticas y Q que haya aprobado
+Química, ¿son M y Q independientes?\\
+No, puesto que saber el resultado de M o Q, determina la probabilidad del otro evento. 
+De ser independientes además debería cumplirse que:
+\begin{equation}
+\begin{split}
+P(Q\cap M) &= P(Q) * P(M)
+\end{split}
+\end{equation}\\
+Sin embargo esto no se cumple:
+\begin{equation}
+\begin{split}
+P(Q\cap M) &= P(Q) * P(M)\\
+0.5 &\neq 0.6 * 0.7\\
+0.5 &\neq 0.42
+\end{split}
+\end{equation}\\
+\section{Ejercicio 4.}
+Un aeropuerto cuenta con un sistema que es capaz de identificar correctamente si una persona
+es terrorista el 95 \% de las veces y si una persona es un ciudadano honrado también el 95 \% de
+las veces. Un informante alerta a las autoridades sobre la presencia de exactamente 1 terrorista
+en un avión con 100 pasajeros, por lo que las autoridades detienen al primer pasajero y el
+sistema detecta que es terrorista. ¿Cuál es la probabilidad de que esta persona realmente sea
+terrorista?\\
+De la descripción del problema podemos sacar el valor de la probabilidad condicional de que el sistema identifique a un terrorista (Evento $I_{st}$) dado que si es un terrorista (Evento $I_{pt}$), el cual es de 95\%, es decir:
+\begin{equation}
+\begin{split}
+P(I_{st} | I_{pt}) &=0.95\\ 
+\end{split}
+\end{equation}
+Ahora queremos saber la probabilidad condicional de que el pasajero sea un terrorista dado que el sistema lo identificó como tal, es decir $P(I_{pt} | I_{st})$.\\
+Por el teorema de Bayes podemos realizar la siguiente evaluación.
+\begin{equation}
+\begin{split}
+P(I_{pt} | I_{st}) &=\frac{P(I_{st} | I_{pt}) * P(I_{pt})}{P(I_{st})}\\
+&=\frac{0.95 * 0.01}{P(I_{st} | I_{pt}) * P(I_{pt}) + P(I_{st} | \overline{I_{pt}}) * P(\overline{I_{pt}})}\\ 
+&=\frac{0.0095}{0.95 * 0.01 + 0.05 * 0.99}\\
+&=\frac{0.0095}{0.0095 + 0.0495}\\
+&=\frac{0.0095}{0.059}\\
+&=0.16101694915\\
+\end{split}
+\end{equation}
+\section{Ejercicio 5}
+Un paciente obtiene un resultado positivo en una prueba de una enfermedad muy seria. Esta
+prueba es muy precisa: la probabilidad de que la prueba sea correcta (positivo o negativo) es
+de 0.99. Sin embargo, la enfermedad es extremadamente rara y sólo afecta a 1 de cada 10000
+personas. ¿Cuál es la probabilidad de que el paciente realmente tenga la enfermedad?\\
+De la descripción del problema podemos sacar el valor de la probabilidad condicional de que la prueba identifique la enfermedad (Evento $E_{pt}$) dado que si tiene la enfermedad (Evento $E_{st}$), el cual es de 99\%, es decir:
+\begin{equation}
+\begin{split}
+P(I_{st} | I_{pt}) &=0.99\\ 
+\end{split}
+\end{equation}
+Ahora queremos saber la probabilidad condicional de que el paciente tenga la enfermedad dado que la prueba dio positivo, es decir $P(I_{pt} | I_{st})$.\\
+Por el teorema de Bayes podemos realizar la siguiente evaluación.
+\begin{equation}
+\begin{split}
+P(I_{pt} | I_{st}) &=\frac{P(I_{st} | I_{pt}) * P(I_{pt})}{P(I_{st})}\\
+&=\frac{0.99 * 0.001}{P(I_{st} | I_{pt}) * P(I_{pt}) + P(I_{st} | \overline{I_{pt}}) * P(\overline{I_{pt}})}\\ 
+&=\frac{0.00099}{0.99 * 0.001 + 0.01 * 0.999}\\
+&=\frac{0.00099}{0.00099 + 0.00999}\\
+&=\frac{0.00099}{0.01098}\\
+&=0.09016393442622951\\
+\end{split}
+\end{equation}
+\section{Ejercicio 6}
+Cien personas hacen fila para abordar un avión. Cada uno tiene su pase de abordar con un
+asiento asignado. Sin embargo, la primera persona en abordar ha perdido su pase y toma un
+asiento al azar. Después de eso, cada persona toma el asiento asignado si está desocupado, y
+uno de los asientos desocupados al azar de caso contrario. ¿Cuál es la probabilidad de que la
+última persona en abordar se siente en su asiento asignado?\\
+\section{Ejercicio 7}
+Juan y Pedro tiran una moneda cada uno. Juan apuesta que ambas monedas caerán iguales
+y Pedro que caerán diferentes. Prueba que incluso si la moneda estuviera cargada, el juego
+seguiría siendo justo\\
+\pagebreak
+\section{Ejercicio 8} 
+ Voluntarios en un programa de adopción de animales encuestaron a 100 estudiantes sobre su
+preferencia entre perros y gatos. La siguiente tabla muestra los datos recabados.\\
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.85]{table}
+	\end{center}
+\end{figure}
+\subsection{Encuentra la probabilidad de que un estudiante seleccionado al azar prefiera los perros.}
+\paragraph{} Hay un total de 100 estudiantes de los cuales 20 Mujeres y 36 Hombres prefieren a los perros, lo cual significa que 56 de 100 estudiantes prefiere a los perros.\\
+Por lo tanto seleccionando al azar a un estudiante habrá $0.56$ de probabilidad que prefiera a los perros. 
+\subsection{De acuerdo a los datos obtenidos, ¿los eventos de preferir los perros y ser mujer son mutuamente excluyentes?}
+No, pues de serlo significaría que ser mujer implicaría que no prefiera a los perros, sin embargo hay datos de que hay mujeres quienes prefieren a los perros.
+\section{Ejercicio 9}
+Un estudiante debe elegir una de las siguientes materias: Matemáticas, Física o Química. ¿Es
+igualmente probable que elija Matemáticas o Física y doblemente probable que elija Química?
+Calcula las probabilidades de cada materia.
+\section{Ejercicio 10}
+En un concurso de TV el anfitrión le da a un concursante 3 puertas a elegir. Detrás de 2 de
+estas puertas hay una cabra y en la restante un auto. El concursante elige la puerta 1 y el
+anfitrión descubre la puerta 3, en la cual hay una cabra. Después de descubrir la puerta 2 el
+anfitrión le da la opción al concursante de cambiar la puerta 1 que había elegido originalmente
+por la puerta 2 aún sin descubrir. ¿Existe alguna diferencia si el concursante cambia de puerta
+2? Explica tu respuesta.
+\paragraph{} Si, la probabilidad de que el concursante haya escogido la puerta correcta es de $1/3$, dejando $2/3$ en las otras dos puertas.\\ Ahora al eliminar una puerta esas probabilidades se mantienen, concursante sigue con $1/3$ de probabilidad de haber acertado, y también hay $2/3$ en el resto de las puertas, que en este caso ahora solo es una.\\
+Finalmente si el concursante cambia de puerta si existe una diferencia, ahora es mas probable que gane.\\
+Otro ejemplo sería que en vez de 3 puertas fueran 100, el concursante escoge una puerta y tiene una probabilidad de $1/100$ de escoger la puerta con el auto, si ahora el anfitrión descubre 98 de las 99 puertas restantes, todas con cabras, y le vuelve a dar la opción de cambiar, es mas intuitivo en este caso pensar que si hay diferencia pues la probabilidad de que haya un auto en la puerta que escogió al principio sigue siendo $1/100$ pero la puerta que sobró ahora tiene una probabilidad de $99/100$ de que contenga el auto.
+\section{Ejercicio 11}
+Calcula la probabilidad de que en un cuarto de 10 personas, al menos 2 cumplan años el
+mismo día. Repite el cálculo para 23, 50 y 75 personas y discute los resultados.
+\section{Ejercicio 12}
+Se tiran 2 dados y se registra el número máximo, ¿cuales son las probabilidades de los eventos
+1, 2, 3, 4, 5, 6?
+\section{Ejercicio 13}
+ Prueba que la covarianza de 2 variables independientes es 0.
+\section{Ejercicio 14}
+ Un alumno decide responder de forma aleatoria un examen en el que cada pregunta tiene
+5 opciones de las cuales solo 1 es correcta. Suponiendo que la probabilidad de acertar una
+pregunta es de 0.2 y que cada respuesta es independiente de las demás, calcula lo siguiente:\\
+\subsection{La probabilidad de tener 10, 20 y 40 aciertos si el examen consiste de 50 preguntas}
+\subsection{La probabilidad de tener 10, 20 y 40 aciertos si el examen consiste de 40 preguntas}
+\subsection{La probabilidad de tener 10, 20 y 40 errores si el examen consiste de 40 preguntas}
+\section{Ejercicio 15}
+La estatura promedio de los alumnos de una universidad es de 169.83cm, con una desviación
+estándar de 4.5cm. Suponiendo una distribución normal, calcula la probabilidad de que la
+estatura de un alumno dado:
+\subsection{Se encuentre entre 160cm y 180cm}
+\subsection{Sea de al menos 150cm}
+\subsection{Sea de máximo 180cm}
+\subsection{Sea mayor a 160cm}
+\subsection{Sea menor a 190cm}
+\section{Ejercicio 16}
+Se tiene la siguiente información acerca del clima. La probabilidad de que llueva el día de hoy
+es de 0.6, mientras que la probabilidad de que llueva el día de mañana es de 0.5. Además, se
+sabe que la probabilidad de que ningún día llueva es de 0.3. Considerando dicha información
+encuentre las siguientes probabilidades:
+\subsection{Que llueva hoy o mañana.}
+\subsection{Que llueva hoy y mañana.}
+\subsection{Que llueva hoy pero no mañana.}
+\subsection{Que llueva hoy o mañana, pero no ambas.}
+\section{Ejercicio 17}
+Una empresa de lámparas incandecentes observa que el número de componentes que fallan
+antes de cumplir 100 horas de funcionamiento es una variable aleatoria de Poisson. Si el
+número promedio de estos fallos es 8, calcule lo siguiente:
+\subsection{¿Cuál es la probabilidad de que falle 1 componente en 25 horas?}
+\subsection{¿Cuál es la probabilidad de que fallen no más de 2 componentes en 50 horas?}
+\subsection{¿Cuál es la probabilidad de que fallen por lo menos 10 en 125 horas?}
+\section{Ejercicio 18}
+ El consejo universitario de la Facultad de Ciencias está compuesto por 14 miembros, 5 de los
+cuales son estudiantes, 5 son maestros y 4 son investigadores. Un periodista planea seleccionar
+a 2 de los miembros del consejo para realizarles una entrevista. El primer miembro será elegido
+al azar y el segundo será elegido al azar de los miembros restantes. ¿Cuál es la probabilidad
+de que se seleccionen 2 maestros?
+\section{Ejercicio 19}
+Una baraja ordinaria de 52 cartas se divide aleatoriamente en 4 pilas de 13 cartas cada una.
+Calcule la probabilidad de que cada pila tenga exactamente 1 As.
+\section{Ejercicio 20}
+ En una determinada etapa de una investigación criminal el inspector al mando está 60 %
+convencido de la culpabilidad de un sospechoso. Supongamos, sin embargo, que una nueva
+pieza de evidencia muestra que el delincuente tiene una cierta característica (como la calvicie
+o el pelo castaño). Si el 20 por ciento de la población posee esta característica, ¿cuál es la
+certeza de la culpabilidad del sospechoso que tiene el inspector si resulta que el sospechoso
+tiene la característica?
+\end{document}  
