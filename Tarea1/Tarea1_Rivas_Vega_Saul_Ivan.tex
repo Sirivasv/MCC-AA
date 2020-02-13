@@ -258,6 +258,64 @@ asiento asignado. Sin embargo, la primera persona en abordar ha perdido su pase 
 asiento al azar. Después de eso, cada persona toma el asiento asignado si está desocupado, y
 uno de los asientos desocupados al azar de caso contrario. ¿Cuál es la probabilidad de que la
 última persona en abordar se siente en su asiento asignado?\\
+\paragraph{Solución: }
+Si solo fueran 2 pasajeros y 2 asientos a tomar existen 2 posibilidades, que el primer pasajero tome su lugar asignado que en este caso es uno de los 2 únicos asientos. Al escogerlo de manera aleatoria existe una probabilidad de $0.5$ para que tome su lugar asignado o el otro el cual corresponde al ultimo pasajero. Entonces la probabilidad de que la última persona en abordar se siente en su asiento asignado, para el caso de 2 pasajeros, es de $0.5$.\\
+Ahora generalicemos esta observación para $n$ pasajeros.\\
+Sea $f(n)$ la probabilidad de que el último pasajero se siente en su lugar.\\
+Revisemos los posibles casos para el primer pasajero.\\
+La probabilidad de que el primer pasajero tome su lugar es de $\frac{1}{n}$. En dado caso para el último pasajero, la probabilidad de que ocupe su lugar ahora es $1$, porque todos tomarán su asiento asignado incluyendo al último. La probabilidad en este caso $1$ y como hay una probabilidad de $\frac{1}{n}$ de que suceda, entonces la probabilidad total es $1\times \frac{1}{n}=\frac{1}{n}$.\\
+
+La probabilidad de que el primer pasajero tome equivocadamente el asiento del segundo es de $\frac{1}{n}$. En dado caso para el último pasajero, la probabilidad de que ocupe su lugar ahora es $f(n-1)$, porque es el mismo problema, un pasajero (en este caso el segundo) va a escoger un lugar de manera aleatoria de entre los $n-1$ asientos restantes que puede o no interferir con los asientos asignados a los otros pasajeros. La probabilidad en este caso $f(n-1)$ y como hay una probabilidad de $\frac{1}{n}$ de que suceda, entonces la probabilidad total es $f(n-1)\times \frac{1}{n}$.\\
+
+Ahora la probabilidad de que el primer pasajero tome equivocadamente el asiento del tercero es de $\frac{1}{n}$. En dado caso para el último pasajero, la probabilidad de que ocupe su lugar ahora es $f(n-2)$, porque el segundo pasajero tomará su lugar y para el tercer pasajero es el mismo problema, un pasajero (en este caso el tercero) va a escoger un lugar de manera aleatoria de entre los $n-2$ asientos restantes que puede o no interferir con los asientos asignados a los otros pasajeros. La probabilidad en este caso $f(n-2)$ y como hay una probabilidad de $\frac{1}{n}$ de que suceda, entonces la probabilidad total es $f(n-2)\times \frac{1}{n}$.\\
+
+Podemos seguir así hasta llegar a nuestro caso base que es $f(2)$ que indicamos al inicio como $0.5$.\\
+$f(n)$ sería la suma de todos estas probabilidades:
+\begin{equation}\label{ec6_1}
+	\begin{split}
+	f(n)&= \frac{1}{n} + (f(n-1)\times\frac{1}{n}) + (f(n-2)\times\frac{1}{n})+\dots+ (f(2)\times\frac{1}{n})\\
+	\end{split}
+\end{equation}
+Ahora multipliquemos a la ecuación \ref{ec6_1} por $n$.\\
+\begin{equation}\label{ec6_2}
+\begin{split}
+n \times f(n)&= n\times [\frac{1}{n} + (f(n-1)\times\frac{1}{n}) + (f(n-2)\times\frac{1}{n})+\dots+ (f(2)\times\frac{1}{n})]\\
+n \times f(n)&= 1 + f(n-1) + f(n-2)+\dots+ f(2)\\
+\end{split}
+\end{equation}
+Ahora evaluemos la ecuación \ref{ec6_2} con $n-1$.
+\begin{equation}\label{ec6_3}
+\begin{split}
+(n-1) \times f(n-1)&= 1 + f((n-1)-1) + f((n-1)-2)+\dots+ f(2)\\
+&= 1 + f(n-2) + f(n-3)+\dots+ f(2)\\
+\end{split}
+\end{equation}
+Probemos entonces restar la ecuación \ref{ec6_3} a la ecuación \ref{ec6_2}.
+\begin{equation}\label{ec6_4}
+\begin{split}
+(n\times f(n)) - [(n-1) \times f(n-1)]  \\
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+&= [1 + f(n-1) + f(n-2)+\dots+ f(2)] - [1 + f(n-2) + f(n-3)+\dots+ f(2)]\\
+&= 1 + f(n-1) + f(n-2)+\dots+ f(2) - 1 - f(n-2) - f(n-3)-\dots- f(2)\\
+&= f(n-1)\\
+\end{split}
+\end{equation}
+Reduzcamos el resultado.\\
+\begin{equation}
+\begin{split}
+(n\times f(n)) - ((n-1) \times f(n-1)) & = f(n-1)\\
+n\times f(n) &= [(n-1) \times f(n-1)] + f(n-1)\\
+n\times f(n) &= [(n-1) + 1] \times f(n-1)\\
+n\times f(n) &= [n - 1 + 1] \times f(n-1)\\
+n\times f(n) &= n \times f(n-1)\\
+f(n) &= f(n-1)\\
+\end{split}
+\end{equation}
+Así tenemos que para $n>3$, $f(n) = f(n-1)$ y como sabemos que $f(2)=0.5$ decimos que para $f(100) = 0.5$.\\
+Finalmente decimos que la probabilidad de que el último pasajero se siente en su lugar asignado cuando hay 100 pasajeros es de $0.5$.
 \section{Ejercicio 7}
 Juan y Pedro tiran una moneda cada uno. Juan apuesta que ambas monedas caerán iguales
 y Pedro que caerán diferentes. Prueba que incluso si la moneda estuviera cargada, el juego
