@@ -335,9 +335,21 @@ Por lo tanto seleccionando al azar a un estudiante habrá $0.56$ de probabilidad
 \subsection{De acuerdo a los datos obtenidos, ¿los eventos de preferir los perros y ser mujer son mutuamente excluyentes?}
 No, pues de serlo significaría que ser mujer implicaría que no prefiera a los perros, sin embargo hay datos de que hay mujeres quienes prefieren a los perros.
 \section{Ejercicio 9}
-Un estudiante debe elegir una de las siguientes materias: Matemáticas, Física o Química. ¿Es
-igualmente probable que elija Matemáticas o Física y doblemente probable que elija Química?
+Un estudiante debe elegir una de las siguientes materias: Matemáticas, Física o Química. Es
+igualmente probable que elija Matemáticas o Física y doblemente probable que elija Química.
 Calcula las probabilidades de cada materia.
+\paragraph{Solución: } Sea $x$ la probabilidad de que elija Matemáticas, y que por consiguiente será igual a la probabilidad que elija Física. Tomemos la siguiente ecuación para modelar el problema:
+\begin{equation}
+	\begin{split}
+		1 &= (x + x + 2x)\\
+		1 &= 4x\\
+		\frac{1}{4} &= x\\
+	\end{split}
+\end{equation}
+Obtenido el valor de $x$ podemos ahora saber las probabilidades de las materias.\\
+De que elija Matemáticas $ = 0.25$\\
+De que elija Física $ = 0.25$\\
+De que elija Química $ = 0.50$\\
 \section{Ejercicio 10}
 En un concurso de TV el anfitrión le da a un concursante 3 puertas a elegir. Detrás de 2 de
 estas puertas hay una cabra y en la restante un auto. El concursante elige la puerta 1 y el
@@ -378,9 +390,64 @@ es de 0.6, mientras que la probabilidad de que llueva el día de mañana es de 0
 sabe que la probabilidad de que ningún día llueva es de 0.3. Considerando dicha información
 encuentre las siguientes probabilidades:
 \subsection{Que llueva hoy o mañana.}
+Sea H el evento de que llueva hoy, y sea M el evento de que llueva mañana.\\
+En la descripción del problema tenemos que la probabilidad de que ningún día llueva es de 0.3. Es decir:
+\begin{equation}
+	P(\overline{H} \cap \overline{M}) = 0.3
+\end{equation}
+Lo que estamos buscando es lo inverso, es decir:
+\begin{equation}
+\begin{split}
+P(\overline{\overline{H} \cap \overline{M}}) &= 1 - 0.3 \\
+P(\overline{\overline{H} \cap \overline{M}}) &= 0.7 \\
+P(H \cup M) &= 0.7 \\
+\end{split}
+\end{equation}
+Finalmente tenemos que la probabilidad de H o M es de 0.7.
 \subsection{Que llueva hoy y mañana.}
+Podemos tomar la siguiente ecuación con la que se calcula la probabilidad de que llueva hoy (H) o que llueva mañana (M).\\
+\begin{equation}\label{ec16_1}
+	\begin{split}
+		P(H\cup M) &= P(H) + P(M) - P(H\cap M)\\
+		P(H\cup M) + P(H\cap M) &= P(H) + P(M)\\
+		P(H\cap M) &= P(H) + P(M) - P(H\cup M)\\
+	\end{split}
+\end{equation}
+Ahora como contamos con la probabilidad de H y de M por la descripción del problema y tenemos $P(H\cup M)$ por el punto anterior podemos sustituir dichos valores en la ecuación \ref{ec16_1}.
+\begin{equation}\label{ec16_2}
+\begin{split}
+P(H\cap M) &= 0.6 + 0.5 - 0.7\\
+&= 0.4\\
+\end{split}
+\end{equation}
+Finalmente decimos que la probabilidad de que llueva hoy y mañana es de $0.4$.
 \subsection{Que llueva hoy pero no mañana.}
+Lo que buscamos es $P(H\backslash (H\cap M))$.
+\begin{equation}\label{ec16_3}
+\begin{split}
+P(H\backslash (H\cap M)) &= P(H) - P(H\cap M)\\
+&= 0.6 - 0.4\\
+&= 0.2\\
+\end{split}
+\end{equation}
+Finalmente decimos que la probabilidad de que llueva hoy pero no mañana es de $0.2$.
 \subsection{Que llueva hoy o mañana, pero no ambas.}
+Lo que buscamos es la diferencia simétrica la cual podemos expresar como:
+\begin{equation}\label{ec16_5}
+\begin{split}
+P(H\triangle M) &= P((H\cup M) \backslash (H\cap M))\\
+&= P(H\cup M) - P(H\cap M)\\
+\end{split}
+\end{equation}
+Y ambos valores en la ecuación \ref{ec16_5} los tenemos así solo sustituimos.
+\begin{equation}\label{ec16_6}
+\begin{split}
+P(H\triangle M) &= P(H\cup M) - P(H\cap M)\\
+&= 0.7 - 0.4\\
+&= 0.3\\
+\end{split}
+\end{equation}
+Finalmente decimos que la probabilidad de que llueva hoy o mañana pero no ambas es de $0.3$. 
 \section{Ejercicio 17}
 Una empresa de lámparas incandecentes observa que el número de componentes que fallan
 antes de cumplir 100 horas de funcionamiento es una variable aleatoria de Poisson. Si el
@@ -394,6 +461,19 @@ cuales son estudiantes, 5 son maestros y 4 son investigadores. Un periodista pla
 a 2 de los miembros del consejo para realizarles una entrevista. El primer miembro será elegido
 al azar y el segundo será elegido al azar de los miembros restantes. ¿Cuál es la probabilidad
 de que se seleccionen 2 maestros?
+\paragraph{Solución: } Tomemos la probabilidad de que el primer miembro seleccionado al azar resulte ser maestro.\\
+En este caso hay 5 maestros en el consejo de 14 miembros, por lo tanto hay una probabilidad de $\frac{5}{14}$ de seleccionar a un maestro.\\
+Ahora si queremos dado ese caso seleccionar a otro maestro tendremos 4 maestros en 13 miembros restantes, así que seleccionemos a un segundo maestro tendrá una probabilidad de $\frac{4}{13}$.
+Y la probabilidad de que sucedan ambos esta dado por su producto.\\
+\begin{equation}
+	\begin{split}
+	\frac{5}{14} \times \frac{4}{13}&=\\
+	&=\frac{5\times 4}{14 \times 13} \\
+	&=\frac{20}{182} \\
+	&=\frac{10}{91}\\
+	&= 0.109890
+	\end{split}
+\end{equation}
 \section{Ejercicio 19}
 Una baraja ordinaria de 52 cartas se divide aleatoriamente en 4 pilas de 13 cartas cada una.
 Calcule la probabilidad de que cada pila tenga exactamente 1 As.
