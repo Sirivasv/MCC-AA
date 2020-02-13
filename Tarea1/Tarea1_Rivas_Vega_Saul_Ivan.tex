@@ -363,6 +363,17 @@ Otro ejemplo sería que en vez de 3 puertas fueran 100, el concursante escoge un
 \section{Ejercicio 11}
 Calcula la probabilidad de que en un cuarto de 10 personas, al menos 2 cumplan años el
 mismo día. Repite el cálculo para 23, 50 y 75 personas y discute los resultados.
+\paragraph{Solución: } Sea $E_n$ el evento de que la $n-$ésima persona comparta un cumpleaños con las otras $n-1$ personas.\\
+Así lo que buscamos es la probabilidad de que suceda dicho evento para alguna persona $1\leq i \leq n$ donde para el primer ejemplo $n=10$.\\
+Ahora revisemos la siguiente ecuación.
+\begin{equation}
+\begin{split}
+1 &= P(E_n) + P(\overline{E_n})\\
+1 - P(\overline{E_n}) &= P(E_n)\\
+P(E_n) &= 1 - P(\overline{E_n})\\
+\end{split}
+\end{equation}
+Lo que quiere decir que podemos encontrar la probabilidad que buscamos al encontrar la probabilidad del complemento.\\
 \section{Ejercicio 12}
 Se tiran 2 dados y se registra el número máximo, ¿cuales son las probabilidades de los eventos
 1, 2, 3, 4, 5, 6?
