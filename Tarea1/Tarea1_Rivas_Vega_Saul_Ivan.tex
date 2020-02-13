@@ -366,8 +366,77 @@ mismo día. Repite el cálculo para 23, 50 y 75 personas y discute los resultado
 \section{Ejercicio 12}
 Se tiran 2 dados y se registra el número máximo, ¿cuales son las probabilidades de los eventos
 1, 2, 3, 4, 5, 6?
+\paragraph{Solución: } 
+El problema puede modelarse como una combinatoria de $k$ elementos con repetición, en este caso estamos eligiendo 2 elementos de 6 totales. Esto se puede modelar como:
+
+\begin{equation}
+	\begin{split}
+	\left(\!\!{n\choose k}\!\!\right)&\\
+	{n + k - 1 \choose k}&=\\
+	&= {6 + 2 - 1 \choose 2} \\
+	&= {7 \choose 2} \\
+	&= \frac{7!}{2!(7-2)!} \\
+	&= \frac{7\times 6 \times 5!}{2!5!} \\
+	&= \frac{7\times 6}{2!} \\
+	&= \frac{42}{2} \\
+	&= 21
+	\end{split}
+\end{equation}
+Entonces al tirar dos dados existen 21 posibles resultados.\\
+De los cuales entonces hay que revisar los casos donde el numero 6 es el mayor. Son $\{(1,6), (2,6), (3, 6), (4, 6), (5, 6), (6, 6)\}$. Son 6 de los posibles 21 casos. Por lo tanto la probabilidad de que $6$ sea el número mayor al tirar 2 dados es de $\frac{6}{21} = \frac{2}{7} = 0.2857$.\\
+Donde el numero 5 es el mayor. Son $\{(1,5), (2,5), (3, 5), (4, 5), (5, 5)\}$. Son 5 de los posibles 21 casos. Por lo tanto la probabilidad de que $5$ sea el número mayor al tirar 2 dados es de $\frac{5}{21} = 0.2381$.\\
+Donde el numero 4 es el mayor. Son $\{(1,4), (2,4), (3, 4), (4, 4)\}$. Son 4 de los posibles 21 casos. Por lo tanto la probabilidad de que $4$ sea el número mayor al tirar 2 dados es de $\frac{4}{21} = 0.19047$.\\
+Donde el numero 3 es el mayor. Son $\{(1,3), (2,3), (3, 3)\}$. Son 3 de los posibles 21 casos. Por lo tanto la probabilidad de que $3$ sea el número mayor al tirar 2 dados es de $\frac{3}{21} = \frac{1}{7} = 0.14285$.\\
+Donde el numero 2 es el mayor. Son $\{(1,2), (2,2)\}$. Son 2 de los posibles 21 casos. Por lo tanto la probabilidad de que $2$ sea el número mayor al tirar 2 dados es de $\frac{2}{21} = 0.095238$.\\
+Donde el numero 1 es el mayor. Son $\{(1,1)\}$. Son 1 de los posibles 21 casos. Por lo tanto la probabilidad de que $1$ sea el número mayor al tirar 1 dados es de $\frac{1}{21} = 0.047619$.\\
 \section{Ejercicio 13}
  Prueba que la covarianza de 2 variables independientes es 0.
+\paragraph{Solución: } La covarianza esta definida como:
+\begin{equation}\label{e13_1}
+	cov(X,Y)=E[XY] - E[X]E[Y]
+\end{equation} 
+Si queremos probar que la covarianza es cero debemos probar que se cumple la siguiente igualdad:
+\begin{equation}
+\begin{split}
+cov(X,Y)&=E[XY] - E[X]E[Y]\\
+0&=E[XY] - E[X]E[Y]\\
+E[X]E[Y]&=E[XY]\\
+\end{split}
+\end{equation}
+Tomemos la definición del valor esperado para el producto de dos variables:
+\begin{equation}
+	E[XY] = \int \int xyF_{X,Y}(x,y)dxdy 
+\end{equation}
+Ahora al ser independientes la función de probabilidad para que ambas variables se puede descomponer en un producto de 2 funciones. 
+\begin{equation}
+\begin{split}
+E[XY] &= \int \int xyF_{X,Y}(x,y)dxdy\\
+&= \int \int xyF_{X}(x)F_{Y}(y)dxdy\\
+\end{split}
+\end{equation}
+Posteriormente reagrupamos las integrales:
+\begin{equation}
+\begin{split}
+E[XY] &= \int \int xyF_{X}(x)F_{Y}(y)dxdy\\
+&= \int xF_{X}(x)dx \int yF_{Y}(y)dy\\
+\end{split}
+\end{equation}
+Cada integral pasa a describir el valor esperado de X y de Y.
+\begin{equation}
+\begin{split}
+E[XY] &= \int xF_{X}(x)dx \int yF_{Y}(y)dy\\
+&= E[X]E[Y]\\
+\end{split}
+\end{equation}
+La cual era la igualdad a la que queríamos llegar entonces al ser iguales podemos tomar la ecuación \ref{e13_1} y sustituir:
+\begin{equation}
+\begin{split}
+cov(X,Y)&=E[XY] - E[X]E[Y]\\
+&= E[X]E[Y] - E[X]E[Y]\\
+&= 0\\
+\end{split}
+\end{equation}
+Finalmente llegamos a que la covarianza de dos variables independientes es 0.
 \section{Ejercicio 14}
  Un alumno decide responder de forma aleatoria un examen en el que cada pregunta tiene
 5 opciones de las cuales solo 1 es correcta. Suponiendo que la probabilidad de acertar una
