@@ -666,10 +666,113 @@ La estatura promedio de los alumnos de una universidad es de 169.83cm, con una d
 estándar de 4.5cm. Suponiendo una distribución normal, calcula la probabilidad de que la
 estatura de un alumno dado:
 \subsection{Se encuentre entre 160cm y 180cm}
+Al estar en una distribución normal podemos buscar el área que se encuentra debajo de la curva en la función de densidad que la define:
+\begin{equation}
+\begin{split}
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}
+\end{split}
+\end{equation}
+Esta última ecuación tiene una forma estándar donde $\sigma = 1$ y $\mu=0$.
+\begin{equation}
+\begin{split}
+\varphi(x)=\frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^2}
+\end{split}
+\end{equation}
+En la cual podemos fácilmente buscar las probabilidades en alguna tabla de distribuciones.\\
+Sin embargo nuestro caso no cumple que $\sigma = 1$ y $\mu=0$, por lo cual debemos realizar una transformación a la variable $x$.
+\begin{equation}
+	z = \frac{x - \mu}{\sigma}
+\end{equation}
+Ahora dados nuestros valores en $x$ podemos sacar los valores $z$ y esos buscarlos en la tabla de la distribución estándar.\\
+Buscamos $P(160 < x < 180)$.\\
+En este caso, nuestro rango con la transformación pasan a ser:
+\begin{equation}
+\begin{split}
+z_{\text{min}} &= \frac{160 - 169.83}{4.5}\\
+&= -2.18\overline{4}\\
+z_{\text{max}} &= \frac{180 - 169.83}{4.5}\\
+&= 2.26\\
+\end{split}
+\end{equation}
+Entonces buscamos $P(-2.18\overline{4} < z < 2.26)$.\\
+\begin{equation}
+	\begin{split}
+	P(-2.18\overline{4} < z < 2.26)&=P(z< 2.26)-P(z < -2.18\overline{4})\\
+	&\text{Al susitituir de las tablas}\\
+	&=0.9881-0.0145\\
+	&\text{Finalmente:}\\
+	&=0.9736\\
+	\end{split}
+\end{equation}
 \subsection{Sea de al menos 150cm}
+Lo que buscamos es $P(x\geq150)$, lo cual podemos ver como $1-P(x<150)$.\\
+Obtenemos la $z$ correspondiente:
+\begin{equation}
+\begin{split}
+z &= \frac{150 - 169.83}{4.5}\\
+&= -4.407\\
+\end{split}
+\end{equation}
+Entonces en la estándar buscamos: 
+\begin{equation}
+\begin{split}
+P(z < -4.407)&\approx 0\\
+&\text{Así}\\
+1 - P(z < -4.407)&\approx 1-0\\
+&\approx 1
+\end{split}
+\end{equation}
 \subsection{Sea de máximo 180cm}
+Buscamos $P(x \leq 180)$, lo cuál es $1 - P(x > 180)$.\\
+Obtenemos la $z$ correspondiente:
+\begin{equation}
+\begin{split}
+z &= \frac{180 - 169.83}{4.5}\\
+&= 2.26\\
+\end{split}
+\end{equation}
+Entonces en la estándar buscamos: 
+\begin{equation}
+\begin{split}
+P(z > 2.26)&= 0.0119\\
+&\text{Así}\\
+1 - P(z > 2.26)&=  1 - 0.0119\\
+&= 0.9881\\
+\end{split}
+\end{equation}
 \subsection{Sea mayor a 160cm}
+Buscamos $P(x > 160)$, lo cuál es $1 - P(x \leq 160)$.\\
+Obtenemos la $z$ correspondiente:
+\begin{equation}
+\begin{split}
+z &= \frac{160 - 169.83}{4.5}\\
+&= -2.18\overline{4}\\
+\end{split}
+\end{equation}
+Entonces en la estándar buscamos: 
+\begin{equation}
+\begin{split}
+P(z \leq -2.18\overline{4})&= 0.0145\\
+&\text{Así}\\
+1 - P(z \leq -2.18\overline{4})&=  1 - 0.0145\\
+&= 0.9855\\
+\end{split}
+\end{equation}
 \subsection{Sea menor a 190cm}
+Buscamos $P(x < 190)$.\\
+Obtenemos la $z$ correspondiente:
+\begin{equation}
+\begin{split}
+z &= \frac{190 - 169.83}{4.5}\\
+&= 4.482\\
+\end{split}
+\end{equation}
+Entonces en la estándar buscamos: 
+\begin{equation}
+\begin{split}
+P(z < 4.482)&\approx 1\\
+\end{split}
+\end{equation}
 \section{Ejercicio 16}
 Se tiene la siguiente información acerca del clima. La probabilidad de que llueva el día de hoy
 es de 0.6, mientras que la probabilidad de que llueva el día de mañana es de 0.5. Además, se
