@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  18 FEB 2020 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  18 FEB 2020 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,6 +1215,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 750--754
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--773
+
+ []
+
 [23] [24] (./Tarea1_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
@@ -1236,7 +1241,7 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb>
-Output written on Tarea1_Rivas_Vega_Saul_Ivan.pdf (24 pages, 155808 bytes).
+Output written on Tarea1_Rivas_Vega_Saul_Ivan.pdf (24 pages, 156969 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream

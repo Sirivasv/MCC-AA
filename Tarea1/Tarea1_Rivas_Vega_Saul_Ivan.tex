@@ -764,10 +764,26 @@ Y la probabilidad de que sucedan ambos esta dado por su producto.\\
 Una baraja ordinaria de 52 cartas se divide aleatoriamente en 4 pilas de 13 cartas cada una.
 Calcule la probabilidad de que cada pila tenga exactamente 1 As.
 \section{Ejercicio 20}
- En una determinada etapa de una investigación criminal el inspector al mando está 60 %
+ En una determinada etapa de una investigación criminal el inspector al mando está 60 \%
 convencido de la culpabilidad de un sospechoso. Supongamos, sin embargo, que una nueva
 pieza de evidencia muestra que el delincuente tiene una cierta característica (como la calvicie
 o el pelo castaño). Si el 20 por ciento de la población posee esta característica, ¿cuál es la
 certeza de la culpabilidad del sospechoso que tiene el inspector si resulta que el sospechoso
-tiene la característica?
+tiene la característica?\\
+\paragraph{Solución:} Sea $C$ el evento de que el individuo sea culpable según la sospecha del detective, entonces $P(C) = 60\% = 0.6$, ahora de que sea inocente ($I$) es $P(C) = 40\% = 0.4$, el evento de que una persona posea la característica la podemos definir como:
+$P(C_r) = 20\% = 0.2$.\\
+Lo que estamos buscando es la certeza de culpabilidad dado que tiene la característica, es decir:
+\begin{equation}
+	P(C|C_r)
+\end{equation}
+Ahora la cual podemos desarrollar con el teorema de Bayes:
+\begin{equation}
+\begin{split}
+P(C|C_r)&=\frac{P(C_r|C)\times P(C)}{P(C_r)}\\
+&=\frac{P(C_r|C)\times P(C)}{P(C_r|C)\times P(C) + P(C_r|I)\times P(I)}\\
+&=\frac{1\times 0.6}{1\times 0.6 +  0.2 \times 0.4}\\
+&= 0.8823529411764707\\
+&\approx 88.23\%\\
+\end{split}
+\end{equation}
 \end{document}  
