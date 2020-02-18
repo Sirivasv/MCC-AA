@@ -561,8 +561,106 @@ Finalmente llegamos a que la covarianza de dos variables independientes es 0.
 5 opciones de las cuales solo 1 es correcta. Suponiendo que la probabilidad de acertar una
 pregunta es de 0.2 y que cada respuesta es independiente de las demás, calcula lo siguiente:\\
 \subsection{La probabilidad de tener 10, 20 y 40 aciertos si el examen consiste de 50 preguntas}
+El problema plantea calcular la probabilidad de un numero de éxitos en una serie de "experimentos" los cuales son cada pregunta del examen, tomando que los eventos son independientes y que hay una probabilidad definida de éxito $p=0.2$ para cada uno podemos entonces modelar una distribución binomial:
+\begin{equation}
+\begin{split}
+b(x;n;p)={n\choose x} \times p^x \times (1 - p)^{n-x}
+\end{split} 
+\end{equation}
+Así entonces podemos encontrar la probabilidad con $x \in \{10, 20, 40\}$ para $n=50$.\\
+Para $x=10$:\\
+\begin{equation}
+\begin{split}
+b(10;50;0.2)&={50\choose 10} \times 0.2^{10} \times (1 - 0.2)^{50-10}\\
+&=(\frac{50!}{10!\times(50-10)!}) \times 0.2^{10} \times 0.8^{40}\\
+&=(\frac{50!}{10!\times(40)!}) \times 0.2^{10} \times 0.8^{40}\\
+&=(\frac{50!}{10!\times(40)!}) \times 0.2^{10} \times 0.8^{40}\\
+&= 0.13981900517
+\end{split} 
+\end{equation}
+Para $x=20$:\\
+\begin{equation}
+\begin{split}
+b(20;50;0.2)&={50\choose 20} \times 0.2^{20} \times (1 - 0.2)^{50-20}\\
+&=(\frac{50!}{20!\times(50-20)!}) \times 0.2^{20} \times 0.8^{30}\\
+&=(\frac{50!}{20!\times(30)!}) \times 0.2^{20} \times 0.8^{30}\\
+&=(\frac{50!}{20!\times(30)!}) \times 0.2^{20} \times 0.8^{30}\\
+&= 0.00061177215
+\end{split} 
+\end{equation}
+Para $x=40$:\\
+\begin{equation}
+\begin{split}
+b(40;50;0.2)&={50\choose 40} \times 0.2^{40} \times (1 - 0.2)^{50-40}\\
+&=(\frac{50!}{40!\times(50-40)!}) \times 0.2^{40} \times 0.8^{10}\\
+&=(\frac{50!}{40!\times(10)!}) \times 0.2^{40} \times 0.8^{10}\\
+&=(\frac{50!}{40!\times(10)!}) \times 0.2^{40} \times 0.8^{10}\\
+&\approx 1.2 \times 10^{-19}
+\end{split} 
+\end{equation}
 \subsection{La probabilidad de tener 10, 20 y 40 aciertos si el examen consiste de 40 preguntas}
+Para $x=10$:\\
+\begin{equation}
+\begin{split}
+b(10;40;0.2)&={40\choose 10} \times 0.2^{10} \times (1 - 0.2)^{40-10}\\
+&=(\frac{40!}{10!\times(40-10)!}) \times 0.2^{10} \times 0.8^{30}\\
+&=(\frac{40!}{10!\times(30)!}) \times 0.2^{10} \times 0.8^{30}\\
+&=(\frac{40!}{10!\times(30)!}) \times 0.2^{10} \times 0.8^{30}\\
+&= 0.10745373771
+\end{split} 
+\end{equation}
+Para $x=20$:\\
+\begin{equation}
+\begin{split}
+b(20;40;0.2)&={40\choose 20} \times 0.2^{20} \times (1 - 0.2)^{40-20}\\
+&=(\frac{40!}{20!\times(40-20)!}) \times 0.2^{20} \times 0.8^{20}\\
+&=(\frac{40!}{20!\times(20)!}) \times 0.2^{20} \times 0.8^{20}\\
+&=(\frac{40!}{20!\times(20)!}) \times 0.2^{20} \times 0.8^{20}\\
+&= 0.00001666462
+\end{split} 
+\end{equation}
+Para $x=40$:\\
+\begin{equation}
+\begin{split}
+b(20;40;0.2)&={40\choose 40} \times 0.2^{40} \times (1 - 0.2)^{40-40}\\
+&=(\frac{40!}{40!\times(40-40)!}) \times 0.2^{40} \times 0.8^{0}\\
+&=(\frac{40!}{40!\times(0)!}) \times 0.2^{40} \\
+&=(\frac{40!}{40!}) \times 0.2^{40} \\
+&= 0.2^{40} \\
+&\approx 1.1 \times 10^{-26}
+\end{split} 
+\end{equation}
 \subsection{La probabilidad de tener 10, 20 y 40 errores si el examen consiste de 40 preguntas}
+Para 10 errores significan 30 aciertos, es decir $x=30$:\\
+\begin{equation}
+\begin{split}
+b(30;40;0.2)&={40\choose 30} \times 0.2^{30} \times (1 - 0.2)^{40-30}\\
+&=(\frac{40!}{30!\times(40-30)!}) \times 0.2^{30} \times 0.8^{10}\\
+&=(\frac{40!}{30!\times(10)!}) \times 0.2^{30} \times 0.8^{10}\\
+&=(\frac{40!}{30!\times(10)!}) \times 0.2^{30} \times 0.8^{10}\\
+&\approx 9 \times 10^{-14}
+\end{split} 
+\end{equation}
+Para 20 errores significan 20 aciertos, es decir $x=20$:\\
+\begin{equation}
+\begin{split}
+b(20;40;0.2)&={40\choose 20} \times 0.2^{20} \times (1 - 0.2)^{40-20}\\
+&=(\frac{40!}{20!\times(40-20)!}) \times 0.2^{20} \times 0.8^{20}\\
+&=(\frac{40!}{20!\times(20)!}) \times 0.2^{20} \times 0.8^{20}\\
+&=(\frac{40!}{20!\times(20)!}) \times 0.2^{20} \times 0.8^{20}\\
+&= 0.00001666462
+\end{split} 
+\end{equation}
+Para 40 errores significan 0 aciertos, es decir $x=0$:\\
+\begin{equation}
+\begin{split}
+b(0;40;0.2)&={40\choose 0} \times 0.2^{0} \times (1 - 0.2)^{40-0}\\
+&=(\frac{40!}{0!\times(40-0)!}) \times 0.8^{40}\\
+&=(\frac{40!}{40!}) \times 0.8^{40}\\
+&= 0.8^{40}\\
+&= 0.0001329228
+\end{split} 
+\end{equation}
 \section{Ejercicio 15}
 La estatura promedio de los alumnos de una universidad es de 169.83cm, con una desviación
 estándar de 4.5cm. Suponiendo una distribución normal, calcula la probabilidad de que la
