@@ -319,8 +319,47 @@ Finalmente decimos que la probabilidad de que el último pasajero se siente en s
 \section{Ejercicio 7}
 Juan y Pedro tiran una moneda cada uno. Juan apuesta que ambas monedas caerán iguales
 y Pedro que caerán diferentes. Prueba que incluso si la moneda estuviera cargada, el juego
-seguiría siendo justo\\
-\pagebreak
+seguiría siendo justo.\\
+\paragraph{Solución:} Existe entonces una moneda cargada y una moneda justa. Sea S el evento de que la moneda salga sol, y A que salga águila. Para la moneda justa podemos suponer las siguientes probabilidades:
+\begin{equation}
+	\begin{split}
+		P(S_j) &= \frac{1}{2}\\
+		P(A_j) &= \frac{1}{2}\\
+	\end{split}
+\end{equation}
+Para la moneda cargada existe un factor $0 \leq x \leq \frac{1}{2}$ por el cual es mayor una probabilidad en alguno de los 2 eventos y menor en el otro. Es decir:
+\begin{equation}\label{ec7_1}
+\begin{split}
+P(S_c) &= \frac{1}{2} + x\\
+P(A_c) &= \frac{1}{2} - x\\
+\end{split}
+\end{equation}
+En la ecuación \ref{ec7_1} la moneda esta cargada para el evento de que caiga Sol, sin embargo probemos que el juego es justo con esta configuración y así no importará hacia que evento esta cargada la moneda.\\
+Veamos entonces las probabilidades para Juan, es decir que ambas monedas caigan iguales.\\
+\begin{equation}\label{ec7_2}
+\begin{split}
+P(Juan) &= P(S_j\cap S_c) + P(A_j\cap A_c)\\
+&\text{al ser eventos independientes, podemos representar las probabilidades como\dots}\\
+ &= (P(S_j) \times P(S_c)) + (P(A_j) \times P(A_c))\\
+ &= ((\frac{1}{2}) \times (\frac{1}{2} + x)) + ((\frac{1}{2}) \times (\frac{1}{2} - x))\\
+ &= (\frac{1}{4} + \frac{x}{2}) + (\frac{1}{4} - \frac{x}{2})\\
+ &= \frac{2}{4}\\
+ &= \frac{1}{2}\\
+\end{split}
+\end{equation}
+Ahora veamos las probabilidades de Pedro, es decir que ambas monedas caigan distintas.\\
+\begin{equation}
+\begin{split}
+	P(Pedro) &= P(S_j\cap A_c) + P(A_j\cap S_c)\\
+	&\text{al ser eventos independientes, podemos representar las probabilidades como\dots}\\
+	&= (P(S_j) \times P(A_c)) + (P(A_j) \times P(S_c))\\
+	&= ((\frac{1}{2}) \times (\frac{1}{2} - x)) + ((\frac{1}{2}) \times (\frac{1}{2} + x))\\
+	&= (\frac{1}{4} - \frac{x}{2}) + (\frac{1}{4} + \frac{x}{2})\\
+	&= \frac{2}{4}\\
+	&= \frac{1}{2}\\
+\end{split}
+\end{equation}
+Finalmente como ambas probabilidades son iguales decimos que el juego sigue siendo justo.
 \section{Ejercicio 8} 
  Voluntarios en un programa de adopción de animales encuestaron a 100 estudiantes sobre su
 preferencia entre perros y gatos. La siguiente tabla muestra los datos recabados.\\
@@ -374,6 +413,75 @@ P(E_n) &= 1 - P(\overline{E_n})\\
 \end{split}
 \end{equation}
 Lo que quiere decir que podemos encontrar la probabilidad que buscamos al encontrar la probabilidad del complemento.\\
+Entonces el evento $\overline{E_i}$ es que la persona $i$ para $1\leq i\leq n$ con el primer ejemplo de $n=10$ no comparta cumpleaños con alguna otra persona $1 \leq j \leq n$ y $j\neq i$.\\
+Veamos como luce la probabilidad de que ninguna persona comparta cumpleaños.\\
+\begin{equation}\label{ec11_1}
+	\begin{split}
+	P(\overline{E_1}\cap \overline{E_2} \cap \dots \cap \overline{E_n}) &=\\
+	& \text{al ser eventos independientes}\dots \\
+	&= P(\overline{E_1}) \times P(\overline{E_2}) \times \dots \times P(\overline{E_n})
+	\end{split}
+\end{equation}
+Para $i=1$ la probabilidad es 1, pues no hay otra persona con la cual compartir. Supongamos que el año tiene 365 días, ahora para la siguiente persona si no comparte cumpleaños tiene 364 opciones de las 365, pues habrá uno en el comparta con la primera persona. Generalizando tomemos la siguiente ecuación:
+\begin{equation}
+	\begin{split}
+	P(\overline{E_1})=&\frac{365}{365}\\
+	P(\overline{E_2})=&\frac{364}{365}\\
+	P(\overline{E_3})=&\frac{363}{365}\\
+	&\dots\\
+	P(\overline{E_i})=&\frac{366 - i}{365}\\
+	& \text{para 1 $\leq i \leq n$}\\
+	& \text{y para el ejercicio $n \in \{10,23,50,75\}$}\\
+	\end{split}
+\end{equation}
+Ahora sustituyendo en la ecuación \ref{ec11_1}.\\
+\begin{equation}\label{ec11_2}
+\begin{split}
+P(\overline{E_1}) \times P(\overline{E_2}) \times \dots \times P(\overline{E_n}) &=(\frac{365}{365}) \times (\frac{364}{365}) \times (\frac{363}{365}) \times \dots \times (\frac{366 - n}{365}) \\
+&=(\frac{1}{365^{n}})\times(365 \times 364 \times 363 \times \dots \times (366 - n))\\
+&=(\frac{1}{365^{n}})\times(\frac{365!}{(365-n)!})\\
+&=\frac{365!}{365^{n} \times(365-n)!}\\
+\end{split}
+\end{equation}
+Como buscamos el complemento entonces llegamos a la siguiente ecuación:
+\begin{equation}\label{ec11_3}
+\begin{split}
+P(\text{al menos dos personas que compartan cumpleaños})&=1 - \frac{365!}{365^{n} \times(365-n)!}\\
+\end{split}
+\end{equation}
+Sustituyamos ahora $n=10$.
+\begin{equation}\label{ec11_4}
+\begin{split}
+1 - \frac{365!}{365^{n} \times(365-n)!}&=1 - \frac{365!}{365^{10} \times(365-10)!}\\
+&\approx 0.117 \\
+&\approx 11.7\%
+\end{split}
+\end{equation}
+Para $n=23$.
+\begin{equation}
+\begin{split}
+1 - \frac{365!}{365^{n} \times(365-n)!}&=1 - \frac{365!}{365^{23} \times(365-23)!}\\
+&\approx 0.507 \\
+&\approx 50.7\%
+\end{split}
+\end{equation}
+Para $n=50$.
+\begin{equation}
+\begin{split}
+1 - \frac{365!}{365^{n} \times(365-n)!}&=1 - \frac{365!}{365^{50} \times(365-50)!}\\
+&\approx 0.97 \\
+&\approx 97\%
+\end{split}
+\end{equation}
+Para $n=75$.
+\begin{equation}
+\begin{split}
+1 - \frac{365!}{365^{n} \times(365-n)!}&=1 - \frac{365!}{365^{75} \times(365-75)!}\\
+&\approx 0.9997 \\
+&\approx 99.97\%
+\end{split}
+\end{equation}
+\paragraph{Discusión de resultados:} Los resultados muestran que la probabilidad esta cerca de duplicarse cuando se duplica la $n$, eventualmente llegará a 1 cuando $n=365$, finalmente podemos decir que presenta un comportamiento exponencial.
 \section{Ejercicio 12}
 Se tiran 2 dados y se registra el número máximo, ¿cuales son las probabilidades de los eventos
 1, 2, 3, 4, 5, 6?
