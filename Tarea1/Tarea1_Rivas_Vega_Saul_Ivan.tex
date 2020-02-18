@@ -739,8 +739,48 @@ Una empresa de lámparas incandecentes observa que el número de componentes que
 antes de cumplir 100 horas de funcionamiento es una variable aleatoria de Poisson. Si el
 número promedio de estos fallos es 8, calcule lo siguiente:
 \subsection{¿Cuál es la probabilidad de que falle 1 componente en 25 horas?}
+Si es una variable aleatoria con una distribución de Poisson, la probabilidad de ocurrencia de eventos esta dada por:
+\begin{equation}
+	\begin{split}
+		P(x)=\frac{\lambda^xe^{-\lambda}}{x!}
+	\end{split}
+\end{equation}
+Donde $\lambda$ es el promedio de eventos por intervalo.\\
+$e$ es el número de Euler.\\
+$x$ es el número de eventos.\\
+En nuestro caso $\lambda = 8$ para un intervalo de 100 horas, así el promedio en un intervalo de 25 horas sería $\lambda=2$.\\
+\begin{equation}
+	\begin{split}
+	P(1) &= \frac{2^1e^{-2}}{1!}\\
+	&= \frac{2e^{-2}}{1}\\
+	&= 2e^{-2}\\
+	&\approx 0.2711\\
+	\end{split}
+\end{equation}
 \subsection{¿Cuál es la probabilidad de que fallen no más de 2 componentes en 50 horas?}
+Ahora $\lambda=4$ y la probabilidad puede verse como la suma de que no fallen, falle 1 y fallen 2.\\
+\begin{equation}
+\begin{split}
+P(x\leq2)&= \sum_{n=0}^{2} \frac{4^ne^{-4}}{n!}\\
+ &= \frac{4^0e^{-4}}{0!} + \frac{4^1e^{-4}}{1!} + \frac{4^2e^{-4}}{2!}\\
+&= \frac{1 e^{-4}}{1} + \frac{4e^{-4}}{1} + \frac{4^2e^{-4}}{2}\\
+&= e^{-4} + 4e^{-4} + 8e^{-4}\\
+&\approx 0.238\\
+\end{split}
+\end{equation}
 \subsection{¿Cuál es la probabilidad de que fallen por lo menos 10 en 125 horas?}
+Ahora $\lambda=10$ y la probabilidad puede verse como la suma de que no fallen hasta 9 y sacar el complemento.\\
+\begin{equation}
+\begin{split}
+P(x\geq10)&= 1 - P(x<10)\\
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+P(x<10)&= \sum_{n=0}^{9} \frac{10^ne^{-10}}{n!}\\
+&\approx 0.54207\\
+\end{split}
+\end{equation}
 \section{Ejercicio 18}
  El consejo universitario de la Facultad de Ciencias está compuesto por 14 miembros, 5 de los
 cuales son estudiantes, 5 son maestros y 4 son investigadores. Un periodista planea seleccionar

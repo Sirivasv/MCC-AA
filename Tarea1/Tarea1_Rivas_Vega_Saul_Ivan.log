@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  18 FEB 2020 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  18 FEB 2020 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1211,16 +1211,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 694--695
  []
 
 [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 750--754
+Underfull \hbox (badness 10000) in paragraph at lines 747--752
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--762
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 777--783
+Underfull \hbox (badness 10000) in paragraph at lines 790--794
 
  []
 
-[24] (./Tarea1_Rivas_Vega_Saul_Ivan.aux
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 817--823
+
+ []
+
+[25] (./Tarea1_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
@@ -1241,10 +1256,10 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb>
-Output written on Tarea1_Rivas_Vega_Saul_Ivan.pdf (24 pages, 157964 bytes).
+Output written on Tarea1_Rivas_Vega_Saul_Ivan.pdf (25 pages, 161056 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
