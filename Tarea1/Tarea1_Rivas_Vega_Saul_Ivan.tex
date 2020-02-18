@@ -762,7 +762,17 @@ Y la probabilidad de que sucedan ambos esta dado por su producto.\\
 \end{equation}
 \section{Ejercicio 19}
 Una baraja ordinaria de 52 cartas se divide aleatoriamente en 4 pilas de 13 cartas cada una.
-Calcule la probabilidad de que cada pila tenga exactamente 1 As.
+Calcule la probabilidad de que cada pila tenga exactamente 1 As.\\
+Hay 4 Ases, tomemos el caso para el primer As, este As estará en alguna de las 4 pilas y no tendríamos mayor inconveniente.\\
+Ahora para el segundo As requiere forzosamente estar en otra pila que no sea la del segundo, si cada pila tiene 13 cartas, entonces El segundo As debió estar en las 39 cartas restantes que no pertenecen a la primera pila y que no sea el primer as, lo cual tiene una probabilidad de $\frac{39}{51}$.\\
+Para el tercer As no debió estar ni en la primera, ni en la segunda pila lo cual significa que debió estar en las 26 cartas restantes y que no son los primeros 2 ases con una probabilidad de $\frac{26}{50}$.\\
+Para el último As debió estar en las últimas 13 cartas y que no es alguno de los otros ases con una probabilidad de $\frac{13}{49}$.\\
+Finalmente terminar con un As en cada pila significa que todos estos eventos pasaron y podemos encontrar el valor con un producto.
+\begin{equation}
+\begin{split}
+	1 \times \frac{39}{51} \times \frac{26}{50} \times \frac{13}{49} &= 0.1055\\	
+\end{split}
+\end{equation}
 \section{Ejercicio 20}
  En una determinada etapa de una investigación criminal el inspector al mando está 60 \%
 convencido de la culpabilidad de un sospechoso. Supongamos, sin embargo, que una nueva
