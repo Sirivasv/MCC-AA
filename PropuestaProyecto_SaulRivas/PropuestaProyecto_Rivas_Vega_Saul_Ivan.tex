@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{
+	left=20mm,
+	top=20mm,
+}
+\usepackage{cite}
+\usepackage[utf8]{inputenc}
+\usepackage[shortlabels]{enumitem}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage[spanish,es-nodecimaldot]{babel}
+ \usepackage{url}
+\usepackage[spanish, fixlanguage]{babelbib}
+\bibliographystyle{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage[linesnumbered]{algorithm2e}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+\usepackage{tikz}
+\usetikzlibrary{positioning, fit}
+\usetikzlibrary{babel}
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{5.5ex plus 1ex minus .2ex}{.3ex plus .1ex}
+\titlespacing*{\subsection}
+{0pt}{5.5ex plus 1ex minus .2ex}{2.3ex plus .1ex}
+\title{Propuesta de Proyecto Final:\\
+	Estimación de nota musical}
+
+\author{
+	Saul Ivan Rivas Vega \\
+	\\
+	Aprendizaje Automatizado\\
+}
+
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\pagebreak
+	\section{Descripción y delimitación del problema}
+	  \paragraph{} Basado en atributos en el dominio de la frecuencia como son los coeficientes por ventana de muestreo de la transformada \textbf{constante-Q} estimar la nota musical de teclado/sintetizador presente en un archivo de audio de una pieza musical monofónica con notas simples.
+	\section{Objetivos}
+	\begin{itemize}
+	\item Extraer los atributos frecuenciales por ventana del conjunto de datos.
+	\item Entrenar un modelo predictivo para estimar la nota musical presente en una ventana dados sus atributos frecuenciales.
+	\item Realizar un transcript de la melodía.
+	\end{itemize}
+	\section{Justificación}
+	\paragraph{} Se han realizado múltiples estudios en la estimación de frecuencia fundamental o de tono \cite{das_real-time_2017,kim_crepe_2018,mauch_pyin_2014,de_cheveigne_yin_2002}. En aplicaciones el ser en tiempo real como en \cite{das_real-time_2017} sería de gran utilidad sin embargo los métodos con mayor precisión son los que analizan archivos pre-grabados como es el caso de \cite{kim_crepe_2018,mauch_pyin_2014}, ambos superando al método estándar YIN \cite{de_cheveigne_yin_2002} que se encuentra en múltiples bibliotecas de extracción de información musical como ESSENTIA \cite{bogdanov_essentia_2013}.\\
+	El presente trabajo tiene como justificación el poder utilizar las propiedades fundamentales para la estimación del tono como en \cite{de_cheveigne_yin_2002,brown_calculation_1991,brown_efficient_1992} y a su vez beneficiarse de los métodos de aprendizaje automatizado para ofrecer una opción para la estimación de notas musicales balanceando la eficiencia en la cantidad de atributos requeridos y la precisión de la estimación.
+	\section{Base de datos a utilizar o estrategia para recopilarla}
+	\paragraph{} La base de datos es NSynth del grupo de investigación musical en Google Magenta \cite{engel_neural_2017}, el dataset contiene 305,979 notas musicales, cada una con un distinto tono, timbre, y envoltura. De 1,006 instrumentos, clips de monofónicos con una taza de muestreo de 16kHz de 4 segundos con anotaciones de nota musical en el rango del formato MIDI en el rango (21-108) con 5 velocidades (25, 50, 75, 100, 127). La nota se mantuvo por 3 segundos dejando el último segundo para el decaimiento.
+	De los clips de audio del instrumento seleccionado se obtendrán los valores de la transformada \textbf{Constante-Q} utilizando la libreria Librosa para python \cite{mcfee_librosa_2015} y exportando en formato csv los atributos frecuenciales y la clase para utilizar en el entrenamiento.
+	\section{Análisis exploratorio de los datos}
+	\bibliography{main}
+\end{document}  
