@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  27 FEB 2020 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  3 MAR 2020 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1033,12 +1033,45 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./PropuestaProyecto_Rivas_Vega_Saul_Ivan.bbl
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Overfull \hbox (11.50975pt too wide) in paragraph at lines 69--70
+[]\OT1/cmr/m/n/12 De los clips de au-dio se-lec-cio-na-dos se ob-tu-vie-ron los
+ va-lo-res de la trans-for-ma-da \OT1/cmr/bx/n/12 Constante-
+ []
+
+<./images/qtransform.png, id=15, 450.68375pt x 279.0425pt>
+File: ./images/qtransform.png Graphic file (type png)
+<use ./images/qtransform.png>
+Package pdftex.def Info: ./images/qtransform.png  used on input line 74.
+(pdftex.def)             Requested size: 372.19685pt x 230.45984pt.
+<./images/qtransfomtable_01.png, id=17, 990.70125pt x 495.8525pt>
+File: ./images/qtransfomtable_01.png Graphic file (type png)
+<use ./images/qtransfomtable_01.png>
+Package pdftex.def Info: ./images/qtransfomtable_01.png  used on input line 84.
+
+(pdftex.def)             Requested size: 381.50374pt x 190.9454pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/qtransformtable_02.png, id=18, 999.735pt x 463.7325pt>
+File: ./images/qtransformtable_02.png Graphic file (type png)
+<use ./images/qtransformtable_02.png>
+Package pdftex.def Info: ./images/qtransformtable_02.png  used on input line 89
+.
+(pdftex.def)             Requested size: 381.50374pt x 176.96315pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./images/qtransform.png>] [4 <./images/qtransfomtable_01.png> <./images/qtr
+ansformtable_02.png>] (./PropuestaProyecto_Rivas_Vega_Saul_Ivan.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-[2]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
@@ -1048,27 +1081,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-) [3] (./PropuestaProyecto_Rivas_Vega_Saul_Ivan.aux
+) [5
+
+] (./PropuestaProyecto_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 17047 strings out of 492982
- 315307 string characters out of 6134896
- 385083 words of memory out of 5000000
- 20275 multiletter control sequences out of 15000+600000
+ 17071 strings out of 492982
+ 315852 string characters out of 6134896
+ 385157 words of memory out of 5000000
+ 20294 multiletter control sequences out of 15000+600000
  12443 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,54p,696b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,7n,54p,697b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on PropuestaProyecto_Rivas_Vega_Saul_Ivan.pdf (3 pages, 67847 by
-tes).
+Output written on PropuestaProyecto_Rivas_Vega_Saul_Ivan.pdf (5 pages, 220963 b
+ytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
