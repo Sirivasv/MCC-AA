@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  3 MAR 2020 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  3 MAR 2020 20:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1090,7 +1090,7 @@ LaTeX Info: Redefining \% on input line 8.
 Here is how much of TeX's memory you used:
  17071 strings out of 492982
  315852 string characters out of 6134896
- 385157 words of memory out of 5000000
+ 384157 words of memory out of 5000000
  20294 multiletter control sequences out of 15000+600000
  12443 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1099,7 +1099,7 @@ Here is how much of TeX's memory you used:
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on PropuestaProyecto_Rivas_Vega_Saul_Ivan.pdf (5 pages, 220963 b
+Output written on PropuestaProyecto_Rivas_Vega_Saul_Ivan.pdf (5 pages, 220962 b
 ytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
