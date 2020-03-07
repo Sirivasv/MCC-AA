@@ -90,21 +90,27 @@
   c_k =& \sum_{i = 1}^{n}{[x^{(i)}_{nombre}=k]}
   \end{split}
   \end{equation}
-  Así podemos estimar el parámetro para las primer categoría:\\
+  Así podemos estimar el parámetro para la primer categoría:\\
   \begin{equation}
   \begin{split}
-  c_1 &= \sum_{i = 1}^{13}{[x^{(i)}_{nombre}=1]}\\
-  	&= 1 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 + 0 + 0 + 0 + 0 + 0\\
-  	&= 2\\
-  \hat{q}_1 =& \frac{2}{13} \\ 
+  	\text{Para la clase \textbf{Femenino}}:\\
+  	c_{1F} &= \sum_{i = 1}^{13}{[x^{(i)}_{nombre}=1 \text{ y $x^{(i)}$ es de la clase Femenino}]}\\
+  	&= 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 + 0 + 0 + 0 + 0 + 0\\
+  	&= 1\\
+  \hat{q}_{(1|F)} =& \frac{1}{6} \\ 
+  \text{Para la clase \textbf{Masculino}}:\\
+  c_{1M} &= \sum_{i = 1}^{13}{[x^{(i)}_{nombre}=1 \text{ y $x^{(i)}$ es de la clase Masculino}]}\\
+  &= 1 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0\\
+  &= 1\\
+  \hat{q}_{(1|M)} =& \frac{1}{7} \\
   \end{split}
   \end{equation}
   Y de la misma forma para las categorías restantes:
   \begin{equation}
   \begin{split}
-  c_2 = 3, \; \; \; \hat{q}_2 = \frac{3}{13} \; \; \; \; \; \; \; \; \; \; \; \; &  c_3 = 3, \; \; \; \hat{q}_3 = \frac{3}{13}\\
-  c_4 = 2, \; \; \; \hat{q}_4 = \frac{2}{13} \; \; \; \; \; \; \; \; \; \; \; \; &  c_5 = 2, \; \; \; \hat{q}_5 = \frac{2}{13}\\ 
-  c_6 = 1, \; \; \; \hat{q}_6 = \frac{1}{13}
+  c_{2F} = 2, \; \hat{q}_{(2|F)} = \frac{2}{6}, \; c_{2M} = 1, \; \hat{q}_{(2|M)} = \frac{1}{7} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{3F} = 1, \; \hat{q}_{(3|F)} = \frac{1}{6}, \; c_{3M} = 2, \; \hat{q}_{(3|M)} = \frac{2}{7}\\
+  c_{4F} = 1, \; \hat{q}_{(4|F)} = \frac{1}{6}, \; c_{4M} = 1, \; \hat{q}_{(4|M)} = \frac{1}{7} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{5F} = 0, \; \hat{q}_{(5|F)} = \frac{0}{6} = 0, \; c_{5M} = 2, \; \hat{q}_{(5|M)} = \frac{2}{7}\\ 
+  c_{6F} = 1, \; \hat{q}_{(6|F)} = \frac{1}{6}, \;c_{6M} = 0, \; \hat{q}_{(6|M)} = \frac{0}{7} = 0\\
   \end{split}
   \end{equation}
   \subsubsection{Atributo Estatura}
@@ -120,6 +126,58 @@
   \mathcal{N}(X_{estatura}^{(i)};\mu;\sigma^2) =& \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-(x^{(i)} - \mu)^2}{2\sigma^2}}\\
   \end{split}
   \end{equation}
+  Donde podemos estimar a $\mu$ y a $\sigma$ usando el estimador de máxima verosimilitud como:
+  \paragraph{} Para la clase \textbf{Femenino}:
+  \begin{equation}
+  \begin{split}
+  \hat{\mu}_{F}&=\frac{1}{n}\sum_{i=1}^{n}{x_{estatura}^{(i)}}\\
+  &=\frac{1}{6}(1.50 + 1.52 + 1.62 + 1.67 + 1.65 + 1.75)\\
+   &=\frac{1}{6}(9.71)\\
+   &= 1.618\bar{3}\\
+  \end{split}
+  \end{equation}
+  \begin{equation}
+  \begin{split}
+  \hat{\sigma}^2_F&=\frac{1}{n}\sum_{i=1}^{n}{(x_{estatura}^{(i)} - \hat{\mu})^2}\\
+  &=\frac{1}{6}[(1.50-1.618\bar{3})^2 + (1.52-1.618\bar{3})^2  + \dots + (1.75-1.618\bar{3})^2)]\\
+  &=\frac{1}{6}[0.014003 + 0.009669 + 0.00166667 + \dots + 0.13166667]\\
+  &=\frac{1}{6}[0.13036923076923082]\\
+  &= 0.021728205128205138\\
+  \end{split}
+  \end{equation}
+  \subsubsection{Atributo Peso}
+  \paragraph{}Para el \textbf{peso} podemos asumir una distribución normal:
+  \begin{equation}
+  \begin{split}
+  X_{peso}^{(i)}\sim \mathcal{N}(X_{peso}^{(i)};\mu;\sigma^2)\\
+  \end{split}
+  \end{equation}
+  Donde $\mathcal{N}(X_{peso}^{(i)};\mu;\sigma^2)$ se define como:\\
+  \begin{equation}
+  \begin{split}
+  \mathcal{N}(X_{peso}^{(i)};\mu;\sigma^2) =& \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-(x^{(i)} - \mu)^2}{2\sigma^2}}\\
+  \end{split}
+  \end{equation}
+  Donde podemos estimar a $\mu$ y a $\sigma$ usando el estimador de máxima verosimilitud como:
+  \begin{equation}
+  \begin{split}
+  \hat{\mu}&=\frac{1}{n}\sum_{i=1}^{n}{x_{peso}^{(i)}}\\
+  &=\frac{1}{13}(75.3 + 81.6 + 86.1 + 77.1 + 78.2 + 74.8 + 74.3 + 50.5 + 45.3 + 61.2 + 68.0 + 58.9 + 68.0)\\
+  &=\frac{1}{13}(899.3)\\
+  &= 69.17692307692307\\
+  \end{split}
+  \end{equation}
+  \begin{equation}
+  \begin{split}
+  \hat{\sigma}^2&=\frac{1}{n}\sum_{i=1}^{n}{(x_{peso}^{(i)} - \hat{\mu})^2}\\
+  &=\frac{1}{13}[(75.3-69.17692)^2 + (81.6-69.17692)^2  + \dots + (68.0-69.17692)^2)]\\
+  &=\frac{1}{13}[37.49207 + 154.33284 + 286.39053 + \dots + 1.38514]\\
+  &=\frac{1}{13}[1771.2230769230764]\\
+  &= 136.2479289940828\\
+  \end{split}
+  \end{equation}
+  \subsubsection{Género}
+  
  \section{Spam}
 	 
 \end{document}  
