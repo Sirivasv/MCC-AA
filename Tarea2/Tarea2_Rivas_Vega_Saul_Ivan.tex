@@ -58,6 +58,8 @@
 	  	\includegraphics[width=.6\linewidth]{ex1_002}
 	  	\label{fig2}
 	  \end{figure}
+  \clearpage
+  \pagebreak
  \subsection{Estimador por máxima verosimilitud}
  \paragraph{} Los atributos son: \textbf{nombre}, \textbf{estatura} y \textbf{peso}, y la clase es \textbf{género}.\\
  \subsubsection{Atributo \textit{Nombre}}
@@ -67,16 +69,9 @@
   X_{nombre}^{(i)}\sim Cat(X_{nombre}^{(i)};q)\\
   \end{split}
   \end{equation}
-  Donde las categorías son los nombres y los podemos enumerar:
-  \begin{enumerate}
-  	\item Denis
-  	\item Guadalupe
-  	\item Alex
-  	\item Cris
-  	\item Juan
-  	\item Rene
-  \end{enumerate}
-  Y así con los nombres de 1 a 6 podemos definir a $Cat(X_{nombre}^{(i)};q)$ como:\\
+  Donde las categorías son los nombres y los podemos enumerar:\\
+  Denis - 1, Guadalupe - 2, Alex - 3, Cris - 4, Juan - 5, Rene - 6.\\
+  \paragraph{}Y así con los nombres de 1 a 6 podemos definir a $Cat(X_{nombre}^{(i)};q)$ como:\\
   \begin{equation}
   \begin{split}
   Cat(X_{nombre}^{(i)};q) = \prod_{k=1}^{6}q_{k}^{[x_{nombre}^{(i)}=k ]}\\
@@ -140,9 +135,27 @@
   \begin{split}
   \hat{\sigma}^2_F&=\frac{1}{n}\sum_{i=1}^{n}{(x_{estatura}^{(i)} - \hat{\mu})^2}\\
   &=\frac{1}{6}[(1.50-1.618\bar{3})^2 + (1.52-1.618\bar{3})^2  + \dots + (1.75-1.618\bar{3})^2)]\\
-  &=\frac{1}{6}[0.014003 + 0.009669 + 0.00166667 + \dots + 0.13166667]\\
-  &=\frac{1}{6}[0.13036923076923082]\\
-  &= 0.021728205128205138\\
+  &=\frac{1}{6}[0.014003 + 0.009669 + 0.000002\bar{7} + \dots + 0.0173361111]\\
+  &=\frac{1}{6}[0.04468\bar{3}]\\
+  &= 0.007447\bar{2}\\
+  \end{split}
+  \end{equation}
+  \paragraph{} Para la clase \textbf{Masculino}:
+  \begin{equation}
+  \begin{split}
+  \hat{\mu}_{M}&=\frac{1}{n}\sum_{i=1}^{n}{x_{estatura}^{(i)}}\\
+  &=\frac{1}{7}(1.72 + 1.82 + 1.80 + 1.70 + 1.73 + 1.80 + 1.80)\\
+  &=\frac{1}{7}(12.37)\\
+  &= 1.7671428571428571\\
+  \end{split}
+  \end{equation}
+  \begin{equation}
+  \begin{split}
+  \hat{\sigma}^2_M&=\frac{1}{n}\sum_{i=1}^{n}{(x_{estatura}^{(i)} - \hat{\mu})^2}\\
+  &=\frac{1}{7}[(1.72-1.76714)^2 + (1.82-1.76714)^2  + \dots + (1.80-1.76714)^2)]\\
+  &=\frac{1}{7}[0.00222245 + 0.00279388 + 0.00107959 + \dots + 0.00107959]\\
+  &=\frac{1}{7}[0.014142857142857169]\\
+  &= 0.0020204081632653097\\
   \end{split}
   \end{equation}
   \subsubsection{Atributo Peso}
@@ -159,25 +172,82 @@
   \end{split}
   \end{equation}
   Donde podemos estimar a $\mu$ y a $\sigma$ usando el estimador de máxima verosimilitud como:
+  \paragraph{} Para la clase \textbf{Femenino}:
   \begin{equation}
   \begin{split}
-  \hat{\mu}&=\frac{1}{n}\sum_{i=1}^{n}{x_{peso}^{(i)}}\\
-  &=\frac{1}{13}(75.3 + 81.6 + 86.1 + 77.1 + 78.2 + 74.8 + 74.3 + 50.5 + 45.3 + 61.2 + 68.0 + 58.9 + 68.0)\\
-  &=\frac{1}{13}(899.3)\\
-  &= 69.17692307692307\\
+  \hat{\mu}_{F}&=\frac{1}{n}\sum_{i=1}^{n}{x_{peso}^{(i)}}\\
+  &=\frac{1}{6}(50.5 + 45.3 + 61.2 + 68.0 + 58.9 + 68.0)\\
+  &=\frac{1}{6}(351.9)\\
+  &= 58.65\\
   \end{split}
   \end{equation}
   \begin{equation}
   \begin{split}
-  \hat{\sigma}^2&=\frac{1}{n}\sum_{i=1}^{n}{(x_{peso}^{(i)} - \hat{\mu})^2}\\
-  &=\frac{1}{13}[(75.3-69.17692)^2 + (81.6-69.17692)^2  + \dots + (68.0-69.17692)^2)]\\
-  &=\frac{1}{13}[37.49207 + 154.33284 + 286.39053 + \dots + 1.38514]\\
-  &=\frac{1}{13}[1771.2230769230764]\\
-  &= 136.2479289940828\\
+  \hat{\sigma}_F^2&=\frac{1}{n}\sum_{i=1}^{n}{(x_{peso}^{(i)} - \hat{\mu})^2}\\
+  &=\frac{1}{6}[(50.5-58.65)^2 + (45.3-58.65)^2  + \dots + (68.0-58.65)^2)]\\
+  &=\frac{1}{6}[66.42250 + 178.2225 + 6.502500 + \dots + 87.42250]\\
+  &=\frac{1}{6}[426.055]\\
+  &= 71.00916\bar{7}\\
   \end{split}
   \end{equation}
+  \paragraph{} Para la clase \textbf{Masculino}:
+  \begin{equation}
+  \begin{split}
+  \hat{\mu}_{M}&=\frac{1}{n}\sum_{i=1}^{n}{x_{peso}^{(i)}}\\
+  &=\frac{1}{7}(75.3 + 81.6 + 86.1 + 77.1 + 78.2 + 74.8 + 74.3)\\
+  &=\frac{1}{7}(547.4)\\
+  &= 78.2\\
+  \end{split}
+  \end{equation}
+  \begin{equation}
+  \begin{split}
+  \hat{\sigma}_M^2&=\frac{1}{n}\sum_{i=1}^{n}{(x_{peso}^{(i)} - \hat{\mu})^2}\\
+  &=\frac{1}{7}[(75.3-78.2)^2 + (81.6-78.2)^2  + \dots + (74.3-78.2)^2)]\\
+  &=\frac{1}{7}[8.41 + 11.56 + 62.41 + \dots + 15.21]\\
+  &=\frac{1}{7}[110.36]\\
+  &= 15.7657142857142\\
+  \end{split}
+  \end{equation}
+  \clearpage
+  \pagebreak
   \subsubsection{Género}
-  
+  Para la clase (Género) podemos asumir una distribución Bernoulli:
+  \begin{equation}
+  \begin{split}
+  Y^{(i)}\sim Ber(Y^{(i)};q)\\
+  \end{split}
+  \end{equation}
+  Donde $Ber(Y^{(i)};q)$ se define como:\\
+  \begin{equation}
+  	\begin{split}
+  		Ber(Y^{(i)};q)&= q^C(1 - q)^{1-C}\\
+  		C &= [y = \text{clase}]
+  	\end{split}
+  \end{equation}
+ Donde podemos estimar a $q$ usando el estimador de máxima verosimilitud como:\\
+ \paragraph{}Para la clase \textbf{Femenino}:
+ \begin{equation}
+ 	\begin{split}
+ 		\hat{q}_F &= \frac{N_F}{N}\\
+ 		&= \frac{6}{13}\\
+ 	\end{split}
+ \end{equation}
+ \paragraph{}Para la clase \textbf{Masculino}:
+ \begin{equation}
+ \begin{split}
+ \hat{q}_M &= \frac{N_M}{N}\\
+ &= \frac{7}{13}\\
+ \end{split}
+ \end{equation}
+ \subsubsection{Uso del Estimador por Máxima Verosimilitud}
+ \paragraph{} Clasificaremos al vector de entrada con base en la siguiente ecuación:
+ \begin{equation}
+ 	\begin{split}
+ 		C &= \text{max arg}_{C\in\{F,M\}} \{ P(X|C)P(C)\} \\
+ 		&\text{Donde las probabilidades de cada parametro al ser independientes se multiplicaran}\\
+ 		&= \text{max arg}_{C\in\{F,M\}} \{ P(C) P(X_{nombre}|C)P(X_{estatura}|C)P(X_{peso}|C)\}
+ 	\end{split}
+ \end{equation}
  \section{Spam}
 	 
 \end{document}  
