@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  7 MAR 2020 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  7 MAR 2020 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,6 +1088,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
 [7
 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+[8
+
 ] (./Tarea2_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
@@ -1112,10 +1119,10 @@ ic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Tarea2_Rivas_Vega_Saul_Ivan.pdf (7 pages, 164077 bytes).
+Output written on Tarea2_Rivas_Vega_Saul_Ivan.pdf (8 pages, 169896 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
