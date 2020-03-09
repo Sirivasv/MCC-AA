@@ -362,6 +362,61 @@
  \end{split}
  \end{equation}
  Así para el caso 3 la clasificación sería \textbf{Femenino} puesto que $0.62286\% > 0.051449\%$.\\
+ \subsection{Estimador por máximo a posteriori}
+ \paragraph{}Los atributos son: \textbf{nombre}, \textbf{estatura} y \textbf{peso}, y la clase es \textbf{género}.\\
+ \subsubsection{Atributo \textit{Nombre}}
+ \paragraph{} Para el \textbf{nombre} podemos asumir una distribución categórica:
+ \begin{equation}
+ \begin{split}
+ X_{nombre}^{(i)}\sim Cat(X_{nombre}^{(i)};q)\\
+ \end{split}
+ \end{equation}
+ Donde las categorías son los nombres y los podemos enumerar:\\
+ Denis - 1, Guadalupe - 2, Alex - 3, Cris - 4, Juan - 5, Rene - 6.\\
+ \paragraph{}Y así con los nombres de 1 a 6 podemos definir a $Cat(X_{nombre}^{(i)};q)$ como:\\
+ \begin{equation}
+ \begin{split}
+ Cat(X_{nombre}^{(i)};q) = \prod_{k=1}^{6}q_{k}^{[x_{nombre}^{(i)}=k ]}\\
+ \end{split}
+ \end{equation}
+ Donde podemos estimar a $q_k$ usando el estimador MAP como:
+ \begin{equation}
+ \begin{split}
+ \hat{q}_k =& \frac{c_k + \alpha_k - 1}{n - K + \sum_{i=1}^{K}{\alpha_i}} \\ 
+ \text{Donde:}&\\
+ \alpha_k =& 1,\; \forall k\\
+ K =& \; 6\\
+ n =& \; \text{numero elementos de la clase}\\
+ c_k =& \sum_{i = 1}^{n}{[x^{(i)}_{nombre}=k]}
+ \end{split}
+ \end{equation}
+ Así podemos estimar el parámetro para la primer categoría:\\
+ \begin{equation}
+ \begin{split}
+ \text{Para la clase \textbf{Femenino}}:\\
+ c_{1F} &= \sum_{i = 1}^{13}{[x^{(i)}_{nombre}=1 \text{ y $x^{(i)}$ es de la clase Femenino}]}\\
+ &= 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 + 0 + 0 + 0 + 0 + 0\\
+ &= 1\\
+ \hat{q}_{(1|F)} &= \frac{1 + 1 - 1}{6 - 6 + \sum_{i=1}^{6}{1}} \\
+ &= \frac{1 + 1 - 1}{6 - 6 + 6} \\  
+ &= \frac{1}{6} \\
+ \text{Para la clase \textbf{Masculino}}:\\
+ c_{1M} &= \sum_{i = 1}^{13}{[x^{(i)}_{nombre}=1 \text{ y $x^{(i)}$ es de la clase Masculino}]}\\
+ &= 1 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0\\
+ &= 1\\
+ \hat{q}_{(1|M)} &= \frac{1 + 1 - 1}{7 - 6 + \sum_{i=1}^{6}{1}} \\
+ &= \frac{1 + 1 - 1}{7 - 6 + 6} \\  
+ &= \frac{1}{7} \\
+ \end{split}
+ \end{equation}
+ Y de la misma forma para las categorías restantes:
+ \begin{equation}
+ \begin{split}
+ c_{2F} = 2, \; \hat{q}_{(2|F)} = \frac{2}{6}, \; c_{2M} = 1, \; \hat{q}_{(2|M)} = \frac{1}{7} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{3F} = 1, \; \hat{q}_{(3|F)} = \frac{1}{6}, \; c_{3M} = 2, \; \hat{q}_{(3|M)} = \frac{2}{7}\\
+ c_{4F} = 1, \; \hat{q}_{(4|F)} = \frac{1}{6}, \; c_{4M} = 1, \; \hat{q}_{(4|M)} = \frac{1}{7} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{5F} = 0, \; \hat{q}_{(5|F)} = \frac{0}{6} = 0, \; c_{5M} = 2, \; \hat{q}_{(5|M)} = \frac{2}{7}\\ 
+ c_{6F} = 1, \; \hat{q}_{(6|F)} = \frac{1}{6}, \;c_{6M} = 0, \; \hat{q}_{(6|M)} = \frac{0}{7} = 0\\
+ \end{split}
+ \end{equation}
  \section{Spam}
 	 
 \end{document}  
