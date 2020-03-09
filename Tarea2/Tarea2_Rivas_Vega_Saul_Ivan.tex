@@ -417,6 +417,81 @@
  c_{6F} = 1, \; \hat{q}_{(6|F)} = \frac{1}{6}, \;c_{6M} = 0, \; \hat{q}_{(6|M)} = \frac{0}{7} = 0\\
  \end{split}
  \end{equation}
- \section{Spam}
-	 
+ \subsubsection{Atributo Estatura}
+ \paragraph{}Para la \textbf{estatura} podemos asumir una distribución normal:
+ \begin{equation}
+ \begin{split}
+ X_{estatura}^{(i)}\sim \mathcal{N}(X_{estatura}^{(i)};\mu;\sigma^2)\\
+ \end{split}
+ \end{equation}
+ Donde $\mathcal{N}(X_{estatura}^{(i)};\mu;\sigma^2)$ se define como:\\
+ \begin{equation}
+ \begin{split}
+ \mathcal{N}(X_{estatura}^{(i)};\mu;\sigma^2) =& \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-(x^{(i)} - \mu)^2}{2\sigma^2}}\\
+ \end{split}
+ \end{equation}
+ Donde $\sigma_F^2 = 0.0074$ y $\sigma_M^2 = 0.0020$, podemos estimar a $\mu$ para cada clase usando el estimador MAP como:
+ \paragraph{} Para la clase \textbf{Femenino}:
+ \begin{equation}
+ \begin{split}
+ \hat{\mu}_{F}&=\frac{\sigma_{0F}^2(\sum_{i=1}^{n}{x_{estatura}^{(i)}}) + \sigma_F^2\mu_{0F} }{\sigma_{0F}^2n + \sigma_F^2}\\
+ &=\frac{0.1\times(\sum_{i=1}^{n}{x_{estatura}^{(i)}}) + (0.0074\times 1.5) }{(0.1 \times 6) + 0.0074}\\
+ &=\frac{0.1\times(1.50 + 1.52 + 1.62 + 1.67 + 1.65 + 1.75) + (0.0111) }{0.6074}\\
+ &=\frac{(0.1\times 9.71) + (0.0111) }{0.6074}\\
+ &=\frac{0.971 + 0.0111 }{0.6074}\\
+ &=\frac{0.9821}{0.6074}\\
+ &= 1.6168916694106026\\
+ \end{split}
+ \end{equation}
+\paragraph{} Para la clase \textbf{Masculino}:
+\begin{equation}
+\begin{split}
+\hat{\mu}_{M}&=\frac{\sigma_{0M}^2(\sum_{i=1}^{n}{x_{estatura}^{(i)}}) + \sigma_M^2\mu_{0M} }{\sigma_{0M}^2n + \sigma_M^2}\\
+&=\frac{0.3\times(\sum_{i=1}^{n}{x_{estatura}^{(i)}}) + (0.0020\times 1.7) }{(0.3 \times 7) + 0.0020}\\
+&=\frac{0.3\times(1.72 + 1.82 + 1.80 + 1.70 + 1.73 + 1.80 + 1.80) + (0.0034) }{2.102}\\
+&=\frac{(0.3\times 12.37) + (0.0034) }{2.102}\\
+&=\frac{3.711 + 0.0034 }{2.102}\\
+&=\frac{3.7144}{2.102}\\
+&= 1.7670789724072313\\
+\end{split}
+\end{equation}
+ \subsubsection{Atributo Peso}
+\paragraph{}Para el \textbf{peso} podemos asumir una distribución normal:
+\begin{equation}
+\begin{split}
+X_{peso}^{(i)}\sim \mathcal{N}(X_{peso}^{(i)};\mu;\sigma^2)\\
+\end{split}
+\end{equation}
+Donde $\mathcal{N}(X_{peso}^{(i)};\mu;\sigma^2)$ se define como:\\
+\begin{equation}
+\begin{split}
+\mathcal{N}(X_{peso}^{(i)};\mu;\sigma^2) =& \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-(x^{(i)} - \mu)^2}{2\sigma^2}}\\
+\end{split}
+\end{equation}
+Donde $\sigma_F^2 = 71.00$ y $\sigma_M^2 = 15.76$, podemos estimar a $\mu$ para cada clase usando el estimador MAP como:
+\paragraph{} Para la clase \textbf{Femenino}:
+\begin{equation}
+\begin{split}
+\hat{\mu}_{F}&=\frac{\sigma_{0F}^2(\sum_{i=1}^{n}{x_{peso}^{(i)}}) + \sigma_F^2\mu_{0F} }{\sigma_{0F}^2n + \sigma_F^2}\\
+&=\frac{85\times(\sum_{i=1}^{n}{x_{peso}^{(i)}}) + (71.0\times 70.3) }{(85 \times 6) + 71.0}\\
+&=\frac{85.5\times(50.5 + 45.3 + 61.2 + 68.0 + 58.9 + 68.0) + (4991.3) }{581}\\
+&=\frac{(85\times 351.9) + (4991.3) }{581}\\
+&=\frac{29911.5 + 4991.3 }{581}\\
+&=\frac{34902.8}{581}\\
+&= 60.073666092943206\\
+\end{split}
+\end{equation}
+\paragraph{} Para la clase \textbf{Masculino}:
+\begin{equation}
+\begin{split}
+\hat{\mu}_{M}&=\frac{\sigma_{0M}^2(\sum_{i=1}^{n}{x_{peso}^{(i)}}) + \sigma_M^2\mu_{0M} }{\sigma_{0M}^2n + \sigma_M^2}\\
+&=\frac{17.0\times(\sum_{i=1}^{n}{x_{peso}^{(i)}}) + (15.76\times 85.5) }{(17.0 \times 7) + 15.76}\\
+&=\frac{17.0\times(75.3 + 81.6 + 86.1 + 77.1 + 78.2 + 74.8 + 74.3) + (1347.48) }{134.76}\\
+&=\frac{(17.0\times 547.4) + (1347.48) }{134.76}\\
+&=\frac{9305.8 + 1347.48}{134.76}\\
+&=\frac{10653.28}{134.76}\\
+&= 79.0537251409914\\
+\end{split}
+\end{equation}
+
 \end{document}  
