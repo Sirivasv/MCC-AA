@@ -493,5 +493,70 @@ Donde $\sigma_F^2 = 71.00$ y $\sigma_M^2 = 15.76$, podemos estimar a $\mu$ para 
 &= 79.0537251409914\\
 \end{split}
 \end{equation}
-
+\subsubsection{Género}
+Para la clase (Género) podemos asumir una distribución Bernoulli:
+\begin{equation}
+\begin{split}
+Y^{(i)}\sim Ber(Y^{(i)};q)\\
+\end{split}
+\end{equation}
+Donde $Ber(Y^{(i)};q)$ se define como:\\
+\begin{equation}
+\begin{split}
+Ber(Y^{(i)};q)&= q^C(1 - q)^{1-C}\\
+C &= [y = \text{clase}]
+\end{split}
+\end{equation}
+Donde podemos estimar a $q$ usando el estimador MAP con los hyperparametros $\alpha_F = 999$, $\alpha_M = 999$, $\beta_F = 999$y $\beta_M = 999$ como:\\
+\paragraph{}Para la clase \textbf{Femenino}:
+\begin{equation}
+\begin{split}
+\hat{q}_F &= \frac{N_F + \alpha_F - 1}{N + \beta_F + \alpha_F - 2}\\
+&= \frac{6 + 999 - 1}{13 + 999 + 999 - 2}\\
+&= \frac{6 + 999 - 1}{13 + 999 + 999 - 2}\\
+\end{split}
+\end{equation}
+\paragraph{}Para la clase \textbf{Masculino}:
+\begin{equation}
+\begin{split}
+\hat{q}_M &= \frac{N_M + \alpha_M - 1}{N + \beta_M + \alpha_M - 2}\\
+&= \frac{7 + 999 - 1}{13 + 999 + 999 - 2}\\
+&= \frac{7 + 999 - 1}{13 + 999 + 999 - 2}\\
+\end{split}
+\end{equation}
+\clearpage
+\pagebreak
+\subsubsection{Uso del Clasificador MAP}
+\paragraph{} Clasificaremos al vector de entrada con base en la siguiente ecuación:
+\begin{equation}
+\begin{split}
+C &= \text{max arg}_{C\in\{F,M\}} \{ P(X|C)P(C)\} \\
+&\text{Donde las probabilidades de cada parametro al ser independientes se multiplicaran}\\
+&= \text{max arg}_{C\in\{F,M\}} \{ P(C) P(X_{nombre}|C)P(X_{estatura}|C)P(X_{peso}|C)\}
+\end{split}
+\end{equation}
+\paragraph{Prueba 1: }x1= (Rene, 1.68, 65)
+\paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
+\begin{equation}
+\begin{split}
+P(F|x1) &\propto P(F) \times P(x1_{nombre}|F) \times P(x1_{estatura}|F) \times P(x1_{peso}|F) \\
+&\propto (\frac{6}{13}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
+&\propto (\frac{6}{13}) \times (\frac{1}{6}) \times (3.4113057085685545) \times (0.03411194570280468) \\
+&\propto 0.00895125193125832 \\
+&\propto 0.89512\% \\
+\end{split}
+\end{equation}
+\paragraph{}Probabilidad de que sea \textbf{Masculino}:\\
+\begin{equation}
+\begin{split}
+P(M|x1) &\propto P(M) \times P(x1_{nombre}|M) \times P(x1_{estatura}|M) \times P(x1_{peso}|M) \\
+&\propto (\frac{7}{13}) \times (0) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
+&\propto (\frac{7}{13}) \times (0) \times (1.641140586274889) \times (0.03411194570280468) \\
+&\propto 0 \\
+&\propto 0 \% \\
+\end{split}
+\end{equation}
+Así para el caso 1 la clasificación sería \textbf{Femenino} puesto que $0.89512\% > 0\%$.\\
+\clearpage
+\pagebreak
 \end{document}  
