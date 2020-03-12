@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{G\351neros}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Estimador por m\341xima verosimilitud}{section.1}% 2
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Atributo Nombre}{subsection.1.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Atributo Estatura}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{Atributo Peso}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.4}{G\351nero}{subsection.1.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.1.5}{Uso del Estimador por M\341xima Verosimilitud}{subsection.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.2}{Estimador por m\341ximo a posteriori}{section.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Atributo Nombre}{subsection.1.2}% 9
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Atributo Estatura}{subsection.1.2}% 10
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Atributo Peso}{subsection.1.2}% 11
+\BOOKMARK [3][-]{subsubsection.1.2.4}{G\351nero}{subsection.1.2}% 12
+\BOOKMARK [3][-]{subsubsection.1.2.5}{Uso del Clasificador MAP}{subsection.1.2}% 13
+\BOOKMARK [1][-]{section.2}{SPAM}{}% 14
+\BOOKMARK [1][-]{section.3}{C\341ncer de seno}{}% 15

@@ -10,6 +10,15 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \usepackage[spanish,es-nodecimaldot]{babel}
  \usepackage{url}
+ \usepackage{hyperref}
+ \hypersetup{
+ 	colorlinks=true,
+ 	linkcolor=blue,
+ 	filecolor=magenta,      
+ 	urlcolor=cyan,
+ }
+ 
+ \urlstyle{same}
 \usepackage[spanish, fixlanguage]{babelbib}
 \bibliographystyle{IEEEtran}
 \usepackage{graphicx}
@@ -507,21 +516,21 @@ Ber(Y^{(i)};q)&= q^C(1 - q)^{1-C}\\
 C &= [y = \text{clase}]
 \end{split}
 \end{equation}
-Donde podemos estimar a $q$ usando el estimador MAP con los hyperparametros $\alpha_F = 999$, $\alpha_M = 999$, $\beta_F = 999$y $\beta_M = 999$ como:\\
+Donde podemos estimar a $q$ usando el estimador MAP con los hyperparametros equivalentes al suavizado de laplace $\alpha_F = 2$, $\alpha_M = 2$, $\beta_F = 6$y $\beta_M = 7$ como:\\
 \paragraph{}Para la clase \textbf{Femenino}:
 \begin{equation}
 \begin{split}
 \hat{q}_F &= \frac{N_F + \alpha_F - 1}{N + \beta_F + \alpha_F - 2}\\
-&= \frac{6 + 999 - 1}{13 + 999 + 999 - 2}\\
-&= \frac{6 + 999 - 1}{13 + 999 + 999 - 2}\\
+&= \frac{6 + 2 - 1}{13 + 2 + 2 - 2}\\
+&= \frac{7}{15}\\
 \end{split}
 \end{equation}
 \paragraph{}Para la clase \textbf{Masculino}:
 \begin{equation}
 \begin{split}
 \hat{q}_M &= \frac{N_M + \alpha_M - 1}{N + \beta_M + \alpha_M - 2}\\
-&= \frac{7 + 999 - 1}{13 + 999 + 999 - 2}\\
-&= \frac{7 + 999 - 1}{13 + 999 + 999 - 2}\\
+&= \frac{7 + 2 - 1}{13 + 2 + 2 - 2}\\
+&= \frac{8}{15}\\
 \end{split}
 \end{equation}
 \clearpage
@@ -540,18 +549,18 @@ C &= \text{max arg}_{C\in\{F,M\}} \{ P(X|C)P(C)\} \\
 \begin{equation}
 \begin{split}
 P(F|x1) &\propto P(F) \times P(x1_{nombre}|F) \times P(x1_{estatura}|F) \times P(x1_{peso}|F) \\
-&\propto (\frac{6}{13}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
-&\propto (\frac{6}{13}) \times (\frac{1}{6}) \times (3.4113057085685545) \times (0.03411194570280468) \\
-&\propto 0.00895125193125832 \\
-&\propto 0.89512\% \\
+&\propto (\frac{7}{19}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
+&\propto (\frac{7}{19}) \times (\frac{1}{6}) \times (3.543448351597527) \times (0.03990772866850168) \\
+&\propto 0.008683130066358118 \\
+&\propto 0.86831\% \\
 \end{split}
 \end{equation}
 \paragraph{}Probabilidad de que sea \textbf{Masculino}:\\
 \begin{equation}
 \begin{split}
 P(M|x1) &\propto P(M) \times P(x1_{nombre}|M) \times P(x1_{estatura}|M) \times P(x1_{peso}|M) \\
-&\propto (\frac{7}{13}) \times (0) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
-&\propto (\frac{7}{13}) \times (0) \times (1.641140586274889) \times (0.03411194570280468) \\
+&\propto (\frac{2}{5}) \times (0) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
+&\propto (\frac{2}{5}) \times (0) \times (1.641140586274889) \times (0.03411194570280468) \\
 &\propto 0 \\
 &\propto 0 \% \\
 \end{split}
@@ -559,4 +568,10 @@ P(M|x1) &\propto P(M) \times P(x1_{nombre}|M) \times P(x1_{estatura}|M) \times P
 Así para el caso 1 la clasificación sería \textbf{Femenino} puesto que $0.89512\% > 0\%$.\\
 \clearpage
 \pagebreak
+\section{SPAM}
+\paragraph{}El ejercicio se encuentra en Colab:\\
+\url{https://colab.research.google.com/drive/1UoK-5HRnuQeLQaa4__uYeaCvyKkcMMMD}
+\section{Cáncer de seno}
+\paragraph{}El ejercicio se encuentra en Colab:\\
+\url{https://colab.research.google.com/drive/1UoK-5HRnuQeLQaa4__uYeaCvyKkcMMMD}  
 \end{document}  
