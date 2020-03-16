@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.16)  16 MAR 2020 09:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.16)  16 MAR 2020 09:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1884,73 +1884,135 @@ Package babel Info: Redefining spanish shorthand "?
 [20
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 647--649
+
+ []
+
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 627.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 627.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 627.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 627.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 627.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 627.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 630.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 630.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 630.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 630.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 630.
+(babel)             in language append on input line 649.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 630.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 633.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 633.
- [21
+(babel)             in language append on input line 649.
+[21
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 633.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 633.
+Underfull \hbox (badness 10000) in paragraph at lines 671--673
+
+ []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 673.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 673.
+[22
+
+]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 675.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 675.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 675.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 675.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 675.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 675.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 678.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 678.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 678.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 678.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 678.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 678.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 681.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 681.
+ [23
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 681.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 681.
  (./Tarea2_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 633.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 633.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 681.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 681.
 Package rerunfilecheck Info: File `Tarea2_Rivas_Vega_Saul_Ivan.out' has not cha
 nged.
 (rerunfilecheck)             Checksum: 243884882E7DF1750247DB05B7E7A7AD;1080.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 633.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 681.
  ) 
 Here is how much of TeX's memory you used:
- 20403 strings out of 492982
- 366634 string characters out of 6134896
+ 20409 strings out of 492982
+ 366700 string characters out of 6134896
  466773 words of memory out of 5000000
  23522 multiletter control sequences out of 15000+600000
  14028 words of font info for 54 fonts, out of 8000000 for 9000
@@ -1968,10 +2030,10 @@ c/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Tarea2_Rivas_Vega_Saul_Ivan.pdf (21 pages, 204628 bytes).
+Output written on Tarea2_Rivas_Vega_Saul_Ivan.pdf (23 pages, 208559 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 101 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
