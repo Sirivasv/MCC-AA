@@ -58,7 +58,7 @@
 	  	\includegraphics[width=.6\linewidth]{excercise1}
 	  	\label{fig1}
 	  \end{figure}
-  \paragraph{} Entrena un clasificador bayesiano ingenuo usando estimación por máxima verosimilitud y otro usando estimación por máximo a posteriori. Reporta los parámetros que obtuviste en ambos casos y usa los clasificadores entrenados para predecir la clase de los siguientes vectores: x1 = (Rene, 1.68, 65), x2 = (Guadalupe, 1.75, 80), x3 = (Denis, 1.80, 79), x4 = (Alex, 190, 85) y x5 = (Cris, 165, 70).
+  \paragraph{} Entrena un clasificador bayesiano ingenuo usando estimación por máxima verosimilitud y otro usando estimación por máximo a posteriori. Reporta los parámetros que obtuviste en ambos casos y usa los clasificadores entrenados para predecir la clase de los siguientes vectores: x1 = (Rene, 1.68, 65), x2 = (Guadalupe, 1.75, 80), x3 = (Denis, 1.80, 79), x4 = (Alex, 1.90, 85) y x5 = (Cris, 1.65, 70).
   Describe de forma detallada el procedimiento que seguiste tanto en el entrenamiento como en la predicción y discute los resultados obtenidos.
   Para el entrenamiento del clasificador por máximo a posteriori considera los siguientes valores
   para las distribuciones correspondientes:
@@ -275,7 +275,7 @@
  \begin{split}
  P(M|x1) &\propto P(M) \times P(x1_{nombre}|M) \times P(x1_{estatura}|M) \times P(x1_{peso}|M) \\
  &\propto (\frac{7}{13}) \times (0) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
- &\propto (\frac{7}{13}) \times (0) \times (1.641140586274889) \times (0.03411194570280468) \\
+ &\propto (\frac{7}{13}) \times (0) \times (1.641140586274889) \times (0.0008157265212592358) \\
  &\propto 0 \\
  &\propto 0 \% \\
  \end{split}
@@ -299,12 +299,14 @@
  \begin{split}
  P(M|x2) &\propto P(M) \times P(x2_{nombre}|M) \times P(x2_{estatura}|M) \times P(x2_{peso}|M) \\
  &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x2 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x2 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
- &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (7.720478376796198) \times (0.0029789834817996216) \\
+ &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (7.720478376796198) \times (0.08517834340037132) \\
  &\propto 0.050585966030299065 \\
  &\propto 5.05859 \% \\
  \end{split}
  \end{equation}
  Así para el caso 2 la clasificación sería \textbf{Masculino} puesto que $5.05859\% > 0.073322\%$.\\
+ \clearpage
+ \pagebreak
  \paragraph{Prueba 3: }x3= (Denis, 1.80, 79)
  \paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
  \begin{equation}
@@ -321,12 +323,14 @@
  \begin{split}
  P(M|x3) &\propto P(M) \times P(x3_{nombre}|M) \times P(x3_{estatura}|M) \times P(x3_{peso}|M) \\
  &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x3 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x3 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
- &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (6.53524385337116) \times (0.003804820622723802) \\
+ &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (6.53524385337116) \times (0.09141640954858433) \\
  &\propto 0.04595604066151125 \\
  &\propto 4.5956 \% \\
  \end{split}
  \end{equation}
  Así para el caso 3 la clasificación sería \textbf{Masculino} puesto que $4.5956\% > 0.019489\%$.\\
+ \clearpage
+ \pagebreak
  \paragraph{Prueba 4: }x4= (Alex, 1.90, 85)
  \paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
  \begin{equation}
@@ -343,12 +347,14 @@
  \begin{split}
  P(M|x4) &\propto P(M) \times P(x4_{nombre}|M) \times P(x4_{estatura}|M) \times P(x4_{peso}|M) \\
  &\propto (\frac{7}{13}) \times (\frac{2}{7}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x4 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x4 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
- &\propto (\frac{7}{13}) \times (\frac{2}{7}) \times (0.1943796927071898) \times (0.0007349997821943831) \\
+ &\propto (\frac{7}{13}) \times (\frac{2}{7}) \times (0.1943796927071898) \times (0.026465591096216903) \\
  &\propto 0.0007914420714764275 \\
  &\propto 0.079144 \% \\
  \end{split}
  \end{equation}
- Así para el caso 3 la clasificación sería \textbf{Masculino} puesto que $0.079144\% > 0.00028178\%$.\\
+ Así para el caso 4 la clasificación sería \textbf{Masculino} puesto que $0.079144\% > 0.00028178\%$.\\
+ \clearpage
+ \pagebreak
  \paragraph{Prueba 5: }x5= (Cris, 1.65, 70)
  \paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
  \begin{equation}
@@ -365,12 +371,14 @@
  \begin{split}
  P(M|x5) &\propto P(M) \times P(x5_{nombre}|M) \times P(x5_{estatura}|M) \times P(x5_{peso}|M) \\
  &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x5 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x5 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
- &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (0.4472629865983849) \times (0.020294471017724632) \\
+ &\propto (\frac{7}{13}) \times (\frac{1}{7}) \times (0.4472629865983849) \times (0.014954113809539074) \\
  &\propto 0.0005144939695681998 \\
  &\propto 0.051449 \% \\
  \end{split}
  \end{equation}
- Así para el caso 3 la clasificación sería \textbf{Femenino} puesto que $0.62286\% > 0.051449\%$.\\
+ Así para el caso 5 la clasificación sería \textbf{Femenino} puesto que $0.62286\% > 0.051449\%$.\\
+ \clearpage
+ \pagebreak
  \subsection{Estimador por máximo a posteriori}
  \paragraph{}Los atributos son: \textbf{nombre}, \textbf{estatura} y \textbf{peso}, y la clase es \textbf{género}.\\
  \subsubsection{Atributo \textit{Nombre}}
@@ -393,7 +401,7 @@
  \begin{split}
  \hat{q}_k =& \frac{c_k + \alpha_k - 1}{n - K + \sum_{i=1}^{K}{\alpha_i}} \\ 
  \text{Donde:}&\\
- \alpha_k =& 1,\; \forall k\\
+ \alpha_k =& 2,\; \forall k\\
  K =& \; 6\\
  n =& \; \text{numero elementos de la clase}\\
  c_k =& \sum_{i = 1}^{n}{[x^{(i)}_{nombre}=k]}
@@ -406,24 +414,24 @@
  c_{1F} &= \sum_{i = 1}^{13}{[x^{(i)}_{nombre}=1 \text{ y $x^{(i)}$ es de la clase Femenino}]}\\
  &= 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 + 0 + 0 + 0 + 0 + 0\\
  &= 1\\
- \hat{q}_{(1|F)} &= \frac{1 + 1 - 1}{6 - 6 + \sum_{i=1}^{6}{1}} \\
- &= \frac{1 + 1 - 1}{6 - 6 + 6} \\  
- &= \frac{1}{6} \\
+ \hat{q}_{(1|F)} &= \frac{1 + 2 - 1}{6 - 6 + \sum_{i=1}^{6}{2}} \\
+ &= \frac{1 + 2 - 1}{6 - 6 + 12} \\  
+ &= \frac{2}{12} = \frac{1}{6} \\
  \text{Para la clase \textbf{Masculino}}:\\
  c_{1M} &= \sum_{i = 1}^{13}{[x^{(i)}_{nombre}=1 \text{ y $x^{(i)}$ es de la clase Masculino}]}\\
  &= 1 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0\\
  &= 1\\
- \hat{q}_{(1|M)} &= \frac{1 + 1 - 1}{7 - 6 + \sum_{i=1}^{6}{1}} \\
- &= \frac{1 + 1 - 1}{7 - 6 + 6} \\  
- &= \frac{1}{7} \\
+ \hat{q}_{(1|M)} &= \frac{1 + 2 - 1}{7 - 6 + \sum_{i=1}^{6}{2}} \\
+ &= \frac{1 + 2 - 1}{7 - 6 + 12} \\  
+ &= \frac{2}{13} \\
  \end{split}
  \end{equation}
  Y de la misma forma para las categorías restantes:
  \begin{equation}
  \begin{split}
- c_{2F} = 2, \; \hat{q}_{(2|F)} = \frac{2}{6}, \; c_{2M} = 1, \; \hat{q}_{(2|M)} = \frac{1}{7} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{3F} = 1, \; \hat{q}_{(3|F)} = \frac{1}{6}, \; c_{3M} = 2, \; \hat{q}_{(3|M)} = \frac{2}{7}\\
- c_{4F} = 1, \; \hat{q}_{(4|F)} = \frac{1}{6}, \; c_{4M} = 1, \; \hat{q}_{(4|M)} = \frac{1}{7} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{5F} = 0, \; \hat{q}_{(5|F)} = \frac{0}{6} = 0, \; c_{5M} = 2, \; \hat{q}_{(5|M)} = \frac{2}{7}\\ 
- c_{6F} = 1, \; \hat{q}_{(6|F)} = \frac{1}{6}, \;c_{6M} = 0, \; \hat{q}_{(6|M)} = \frac{0}{7} = 0\\
+ c_{2F} = 2, \; \hat{q}_{(2|F)} = \frac{1}{4}, \; c_{2M} = 1, \; \hat{q}_{(2|M)} = \frac{2}{13} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{3F} = 1, \; \hat{q}_{(3|F)} = \frac{1}{6}, \; c_{3M} = 2, \; \hat{q}_{(3|M)} = \frac{3}{13}\\
+ c_{4F} = 1, \; \hat{q}_{(4|F)} = \frac{1}{6}, \; c_{4M} = 1, \; \hat{q}_{(4|M)} = \frac{2}{13} \; \; \; \; \; \; \; \; \; \; \; \; &  c_{5F} = 0, \; \hat{q}_{(5|F)} = \frac{1}{12}, \; c_{5M} = 2, \; \hat{q}_{(5|M)} = \frac{3}{13}\\ 
+ c_{6F} = 1, \; \hat{q}_{(6|F)} = \frac{1}{6}, \;c_{6M} = 0, \; \hat{q}_{(6|M)} = \frac{1}{13}\\
  \end{split}
  \end{equation}
  \subsubsection{Atributo Estatura}
@@ -549,23 +557,119 @@ C &= \text{max arg}_{C\in\{F,M\}} \{ P(X|C)P(C)\} \\
 \begin{equation}
 \begin{split}
 P(F|x1) &\propto P(F) \times P(x1_{nombre}|F) \times P(x1_{estatura}|F) \times P(x1_{peso}|F) \\
-&\propto (\frac{7}{19}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
-&\propto (\frac{7}{19}) \times (\frac{1}{6}) \times (3.543448351597527) \times (0.03990772866850168) \\
-&\propto 0.008683130066358118 \\
-&\propto 0.86831\% \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (3.543448351597527) \times (0.03990772866850168) \\
+&\propto 0.010998631417386951 \\
+&\propto 1.09986\% \\
 \end{split}
 \end{equation}
 \paragraph{}Probabilidad de que sea \textbf{Masculino}:\\
 \begin{equation}
 \begin{split}
 P(M|x1) &\propto P(M) \times P(x1_{nombre}|M) \times P(x1_{estatura}|M) \times P(x1_{peso}|M) \\
-&\propto (\frac{2}{5}) \times (0) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
-&\propto (\frac{2}{5}) \times (0) \times (1.641140586274889) \times (0.03411194570280468) \\
-&\propto 0 \\
-&\propto 0 \% \\
+&\propto (\frac{8}{15}) \times (\frac{1}{13}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x1 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
+&\propto (\frac{8}{15}) \times (\frac{1}{13}) \times (1.3400121179009323) \times (0.00019089879499971726) \\
+&\propto 0.00001049463378840234 \\
+&\propto 0.001049 \% \\
 \end{split}
 \end{equation}
-Así para el caso 1 la clasificación sería \textbf{Femenino} puesto que $0.89512\% > 0\%$.\\
+Así para el caso 1 la clasificación sería \textbf{Femenino} puesto que $1.09986\% > 0.001049\%$.\\
+\clearpage
+\pagebreak
+\paragraph{Prueba 2: }x2= (Guadalupe, 1.75, 80)
+\paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
+\begin{equation}
+\begin{split}
+P(F|x2) &\propto P(F) \times P(x2_{nombre}|F) \times P(x2_{estatura}|F) \times P(x2_{peso}|F) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{4}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x2 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x2 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{4}) \times (1.400807124197552) \times (0.0028900915931486235) \\
+&\propto 0.0004723204375477052 \\
+&\propto 0.04723\% \\
+\end{split}
+\end{equation}
+\paragraph{}Probabilidad de que sea \textbf{Masculino}:\\
+\begin{equation}
+\begin{split}
+P(M|x2) &\propto P(M) \times P(x2_{nombre}|M) \times P(x2_{estatura}|M) \times P(x2_{peso}|M) \\
+&\propto (\frac{8}{15}) \times (\frac{2}{13}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x2 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x2 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
+&\propto (\frac{8}{15}) \times (\frac{2}{13}) \times (8.293256306718865) \times (0.09767744743718082) \\
+&\propto 0.06646679852164925 \\
+&\propto 6.64667 \% \\
+\end{split}
+\end{equation}
+Así para el caso 2 la clasificación sería \textbf{Masculino} puesto que $6.64667\% > 0.04723\%$.\\
+\clearpage
+\pagebreak
+\paragraph{Prueba 3: }x3= (Denis, 1.80, 79)
+\paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
+\begin{equation}
+\begin{split}
+P(F|x3) &\propto P(F) \times P(x3_{nombre}|F) \times P(x3_{estatura}|F) \times P(x3_{peso}|F) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x3 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x3 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (0.48130652620587744) \times (0.0037996103859865684) \\
+&\propto 0.00014223823256338645 \\
+&\propto 0.014223\% \\
+\end{split}
+\end{equation}
+\paragraph{}Probabilidad de que sea \textbf{Masculino}:\\
+\begin{equation}
+\begin{split}
+P(M|x3) &\propto P(M) \times P(x3_{nombre}|M) \times P(x3_{estatura}|M) \times P(x3_{peso}|M) \\
+&\propto (\frac{8}{15}) \times (\frac{2}{13}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x3 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x3 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
+&\propto (\frac{8}{15}) \times (\frac{2}{13}) \times (6.803362678975037) \times (0.10048290668038978) \\
+&\propto 0.05609203340999346 \\
+&\propto 5.609203 \% \\
+\end{split}
+\end{equation}
+Así para el caso 3 la clasificación sería \textbf{Masculino} puesto que $5.609203\% > 0.014223\%$.\\
+\clearpage
+\pagebreak
+\paragraph{Prueba 4: }x4= (Alex, 1.90, 85)
+\paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
+\begin{equation}
+\begin{split}
+P(F|x4) &\propto P(F) \times P(x4_{nombre}|F) \times P(x4_{estatura}|F) \times P(x4_{peso}|F) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x4 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x4 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (0.020622686582304144) \times (0.0005956922558736581) \\
+&\propto 0.0000009554824760746358 \\
+&\propto 0.0000955\% \\
+\end{split}
+\end{equation}
+\paragraph{}Probabilidad de que sea \textbf{Masculino}:\\
+\begin{equation}
+\begin{split}
+P(M|x4) &\propto P(M) \times P(x4_{nombre}|M) \times P(x4_{estatura}|M) \times P(x4_{peso}|M) \\
+&\propto (\frac{8}{15}) \times (\frac{3}{13}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x4 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x4 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
+&\propto (\frac{8}{15}) \times (\frac{3}{13}) \times (0.10767537362956028) \times (0.03273056610044485) \\
+&\propto 0.00043375703802737465 \\
+&\propto 0.043375 \% \\
+\end{split}
+\end{equation}
+Así para el caso 4 la clasificación sería \textbf{Masculino} puesto que $0.043375\% > 0.0000955\%$.\\
+\clearpage
+\pagebreak
+\paragraph{Prueba 5: }x5= (Cris, 1.65, 70)
+\paragraph{}Probabilidad de que sea \textbf{Femenino}:\\
+\begin{equation}
+\begin{split}
+P(F|x5) &\propto P(F) \times P(x5_{nombre}|F) \times P(x5_{estatura}|F) \times P(x5_{peso}|F) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|F}^2}}e^{\frac{-(x5 - \hat{\mu}_{\text{estatura}|F})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|F}^2}}e^{\frac{-(x5 - \hat{\mu}_{\text{peso}|F})^2}{2\hat{\sigma}_{\text{peso}|F}^2}}) \\
+&\propto (\frac{7}{15}) \times (\frac{1}{6}) \times (4.306537152513246) \times (0.023655336754024023) \\
+&\propto 0.007923423401165731 \\
+&\propto 0.792342\% \\
+\end{split}
+\end{equation}
+\paragraph{}Probabilidad de que sea \textbf{Masculino}:\\
+\begin{equation}
+\begin{split}
+P(M|x5) &\propto P(M) \times P(x5_{nombre}|M) \times P(x5_{estatura}|M) \times P(x5_{peso}|M) \\
+&\propto (\frac{8}{15}) \times (\frac{2}{13}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{estatura}|M}^2}}e^{\frac{-(x5 - \hat{\mu}_{\text{estatura}|M})^2}{2\hat{\sigma}_{\text{estatura}|F}^2}}) \times (\frac{1}{\sqrt{2\pi\hat{\sigma}_{\text{peso}|M}^2}}e^{\frac{-(x5 - \hat{\mu}_{\text{peso}|M})^2}{2\hat{\sigma}_{\text{peso}|M}^2}}) \\
+&\propto (\frac{8}{15}) \times (\frac{2}{13}) \times (0.2898169016632377) \times (0.007459661777987876) \\
+&\propto 0.00017738962576017438 \\
+&\propto 0.017738 \% \\
+\end{split}
+\end{equation}
+Así para el caso 5 la clasificación sería \textbf{Femenino} puesto que $0.792342\% > 0.017738\%$.\\
 \clearpage
 \pagebreak
 \section{SPAM}
