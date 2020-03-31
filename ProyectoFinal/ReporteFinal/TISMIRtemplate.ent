@@ -1,14 +1,6 @@
 \@doanenote {1}
 macro:->Link
 to
-guidelines:
-\\
-\url
-{http://transactions.ismir.net/information/competingInterestGuidelines}
-\@endanenote 
-\@doanenote {2}
-macro:->Link
-to
 citation
 examples:
 \\
