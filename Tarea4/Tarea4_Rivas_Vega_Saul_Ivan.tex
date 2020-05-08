@@ -204,7 +204,7 @@
 	  	\caption{Red 2.}
 	  	\label{fig:ej1002}
 	  \end{figure}
-  En esta red se interpreta prácticamente lo mismo que en el anterior sin embargo se busca introducir mas independencias condicionales y minimizar los arcos sin interferir demasiado en la intuición de la red original. Aquí la temperatura deja de influir para el evento de que la alarma sea defectuosa. Un ejemplo de independencia condicional que se agrega es $D_I  \perp\!\!\!\perp D_A | I$, porque ahora los caminos de $D_I$ a $D_A$ son: $\{D_I,T,I,A,D_A\}$ y $\{D_I,I,A,D_A\}$ y tienen las tripletas $[\{D_I,T,I\}, \{T,I,A\}, \{I,A,D_A\}]$ y $[\{D_I,I,A\}, \{I,A,D_A\}]$ respectivamente. Y dado $I$ la tripleta del primer camino $\{T,I,A\}$ y la tripleta del segundo camino $\{D_I,I,A\}$ son inactivas entonces ningún camino es activo y por lo tanto $D_I$ es condicionalmente independiente de $D_A$ dado $I$.\\
+  En esta red se interpreta prácticamente lo mismo que en el anterior sin embargo se busca introducir mas independencias condicionales y minimizar los arcos sin interferir demasiado en la intuición de la red original. Aquí la temperatura deja de influir para el evento de que la alarma sea defectuosa. Un ejemplo de independencia condicional que se agrega es $D_I  \perp\!\!\!\perp D_A | I$, porque ahora los caminos de $D_I$ a $D_A$ son: $\{D_I,T,I,A,D_A\}$ y $\{D_I,I,A,D_A\}$ y tienen las tripletas $[\{D_I,T,I\}, \{T,I,A\}, \{I,A,D_A\}]$ y $[\{D_I,I,A\}, \{I,A,D_A\}]$ respectivamente. Y dado $I$ la tripleta del primer camino $\{T,I,A\}$ y la tripleta del segundo camino $\{D_I,I,A\}$ son inactivas ya que ambas son cadenas causales con la variable observada en medio, entonces ningún camino es activo y por lo tanto $D_I$ es condicionalmente independiente de $D_A$ dado $I$.\\
   Su distribución conjunta en términos de sus probabilidades condicionales es:
   \begin{equation}
   P(T,D_I,I,D_A,A)=P(T)P(D_A)P(D_I|T)P(I|D_I,T)P(A|I,D_A)
@@ -421,9 +421,41 @@ P(T,D_I,I,D_A,A)=P(T)P(D_A)P(D_I)P(I|D_I,T)P(A|I,D_A)
 	\end{figure}
 Di si las siguientes relaciones de independencia condicional son verdaderas o falsas y explica por qué:
 \subsection{$T  \perp\!\!\!\perp F | D$}
+De $T$ a $F$ existen 2 caminos de nodos:
+\begin{enumerate}
+	\item $\{T, O, C, F\}$
+	\item $\{T, O, D, B, F\}$
+\end{enumerate}
+En el Camino 1 existen las siguientes tripletas $[\{T,O,C\},\{O,C,F\}]$, la tripleta $\{T,O,C\}$ esta activa ya que es un efecto común donde uno de los descendientes es la variable observada (en este caso nuestra variable observada $D$ es descendiente de $O$).
+La otra tripleta $\{O,C,F\}$ es una cadena causal pero ninguna de sus variables es observada, así decimos que esta activa. Como las 2 tripletas del camino 1 fueron activas, el camino 1 es activo. \\
+Como hay al menos un camino activo entre $T$ y $F$ dado $D$ decimos que no se garantiza la independencia condicional y por lo tanto es \textbf{falso} afirmar que $T  \perp\!\!\!\perp F | D$ solo con los datos de la gráfica.
 \subsection{$C  \perp\!\!\!\perp B | F$}
+De $C$ a $B$ existen 2 caminos de nodos:
+\begin{enumerate}
+	\item $\{C, F, B\}$
+	\item $\{C, O, D, B\}$
+\end{enumerate}
+En el Camino 1 solo existe la tripleta $\{C,F,B\}$, la cual es inactiva ya que es una causa común donde la variable de en medio $F$ si es observada. Como no todas las tripletas del camino 1 fueron activas decimos que el camino es inactivo.
+En el Camino 2 existen las siguientes tripletas $[\{C,O,D\},\{O,D,B\}]$, la tripleta $\{C,O,D\}$ esta activa ya que es una cadena causal donde ninguna variable es observada.
+La otra tripleta $\{O,D,B\}$ es un efecto común pero ninguna de sus variables es observada, así decimos que es inactiva. Como no todas las tripletas del camino 1 fueron activas decimos que el camino es inactivo.\\
+Finalmente como no hay un solo camino activo entre $C$ y $B$ dado $F$ se garantiza la independencia condicional y por lo tanto es \textbf{verdadero} afirmar que $C  \perp\!\!\!\perp B | F$ solo con los datos de la gráfica.
 \subsection{$A  \perp\!\!\!\perp F | C$}
+De $A$ a $F$ existen 2 caminos de nodos:
+\begin{enumerate}
+	\item $\{A, T, O, D, B, F\}$
+	\item $\{A, T, O, C, F\}$
+\end{enumerate}
+En el Camino 1 existen las siguientes tripletas $[\{A,T,O\},\{O,D,B\},\{D,B,F\}]$. La tripleta $\{O,D,B\}$ esta inactiva ya que es un efecto común donde ninguna variable es observada. Como no todas las tripletas del camino 1 son activas decimos que el camino es inactivo.\\
+En el Camino 2 existen las siguientes tripletas $[\{A,T,O\},\{O,C,F\}]$. La tripleta $\{O,C,F\}$ esta inactiva ya que es una cadena causal donde la variable de en medio $C$ es observada. Como no todas las tripletas del camino 2 son activas decimos que el camino es inactivo.\\
+Finalmente como no hay un solo camino activo entre $A$ y $F$ dado $C$ se garantiza la independencia condicional y por lo tanto es \textbf{verdadero} afirmar que $A  \perp\!\!\!\perp F | C$ solo con los datos de la gráfica.
 \subsection{$A  \perp\!\!\!\perp F | C,D$}
+De $A$ a $F$ existen 2 caminos de nodos:
+\begin{enumerate}
+	\item $\{A, T, O, D, B, F\}$
+	\item $\{A, T, O, C, F\}$
+\end{enumerate}
+En el Camino 1 existen las siguientes tripletas $[\{A,T,O\},\{O,D,B\},\{D,B,F\}]$. La tripleta $\{A,T,O\}$ es activa ya que es una cadena causal donde ninguna variable es observada. La tripleta $\{T,O,D\}$ es activa ya que es una cadena causal donde ninguna variable es observada. La tripleta $\{O,D,B\}$ es activa ya que es un efecto común donde la variable de en medio $D$ es observada. La tripleta $\{D,B,F\}$ es activa ya que es una cadena causal que a pesar de que $D$ es observada, esta no es la variable de en medio, en este caso la variable de en medio es $B$ y no es observada. Como todas las tripletas del camino 1 son activas decimos que el camino es activo.\\
+Como hay al menos un camino activo entre $A$ y $F$ dado $C,D$ decimos que no se garantiza la independencia condicional y por lo tanto es \textbf{falso} afirmar que $A  \perp\!\!\!\perp F | C,D$ solo con los datos de la gráfica.
 \section{Ejercicio 3}
 Imagina una clínica que ayuda a pacientes con ébola en un área afectada por el virus. La red de la Figura~\ref{fig2} intenta capturar la dinámica por la cual las personas que sufren los síntomas pueden llegar a esta clínica y ver a un especialista. Existe la posibilidad de que alguien con ébola ($E=\text{verdadero}$) muestre síntomas, por ejemplo sangrado ($S=\text{verdadero}$), fiebre ($F=\text{verdadero}$) y visite la clínica ($V=\text{verdadero}$). El sangrado incrementa el riesgo de complicaciones ($C=\text{verdadero}$) y la persona puede ser llevada a ver un doctor especialista ($D=\text{verdadero}$).
 \begin{figure}[h!]

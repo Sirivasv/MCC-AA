@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2020.1.24)  7 MAY 2020 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2020.1.24)  8 MAY 2020 18:49
 entering extended mode
 **./Tarea4_Rivas_Vega_Saul_Ivan.tex
 (Tarea4_Rivas_Vega_Saul_Ivan.tex
@@ -907,133 +907,134 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 424.
+(hyperref)                removing `math shift' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 424.
+(hyperref)                removing `\perp' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 424.
+(hyperref)                removed on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 425.
+(hyperref)                removed on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 425.
+(hyperref)                removed on input line 432.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 432.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 432.
+
+[10 <./images/excercise2f.png> <./images/excercise2t.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 442.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 442.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 425.
+(hyperref)                removed on input line 442.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 426.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 426.
+(hyperref)                removed on input line 442.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 426.
+(hyperref)                removed on input line 442.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 442.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 442.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 451.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 426.
+(hyperref)                removed on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 426.
+(hyperref)                removed on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 426.
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 426.
+(hyperref)                removing `\perp' on input line 451.
 
-<./images/excercise3f.png, id=151, 185.19188pt x 177.66376pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 451.
+
+[11]
+<./images/excercise3f.png, id=171, 185.19188pt x 177.66376pt>
 File: ./images/excercise3f.png Graphic file (type png)
 <use ./images/excercise3f.png>
-Package pdftex.def Info: ./images/excercise3f.png  used on input line 431.
+Package pdftex.def Info: ./images/excercise3f.png  used on input line 463.
 (pdftex.def)             Requested size: 162.83833pt x 156.21988pt.
-[10 <./images/excercise2f.png> <./images/excercise2t.png>] [11 <./images/excerc
-ise3f.png>] [12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
+ [12 <./images/excercise3f.png>] [13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
  (Tarea4_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
 Package rerunfilecheck Info: File `Tarea4_Rivas_Vega_Saul_Ivan.out' has not cha
 nged.
 (rerunfilecheck)             Checksum: 83233DB9CE38EFF286945BA1DB0A1CA1;958.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 460.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
  ) 
 Here is how much of TeX's memory you used:
- 20912 strings out of 492966
- 377627 string characters out of 3143728
- 502583 words of memory out of 3000000
- 24365 multiletter control sequences out of 15000+200000
+ 20923 strings out of 492966
+ 377728 string characters out of 3143728
+ 503583 words of memory out of 3000000
+ 24367 multiletter control sequences out of 15000+200000
  14862 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,54p,868b,949s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,54p,938b,949s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MikTex/fonts/type1/p
 ublic/amsfonts/cm/cmmi12.pfb><D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pf
 b><D:/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MikTex/fonts/type1/pu
 blic/amsfonts/cm/cmr17.pfb><D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 >
-Output written on Tarea4_Rivas_Vega_Saul_Ivan.pdf (13 pages, 144445 bytes).
+Output written on Tarea4_Rivas_Vega_Saul_Ivan.pdf (14 pages, 150938 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
  172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
