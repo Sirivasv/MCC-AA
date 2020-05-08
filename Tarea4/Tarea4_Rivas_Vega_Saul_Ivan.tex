@@ -7,6 +7,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[shortlabels]{enumitem}
 \usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\setlength{\arrayrulewidth}{1.5pt}
+%\usepackage[xcdraw]{xcolor}
+
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \usepackage[spanish,es-nodecimaldot]{babel}
  \usepackage{url}
@@ -22,6 +27,7 @@
 \usepackage[spanish, fixlanguage]{babelbib}
 \bibliographystyle{IEEEtran}
 \usepackage{graphicx}
+\usepackage{booktabs}
 \graphicspath{ {./images/} }
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -32,13 +38,14 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning, fit}
 \usetikzlibrary{babel}
+\usetikzlibrary{arrows}
 \usepackage{titlesec}
 \titlespacing*{\section}
 {0pt}{5.5ex plus 1ex minus .2ex}{.3ex plus .1ex}
 \titlespacing*{\subsection}
 {0pt}{5.5ex plus 1ex minus .2ex}{2.3ex plus .1ex}
 \title{Tarea 4: Gráficos probabilísticos}
-
+\newcommand{\otoprule}{\midrule[\heavyrulewidth]}
 \author{
 	Saul Ivan Rivas Vega \\
 	\\
@@ -51,12 +58,354 @@
 	\maketitle
 	\pagebreak
 	\section{Ejercicio 1}
-	  \paragraph{} En una planta nuclear hay una alarma que se activa cuando un indicador de temperatura excede un umbral. El indicador mide la temperatura del núcleo. Considera las variables booleanas $A$ (alarma), $D_A$ (alarma defectuosa), $D_I$ (indicador defectuoso) y las variables enteras $I$ (lectura del indicador) y $T$ (temperatura real del núcleo).\\
+	  \paragraph{} En una planta nuclear hay una alarma que se activa cuando un indicador de temperatura excede un umbral. El indicador mide la temperatura del núcleo. Considera las variables booleanas $A$ (alarma), $D_A$ (alarma defectuosa), $D_I$ (indicador defectuoso) y las variables enteras $I$ (lectura del indicador) y $T$ (temperatura real del núcleo).
+	  \begin{itemize}
+		\item Dibuja 3 redes bayesianas válidas diferentes que capturen el comportamiento del proceso, entre ellas incluye aquella que capture el mayor número de independencias condicionales con el menor número de arcos. Discute el modelo representado por cada una de las redes.
+		\item De las redes dibujadas, escribe sus distribuciones conjuntas en términos de sus probabilidades condicionales.
+		\item Asumiendo que las variables enteras $I$ y $T$ pueden tomar un máximo de 100 valores, ¿Cuál sería el número de valores necesarios en cada nodo y el total en cada una de las redes?
+	  \end{itemize}
 	  \subsection{}
-	  Dibuja 3 redes bayesianas válidas diferentes que capturen el comportamiento del proceso, entre ellas incluye aquella que capture el mayor número de independencias condicionales con el menor número de arcos. Discute el modelo representado por cada una de las redes.
+	  \begin{figure}[h!]
+	  	\begin{center}
+	  		\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+	  		thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+	  		
+	  		\node[main node] (1) {$T$};
+	  		\node[main node] (2) [below left of=1] {$D_I$};
+	  		\node[main node] (3) [below of=1] {$I$};
+	  		\node[main node] (4) [below of=3] {$A$};
+	  		\node[main node] (5) [right of=3] {$D_A$};
+	  		
+	  		\path[every node/.style={font=\sffamily\small}]
+	  		(1) edge node [left] {}(3)
+	  		(1) edge node [left] {}(2)
+	  		(1) edge node [left] {}(5)
+	  		(2) edge node [left] {}(3)
+	  		(3) edge node [left] {}(4)
+	  		(5) edge node [left] {}(4);
+	  		\end{tikzpicture}
+	  	\end{center}
+	  	\caption{Red 1.}
+	  	\label{fig:ej1001}
+	  \end{figure}
+  En esta red se interpreta que si la temperatura tenga cierto valor, influye en la probabilidad de que tanto el indicador como la alarma sean defectuosos esto es por la intuición de que quizá ambos funcionen perfectamente hasta que la temperatura del núcleo este en valores muy altos. De igual forma la temperatura influye directamente en el valor que este reportando el indicador. El indicador se ve influenciado naturalmente por la probabilidad de que este sea defectuoso. Para que la alarma este activa influye si es defectuosa y también el valor que este reportando el indicador.\\
+  Su distribución conjunta en términos de sus probabilidades condicionales es:
+\begin{equation}
+	P(T,D_I,I,D_A,A)=P(T)P(D_I|T)P(I|D_I,T)P(D_A|T)P(A|I,D_A)
+\end{equation}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+	\multicolumn{6}{|c|}{$P(T)$} \\\hline %
+		\rowcolor[gray]{.8}
+		0 & 1 & 2 & 3 & $\dots$ & 99\\\hline
+		$P(T=0)$ & $P(T=1)$ & $P(T=2)$ & $P(T=3)$ & $\dots$ & $P(T=99)$\\\hline
+	\end{tabular}
+\caption{Tabla de valores para la variable $\pmb{T}$, son \textbf{100}.}
+\label{tab:ej1001}0
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$T$&$P(D_I=0|T)$&$P(D_I=1|T)$ \\\hline %
+		0 & $P(D_I=0|T=0)$ &$P(D_I=1|T=0)$\\\hline
+		1 & $P(D_I=0|T=1)$ &$P(D_I=1|T=1)$\\\hline
+		2 & $P(D_I=0|T=2)$ &$P(D_I=1|T=2)$\\\hline
+		$\dots$ & $\dots$ &$\dots$\\\hline
+		99 & $P(D_I=0|T=99)$ &$P(D_I=1|T=99)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{D_I}$, son \textbf{200} ($D_I\times T=2\times 100$).}
+	\label{tab:ej1002}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$T$&$P(D_A=0|T)$&$P(D_A=1|T)$ \\\hline %
+		0 & $P(D_A=0|T=0)$ &$P(D_A=1|T=0)$\\\hline
+		1 & $P(D_A=0|T=1)$ &$P(D_A=1|T=1)$\\\hline
+		2 & $P(D_A=0|T=2)$ &$P(D_A=1|T=2)$\\\hline
+		$\dots$ & $\dots$ &$\dots$\\\hline
+		99 & $P(D_A=0|T=99)$ &$P(D_A=1|T=99)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{D_A}$, son \textbf{200} ($D_A\times T=2\times 100$).}
+	\label{tab:ej1003}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$D_I$&$T$&$P(I=0|T,D_I)$ &$P(I=1|T,D_I)$&$\dots$&$P(I=99|T,D_I)$ \\\hline %
+		0 & 0 & $P(I=0|T=0,D_I=0)$ &$P(I=1|T=0,D_I=0)$&$\dots$&$P(I=99|T=0,D_I=0)$\\\hline
+		0 & 1 & $P(I=0|T=1,D_I=0)$ &$P(I=1|T=1,D_I=0)$&$\dots$&$P(I=99|T=1,D_I=0)$\\\hline
+		0 & 2 & $P(I=0|T=2,D_I=0)$ &$P(I=1|T=2,D_I=0)$&$\dots$&$P(I=99|T=2,D_I=0)$\\\hline
+		0 & $\dots$ & $\dots$ &$\dots$&$\dots$&$\dots$\\\hline
+		0 & 99 & $P(I=0|T=99,D_I=0)$ &$P(I=1|T=99,D_I=0)$&$\dots$&$P(I=99|T=99,D_I=0)$\\\hline
+		1 & 0 & $P(I=0|T=0,D_I=1)$ &$P(I=1|T=0,D_I=1)$&$\dots$&$P(I=99|T=0,D_I=1)$\\\hline
+		1 & 1 & $P(I=0|T=1,D_I=1)$ &$P(I=1|T=1,D_I=1)$&$\dots$&$P(I=99|T=1,D_I=1)$\\\hline
+		1 & 2 & $P(I=0|T=2,D_I=1)$ &$P(I=1|T=2,D_I=1)$&$\dots$&$P(I=99|T=2,D_I=1)$\\\hline
+		1 & $\dots$ & $\dots$ &$\dots$&$\dots$&$\dots$\\\hline
+		1 & 99 & $P(I=0|T=99,D_I=1)$ &$P(I=1|T=99,D_I=1)$&$\dots$&$P(I=99|T=99,D_I=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{I}$, son \textbf{20000} ($D_I\times T\times I=2\times 100\times 100$).}
+	\label{tab:ej1004}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$D_A$&$I$&$P(A=0|I,D_A)$&$P(A=1|I,D_A)$ \\\hline %
+		0 & 0 & $P(A=0|I=0,D_A=0)$ &$P(A=1|I=0,D_A=0)$\\\hline
+		0 & 1 & $P(A=0|I=1,D_A=0)$ &$P(A=1|I=1,D_A=0)$\\\hline
+		0 & 2 & $P(A=0|I=2,D_A=0)$ &$P(A=1|I=2,D_A=0)$\\\hline
+		0 & $\dots$ & $\dots$ &$\dots$\\\hline
+		0 & 99 & $P(A=0|I=99,D_A=0)$ &$P(A=1|I=99,D_A=0)$\\\hline
+		1 & 0 & $P(A=0|I=0,D_A=1)$ &$P(A=1|I=0,D_A=1)$\\\hline
+		1 & 1 & $P(A=0|I=1,D_A=1)$ &$P(A=1|I=1,D_A=1)$\\\hline
+		1 & 2 & $P(A=0|I=2,D_A=1)$ &$P(A=1|I=2,D_A=1)$\\\hline
+		1 & $\dots$ & $\dots$ &$\dots$\\\hline
+		1 & 99 & $P(A=0|I=99,D_A=1)$ &$P(A=1|I=99,D_A=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{A}$, son \textbf{400} ($A\times I\times D_A=2\times 100 \times 2$).}
+	\label{tab:ej1005}
+\end{table}\pagebreak
+\paragraph{} Finalmente tomando en cuenta los valores obtenidos de las 5 tablas obtenemos el total de valores en la red:
+\begin{equation}
+	100 + 200 + 200 + 20000 + 400 = 20900
+\end{equation}
+\pagebreak
 	  \subsection{}
-	  De las redes dibujadas, escribe sus distribuciones conjuntas en términos de sus probabilidades condicionales.
-	  \subsection{}Asumiendo que las variables enteras $I$ y $T$ pueden tomar un máximo de 100 valores, ¿Cuál sería el número de valores necesarios en cada nodo y el total en cada una de las redes?
+	  \begin{figure}[h!]
+	  	\begin{center}
+	  		\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+	  		thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+	  		
+	  		\node[main node] (1) {$T$};
+	  		\node[main node] (2) [below left of=1] {$D_I$};
+	  		\node[main node] (3) [below of=1] {$I$};
+	  		\node[main node] (4) [below of=3] {$A$};
+	  		\node[main node] (5) [right of=3] {$D_A$};
+	  		
+	  		\path[every node/.style={font=\sffamily\small}]
+	  		(1) edge node [left] {}(3)
+	  		(1) edge node [left] {}(2)
+	  		(2) edge node [left] {}(3)
+	  		(3) edge node [left] {}(4)
+	  		(5) edge node [left] {}(4);
+	  		\end{tikzpicture}
+	  	\end{center}
+	  	\caption{Red 2.}
+	  	\label{fig:ej1002}
+	  \end{figure}
+  En esta red se interpreta prácticamente lo mismo que en el anterior sin embargo se busca introducir mas independencias condicionales y minimizar los arcos sin interferir demasiado en la intuición de la red original. Aquí la temperatura deja de influir para el evento de que la alarma sea defectuosa. Un ejemplo de independencia condicional que se agrega es $D_I  \perp\!\!\!\perp D_A | I$, porque ahora los caminos de $D_I$ a $D_A$ son: $\{D_I,T,I,A,D_A\}$ y $\{D_I,I,A,D_A\}$ y tienen las tripletas $[\{D_I,T,I\}, \{T,I,A\}, \{I,A,D_A\}]$ y $[\{D_I,I,A\}, \{I,A,D_A\}]$ respectivamente. Y dado $I$ la tripleta del primer camino $\{T,I,A\}$ y la tripleta del segundo camino $\{D_I,I,A\}$ son inactivas entonces ningún camino es activo y por lo tanto $D_I$ es condicionalmente independiente de $D_A$ dado $I$.\\
+  Su distribución conjunta en términos de sus probabilidades condicionales es:
+  \begin{equation}
+  P(T,D_I,I,D_A,A)=P(T)P(D_A)P(D_I|T)P(I|D_I,T)P(A|I,D_A)
+  \end{equation}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		\multicolumn{6}{|c|}{$P(T)$} \\\hline %
+		\rowcolor[gray]{.8}
+		0 & 1 & 2 & 3 & $\dots$ & 99\\\hline
+		$P(T=0)$ & $P(T=1)$ & $P(T=2)$ & $P(T=3)$ & $\dots$ & $P(T=99)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{T}$, son \textbf{100}.}
+	\label{tab:ej1006}0
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$T$&$P(D_I=0|T)$&$P(D_I=1|T)$ \\\hline %
+		0 & $P(D_I=0|T=0)$ &$P(D_I=1|T=0)$\\\hline
+		1 & $P(D_I=0|T=1)$ &$P(D_I=1|T=1)$\\\hline
+		2 & $P(D_I=0|T=2)$ &$P(D_I=1|T=2)$\\\hline
+		$\dots$ & $\dots$ &$\dots$\\\hline
+		99 & $P(D_I=0|T=99)$ &$P(D_I=1|T=99)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{D_I}$, son \textbf{200} ($D_I\times T=2\times 100$).}
+	\label{tab:ej1007}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		\multicolumn{2}{|c|}{$P(D_A)$} \\\hline %
+		\rowcolor[gray]{.8}
+		0 & 1 \\\hline
+		$P(D_A=0)$ & $P(D_A=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{D_A}$, son \textbf{2}.}
+	\label{tab:ej1008}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$D_I$&$T$&$P(I=0|T,D_I)$ &$P(I=1|T,D_I)$&$\dots$&$P(I=99|T,D_I)$ \\\hline %
+		0 & 0 & $P(I=0|T=0,D_I=0)$ &$P(I=1|T=0,D_I=0)$&$\dots$&$P(I=99|T=0,D_I=0)$\\\hline
+		0 & 1 & $P(I=0|T=1,D_I=0)$ &$P(I=1|T=1,D_I=0)$&$\dots$&$P(I=99|T=1,D_I=0)$\\\hline
+		0 & 2 & $P(I=0|T=2,D_I=0)$ &$P(I=1|T=2,D_I=0)$&$\dots$&$P(I=99|T=2,D_I=0)$\\\hline
+		0 & $\dots$ & $\dots$ &$\dots$&$\dots$&$\dots$\\\hline
+		0 & 99 & $P(I=0|T=99,D_I=0)$ &$P(I=1|T=99,D_I=0)$&$\dots$&$P(I=99|T=99,D_I=0)$\\\hline
+		1 & 0 & $P(I=0|T=0,D_I=1)$ &$P(I=1|T=0,D_I=1)$&$\dots$&$P(I=99|T=0,D_I=1)$\\\hline
+		1 & 1 & $P(I=0|T=1,D_I=1)$ &$P(I=1|T=1,D_I=1)$&$\dots$&$P(I=99|T=1,D_I=1)$\\\hline
+		1 & 2 & $P(I=0|T=2,D_I=1)$ &$P(I=1|T=2,D_I=1)$&$\dots$&$P(I=99|T=2,D_I=1)$\\\hline
+		1 & $\dots$ & $\dots$ &$\dots$&$\dots$&$\dots$\\\hline
+		1 & 99 & $P(I=0|T=99,D_I=1)$ &$P(I=1|T=99,D_I=1)$&$\dots$&$P(I=99|T=99,D_I=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{I}$, son \textbf{20000} ($D_I\times T\times I=2\times 100\times 100$).}
+	\label{tab:ej1009}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$D_A$&$I$&$P(A=0|I,D_A)$&$P(A=1|I,D_A)$ \\\hline %
+		0 & 0 & $P(A=0|I=0,D_A=0)$ &$P(A=1|I=0,D_A=0)$\\\hline
+		0 & 1 & $P(A=0|I=1,D_A=0)$ &$P(A=1|I=1,D_A=0)$\\\hline
+		0 & 2 & $P(A=0|I=2,D_A=0)$ &$P(A=1|I=2,D_A=0)$\\\hline
+		0 & $\dots$ & $\dots$ &$\dots$\\\hline
+		0 & 99 & $P(A=0|I=99,D_A=0)$ &$P(A=1|I=99,D_A=0)$\\\hline
+		1 & 0 & $P(A=0|I=0,D_A=1)$ &$P(A=1|I=0,D_A=1)$\\\hline
+		1 & 1 & $P(A=0|I=1,D_A=1)$ &$P(A=1|I=1,D_A=1)$\\\hline
+		1 & 2 & $P(A=0|I=2,D_A=1)$ &$P(A=1|I=2,D_A=1)$\\\hline
+		1 & $\dots$ & $\dots$ &$\dots$\\\hline
+		1 & 99 & $P(A=0|I=99,D_A=1)$ &$P(A=1|I=99,D_A=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{A}$, son \textbf{400} ($A\times I\times D_A=2\times 100 \times 2$).}
+	\label{tab:ej1010}
+\end{table}\pagebreak
+\paragraph{} Finalmente tomando en cuenta los valores obtenidos de las 5 tablas obtenemos el total de valores en la red:
+\begin{equation}
+100 + 200 + 2 + 20000 + 400 = 20702
+\end{equation}
+\pagebreak
+  \subsection{}
+  \begin{figure}[h!]
+  	\begin{center}
+  		\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+  		thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+  		
+  		\node[main node] (1) {$T$};
+  		\node[main node] (2) [below left of=1] {$D_I$};
+  		\node[main node] (3) [below of=1] {$I$};
+  		\node[main node] (4) [below of=3] {$A$};
+  		\node[main node] (5) [right of=3] {$D_A$};
+  		
+  		\path[every node/.style={font=\sffamily\small}]
+  		(1) edge node [left] {}(3)
+  		(2) edge node [left] {}(3)
+  		(3) edge node [left] {}(4)
+  		(5) edge node [left] {}(4);
+  		\end{tikzpicture}
+  	\end{center}
+  	\caption{Red 3.}
+  	\label{fig:ej1003}
+  \end{figure}
+Finalmente para esta tercer red llegamos a una de las posibilidades de la red inicial con menor numero de arcos y mayor numero de independencias condicionales al quitar la influencia de la temperatura en el evento de que el indicador sea defectuoso. Un ejemplo de independencia condicional que se agrega es $T  \perp\!\!\!\perp A | I$, porque ahora el camino de $T$ a $A$ es uno inactivo dado $I$ ya que es una cadena causal con la variable observada en medio, y por ser el único todos los caminos de $T$ a $A$ están inactivos y por lo tanto $T$ es condicionalmente independiente de $A$ dado $I$.\\
+Su distribución conjunta en términos de sus probabilidades condicionales es:
+\begin{equation}
+P(T,D_I,I,D_A,A)=P(T)P(D_A)P(D_I)P(I|D_I,T)P(A|I,D_A)
+\end{equation}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		\multicolumn{6}{|c|}{$P(T)$} \\\hline %
+		\rowcolor[gray]{.8}
+		0 & 1 & 2 & 3 & $\dots$ & 99\\\hline
+		$P(T=0)$ & $P(T=1)$ & $P(T=2)$ & $P(T=3)$ & $\dots$ & $P(T=99)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{T}$, son \textbf{100}.}
+	\label{tab:ej1011}0
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		\multicolumn{2}{|c|}{$P(D_I)$} \\\hline %
+		\rowcolor[gray]{.8}
+		0 & 1 \\\hline
+		$P(D_I=0)$ & $P(D_I=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{D_I}$, son \textbf{2} ($D_I\times T=2\times 100$).}
+	\label{tab:ej1012}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		\multicolumn{2}{|c|}{$P(D_A)$} \\\hline %
+		\rowcolor[gray]{.8}
+		0 & 1 \\\hline
+		$P(D_A=0)$ & $P(D_A=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{D_A}$, son \textbf{2}.}
+	\label{tab:ej1013}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$D_I$&$T$&$P(I=0|T,D_I)$ &$P(I=1|T,D_I)$&$\dots$&$P(I=99|T,D_I)$ \\\hline %
+		0 & 0 & $P(I=0|T=0,D_I=0)$ &$P(I=1|T=0,D_I=0)$&$\dots$&$P(I=99|T=0,D_I=0)$\\\hline
+		0 & 1 & $P(I=0|T=1,D_I=0)$ &$P(I=1|T=1,D_I=0)$&$\dots$&$P(I=99|T=1,D_I=0)$\\\hline
+		0 & 2 & $P(I=0|T=2,D_I=0)$ &$P(I=1|T=2,D_I=0)$&$\dots$&$P(I=99|T=2,D_I=0)$\\\hline
+		0 & $\dots$ & $\dots$ &$\dots$&$\dots$&$\dots$\\\hline
+		0 & 99 & $P(I=0|T=99,D_I=0)$ &$P(I=1|T=99,D_I=0)$&$\dots$&$P(I=99|T=99,D_I=0)$\\\hline
+		1 & 0 & $P(I=0|T=0,D_I=1)$ &$P(I=1|T=0,D_I=1)$&$\dots$&$P(I=99|T=0,D_I=1)$\\\hline
+		1 & 1 & $P(I=0|T=1,D_I=1)$ &$P(I=1|T=1,D_I=1)$&$\dots$&$P(I=99|T=1,D_I=1)$\\\hline
+		1 & 2 & $P(I=0|T=2,D_I=1)$ &$P(I=1|T=2,D_I=1)$&$\dots$&$P(I=99|T=2,D_I=1)$\\\hline
+		1 & $\dots$ & $\dots$ &$\dots$&$\dots$&$\dots$\\\hline
+		1 & 99 & $P(I=0|T=99,D_I=1)$ &$P(I=1|T=99,D_I=1)$&$\dots$&$P(I=99|T=99,D_I=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{I}$, son \textbf{20000} ($D_I\times T\times I=2\times 100\times 100$).}
+	\label{tab:ej1014}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$D_A$&$I$&$P(A=0|I,D_A)$&$P(A=1|I,D_A)$ \\\hline %
+		0 & 0 & $P(A=0|I=0,D_A=0)$ &$P(A=1|I=0,D_A=0)$\\\hline
+		0 & 1 & $P(A=0|I=1,D_A=0)$ &$P(A=1|I=1,D_A=0)$\\\hline
+		0 & 2 & $P(A=0|I=2,D_A=0)$ &$P(A=1|I=2,D_A=0)$\\\hline
+		0 & $\dots$ & $\dots$ &$\dots$\\\hline
+		0 & 99 & $P(A=0|I=99,D_A=0)$ &$P(A=1|I=99,D_A=0)$\\\hline
+		1 & 0 & $P(A=0|I=0,D_A=1)$ &$P(A=1|I=0,D_A=1)$\\\hline
+		1 & 1 & $P(A=0|I=1,D_A=1)$ &$P(A=1|I=1,D_A=1)$\\\hline
+		1 & 2 & $P(A=0|I=2,D_A=1)$ &$P(A=1|I=2,D_A=1)$\\\hline
+		1 & $\dots$ & $\dots$ &$\dots$\\\hline
+		1 & 99 & $P(A=0|I=99,D_A=1)$ &$P(A=1|I=99,D_A=1)$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{A}$, son \textbf{400} ($A\times I\times D_A=2\times 100 \times 2$).}
+	\label{tab:ej1015}
+\end{table}\pagebreak
+\paragraph{} Finalmente tomando en cuenta los valores obtenidos de las 5 tablas obtenemos el total de valores en la red:
+\begin{equation}
+100 + 2 + 2 + 20000 + 400 = 20504
+\end{equation}
+\pagebreak
 	\section{Ejercicio 2}	 
 	  \begin{figure}[h!]
 	  	\centering

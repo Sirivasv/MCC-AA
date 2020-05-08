@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2020.1.24)  5 MAY 2020 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2020.1.24)  7 MAY 2020 19:50
 entering extended mode
 **./Tarea4_Rivas_Vega_Saul_Ivan.tex
 (Tarea4_Rivas_Vega_Saul_Ivan.tex
@@ -73,10 +73,46 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \extratabsurround=\skip44
 \backup@length=\skip45
 \ar@cellbox=\box28
-) (D:\MikTex\tex\generic\babel\babel.sty
-Package: babel 2018/09/26 3.24 The Babel package
+) (D:\MikTex\tex\latex\tools\tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen114
+\TX@old@table=\dimen115
+\TX@old@col=\dimen116
+\TX@target=\dimen117
+\TX@delta=\dimen118
+\TX@cols=\count92
+\TX@ftn=\toks20
+)
+(D:\MikTex\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(D:\MikTex\tex\generic\babel\switch.def
+(D:\MikTex\tex\latex\graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(D:\MikTex\tex\latex\graphics-def\pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+(D:\MikTex\tex\latex\colortbl\colortbl.sty
+Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
+\everycr=\toks21
+\minrowclearance=\skip46
+)
+\rownum=\count93
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(D:\MikTex\tex\generic\babel\babel.sty
+Package: babel 2018/09/26 3.24 The Babel package
+ (D:\MikTex\tex\generic\babel\switch.def
 File: switch.def 2018/09/26 3.24 Babel switching mechanism
 )
 *************************************
@@ -91,14 +127,14 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 (D:\MikTex\tex\generic\babel\babel.def
 File: babel.def 2018/09/26 3.24 Babel common definitions
-\babel@savecnt=\count92
-\U@D=\dimen114
+\babel@savecnt=\count94
+\U@D=\dimen119
 
 (D:\MikTex\tex\generic\babel\txtbabel.def)
-\bbl@dirlevel=\count93
+\bbl@dirlevel=\count95
 )
-\es@quottoks=\toks20
-\es@quotdepth=\count94
+\es@quottoks=\toks22
+\es@quotdepth=\count96
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
@@ -157,16 +193,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (D:\MikTex\tex\latex\oberdiek\kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen115
-\Hy@linkcounter=\count95
-\Hy@pagecounter=\count96
+\@linkdim=\dimen120
+\Hy@linkcounter=\count97
+\Hy@pagecounter=\count98
 
 (D:\MikTex\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count97
+\Hy@SavedSpaceFactor=\count99
 
 (D:\MikTex\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -178,12 +214,12 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count98
+\c@Hy@tempcnt=\count100
 LaTeX Info: Redefining \url on input line 5141.
-\XeTeXLinkMargin=\dimen116
-\Fld@menulength=\count99
-\Field@Width=\dimen117
-\Fld@charsize=\dimen118
+\XeTeXLinkMargin=\dimen121
+\Fld@menulength=\count101
+\Field@Width=\dimen122
+\Fld@charsize=\dimen123
 Package hyperref Info: Hyper figures OFF on input line 6396.
 Package hyperref Info: Link nesting OFF on input line 6401.
 Package hyperref Info: Hyper index ON on input line 6404.
@@ -193,25 +229,25 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count100
-\c@Item=\count101
-\c@Hfootnote=\count102
+\Hy@abspage=\count102
+\c@Item=\count103
+\c@Hfootnote=\count104
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (D:\MikTex\tex\latex\hyperref\hpdftex.def
 File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count103
-\c@bookmark@seq@number=\count104
+\Fld@listcount=\count105
+\c@bookmark@seq@number=\count106
 
 (D:\MikTex\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip46
+\Hy@SectionHShift=\skip47
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+Package hyperref Info: Option `colorlinks' set `true' on input line 24.
 
 (D:\MikTex\tex\latex\babelbib\babelbib.sty
 Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
@@ -219,7 +255,7 @@ Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 (D:\MikTex\tex\latex\babelbib\spanish.bdf
 File: spanish.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 )
-\c@btxromaniannumeral=\count105
+\c@btxromaniannumeral=\count107
 )
 (D:\MikTex\tex\latex\graphics\graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -234,19 +270,36 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(D:\MikTex\tex\latex\graphics-def\pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen119
-\Gin@req@width=\dimen120
+)
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+(D:\MikTex\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen126
+\lightrulewidth=\dimen127
+\cmidrulewidth=\dimen128
+\belowrulesep=\dimen129
+\belowbottomsep=\dimen130
+\aboverulesep=\dimen131
+\abovetopsep=\dimen132
+\cmidrulesep=\dimen133
+\cmidrulekern=\dimen134
+\defaultaddspace=\dimen135
+\@cmidla=\count108
+\@cmidlb=\count109
+\@aboverulesep=\dimen136
+\@belowrulesep=\dimen137
+\@thisruleclass=\count110
+\@lastruleclass=\count111
+\@thisrulewidth=\dimen138
 )
 (D:\MikTex\tex\latex\amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (D:\MikTex\tex\latex\amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks21
+\@emptytoks=\toks23
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -254,7 +307,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (D:\MikTex\tex\latex\amsmath\amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip47
+\@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
 (D:\MikTex\tex\latex\amsmath\amstext.sty
@@ -262,51 +315,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (D:\MikTex\tex\latex\amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks22
-\ex@=\dimen121
+\@emptytoks=\toks24
+\ex@=\dimen139
 ))
 (D:\MikTex\tex\latex\amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen122
+\pmbraise@=\dimen140
 )
 (D:\MikTex\tex\latex\amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count106
+\inf@bad=\count112
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count107
-\leftroot@=\count108
+\uproot@=\count113
+\leftroot@=\count114
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count109
-\DOTSCASE@=\count110
+\classnum@=\count115
+\DOTSCASE@=\count116
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box29
 \strutbox@=\box30
-\big@size=\dimen123
+\big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count111
-\c@MaxMatrixCols=\count112
+\macc@depth=\count117
+\c@MaxMatrixCols=\count118
 \dotsspace@=\muskip11
-\c@parentequation=\count113
-\dspbrk@lvl=\count114
-\tag@help=\toks23
-\row@=\count115
-\column@=\count116
-\maxfields@=\count117
-\andhelp@=\toks24
-\eqnshift@=\dimen124
-\alignsep@=\dimen125
-\tagshift@=\dimen126
-\tagwidth@=\dimen127
-\totwidth@=\dimen128
-\lineht@=\dimen129
-\@envbody=\toks25
-\multlinegap=\skip48
-\multlinetaggap=\skip49
-\mathdisplay@stack=\toks26
+\c@parentequation=\count119
+\dspbrk@lvl=\count120
+\tag@help=\toks25
+\row@=\count121
+\column@=\count122
+\maxfields@=\count123
+\andhelp@=\toks26
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks27
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -319,80 +372,80 @@ Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
 (D:\MikTex\tex\latex\caption\caption3.sty
 Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen130
-\captionmargin@=\dimen131
-\captionwidth=\dimen132
-\caption@tempdima=\dimen133
-\caption@indent=\dimen134
-\caption@parindent=\dimen135
-\caption@hangindent=\dimen136
+\captionmargin=\dimen148
+\captionmargin@=\dimen149
+\captionwidth=\dimen150
+\caption@tempdima=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
 )
-\c@ContinuedFloat=\count118
+\c@ContinuedFloat=\count124
 Package caption Info: hyperref package is loaded.
 )
-\c@subfigure=\count119
-\c@subtable=\count120
+\c@subfigure=\count125
+\c@subtable=\count126
 )
 (D:\MikTex\tex\latex\algorithm2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count121
+\c@AlgoLine=\count127
 
 (D:\MikTex\tex\latex\base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip50
+\algocf@hangindent=\skip51
 
 (D:\MikTex\tex\latex\ifoddpage\ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count122
+\c@checkoddpage=\count128
 )
 (D:\MikTex\tex\latex\tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (D:\MikTex\tex\latex\relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip51
-\skiplinenumber=\skip52
-\skiprule=\skip53
-\skiphlne=\skip54
-\skiptext=\skip55
-\skiplength=\skip56
-\algomargin=\skip57
-\skipalgocfslide=\skip58
-\algowidth=\dimen137
-\inoutsize=\dimen138
-\inoutindent=\dimen139
-\interspacetitleruled=\dimen140
-\interspacealgoruled=\dimen141
-\interspacetitleboxruled=\dimen142
-\algocf@ruledwidth=\skip59
+\skiptotal=\skip52
+\skiplinenumber=\skip53
+\skiprule=\skip54
+\skiphlne=\skip55
+\skiptext=\skip56
+\skiplength=\skip57
+\algomargin=\skip58
+\skipalgocfslide=\skip59
+\algowidth=\dimen155
+\inoutsize=\dimen156
+\inoutindent=\dimen157
+\interspacetitleruled=\dimen158
+\interspacealgoruled=\dimen159
+\interspacetitleboxruled=\dimen160
+\algocf@ruledwidth=\skip60
 \algocf@inoutbox=\box31
 \algocf@inputbox=\box32
-\AlCapSkip=\skip60
-\AlCapHSkip=\skip61
-\algoskipindent=\skip62
+\AlCapSkip=\skip61
+\AlCapHSkip=\skip62
+\algoskipindent=\skip63
 \algocf@nlbox=\box33
 \algocf@hangingbox=\box34
 \algocf@untilbox=\box35
-\algocf@skipuntil=\skip63
+\algocf@skipuntil=\skip64
 \algocf@capbox=\box36
-\algocf@lcaptionbox=\skip64
-\algoheightruledefault=\skip65
-\algoheightrule=\skip66
-\algotitleheightruledefault=\skip67
-\algotitleheightrule=\skip68
-\c@algocfline=\count123
-\c@algocfproc=\count124
-\c@algocf=\count125
+\algocf@lcaptionbox=\skip65
+\algoheightruledefault=\skip66
+\algoheightrule=\skip67
+\algotitleheightruledefault=\skip68
+\algotitleheightrule=\skip69
+\c@algocfline=\count129
+\c@algocfproc=\count130
+\c@algocf=\count131
 \algocf@algoframe=\box37
 \algocf@algobox=\box38
 ) (D:\MikTex\tex\latex\pgf\frontendlayer\tikz.sty
 (D:\MikTex\tex\latex\pgf\basiclayer\pgf.sty
 (D:\MikTex\tex\latex\pgf\utilities\pgfrcs.sty
 (D:\MikTex\tex\generic\pgf\utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen143
-\pgfutil@tempdimb=\dimen144
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
 
 (D:\MikTex\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
 (D:\MikTex\tex\generic\pgf\utilities\pgfutil-latex.def
@@ -412,29 +465,29 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (D:\MikTex\tex\generic\pgf\utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
 
 (D:\MikTex\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks30
+\pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen145
-\pgf@y=\dimen146
-\pgf@xa=\dimen147
-\pgf@ya=\dimen148
-\pgf@xb=\dimen149
-\pgf@yb=\dimen150
-\pgf@xc=\dimen151
-\pgf@yc=\dimen152
+\pgf@x=\dimen163
+\pgf@y=\dimen164
+\pgf@xa=\dimen165
+\pgf@ya=\dimen166
+\pgf@xb=\dimen167
+\pgf@yb=\dimen168
+\pgf@xc=\dimen169
+\pgf@yc=\dimen170
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count126
-\c@pgf@countb=\count127
-\c@pgf@countc=\count128
-\c@pgf@countd=\count129
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
+\c@pgf@counta=\count132
+\c@pgf@countb=\count133
+\c@pgf@countc=\count134
+\c@pgf@countd=\count135
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
 
 (D:\MikTex\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -449,29 +502,12 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (D:\MikTex\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count130
-\pgfsyssoftpath@bigbuffer@items=\count131
+\pgfsyssoftpath@smallbuffer@items=\count136
+\pgfsyssoftpath@bigbuffer@items=\count137
 )
 (D:\MikTex\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(D:\MikTex\tex\latex\xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(D:\MikTex\tex\latex\graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
@@ -479,12 +515,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (D:\MikTex\tex\generic\pgf\math\pgfmathcalc.code.tex
 (D:\MikTex\tex\generic\pgf\math\pgfmathutil.code.tex)
 (D:\MikTex\tex\generic\pgf\math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen153
-\pgfmath@count=\count132
+\pgfmath@dimen=\dimen171
+\pgfmath@count=\count138
 \pgfmath@box=\box40
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
 )
 (D:\MikTex\tex\generic\pgf\math\pgfmathfunctions.code.tex
 (D:\MikTex\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
@@ -496,51 +532,51 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (D:\MikTex\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
 (D:\MikTex\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex)))
 (D:\MikTex\tex\generic\pgf\math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count133
+\c@pgfmathroundto@lastzeros=\count139
 ))
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen154
-\pgf@picmaxx=\dimen155
-\pgf@picminy=\dimen156
-\pgf@picmaxy=\dimen157
-\pgf@pathminx=\dimen158
-\pgf@pathmaxx=\dimen159
-\pgf@pathminy=\dimen160
-\pgf@pathmaxy=\dimen161
-\pgf@xx=\dimen162
-\pgf@xy=\dimen163
-\pgf@yx=\dimen164
-\pgf@yy=\dimen165
-\pgf@zx=\dimen166
-\pgf@zy=\dimen167
+\pgf@picminx=\dimen172
+\pgf@picmaxx=\dimen173
+\pgf@picminy=\dimen174
+\pgf@picmaxy=\dimen175
+\pgf@pathminx=\dimen176
+\pgf@pathmaxx=\dimen177
+\pgf@pathminy=\dimen178
+\pgf@pathmaxy=\dimen179
+\pgf@xx=\dimen180
+\pgf@xy=\dimen181
+\pgf@yx=\dimen182
+\pgf@yy=\dimen183
+\pgf@zx=\dimen184
+\pgf@zy=\dimen185
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen168
-\pgf@path@lasty=\dimen169
+\pgf@path@lastx=\dimen186
+\pgf@path@lasty=\dimen187
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen170
-\pgf@shorten@start@additional=\dimen171
+\pgf@shorten@end@additional=\dimen188
+\pgf@shorten@start@additional=\dimen189
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box41
 \pgf@hbox=\box42
 \pgf@layerbox@main=\box43
-\pgf@picture@serial@count=\count134
+\pgf@picture@serial@count=\count140
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen172
+\pgflinewidth=\dimen190
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen173
-\pgf@pt@y=\dimen174
-\pgf@pt@temp=\dimen175
+\pgf@pt@x=\dimen191
+\pgf@pt@y=\dimen192
+\pgf@pt@temp=\dimen193
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -553,12 +589,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen176
+\pgfarrowsep=\dimen194
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen177
-\pgf@sys@shading@range@num=\count135
+\pgf@max=\dimen195
+\pgf@sys@shading@range@num=\count141
 )
 (D:\MikTex\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -585,8 +621,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (D:\MikTex\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen178
-\pgf@nodesepend=\dimen179
+\pgf@nodesepstart=\dimen196
+\pgf@nodesepend=\dimen197
 )
 (D:\MikTex\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
@@ -600,41 +636,41 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (D:\MikTex\tex\generic\pgf\math\pgfmath.code.tex)
-\pgffor@iter=\dimen180
-\pgffor@skip=\dimen181
-\pgffor@stack=\toks37
-\pgffor@toks=\toks38
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
 ))
 (D:\MikTex\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
 (D:\MikTex\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count136
-\pgfplotmarksize=\dimen182
+\pgf@plot@mark@count=\count142
+\pgfplotmarksize=\dimen256
 )
-\tikz@lastx=\dimen183
-\tikz@lasty=\dimen184
-\tikz@lastxsaved=\dimen185
-\tikz@lastysaved=\dimen186
-\tikzleveldistance=\dimen187
-\tikzsiblingdistance=\dimen188
+\tikz@lastx=\dimen257
+\tikz@lasty=\dimen258
+\tikz@lastxsaved=\dimen259
+\tikz@lastysaved=\dimen260
+\tikzleveldistance=\dimen261
+\tikzsiblingdistance=\dimen262
 \tikz@figbox=\box46
 \tikz@figbox@bg=\box47
 \tikz@tempbox=\box48
 \tikz@tempbox@bg=\box49
-\tikztreelevel=\count137
-\tikznumberofchildren=\count138
-\tikznumberofcurrentchild=\count139
-\tikz@fig@count=\count140
+\tikztreelevel=\count143
+\tikznumberofchildren=\count144
+\tikznumberofcurrentchild=\count145
+\tikz@fig@count=\count146
 
 (D:\MikTex\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count141
-\pgfmatrixcurrentcolumn=\count142
-\pgf@matrix@numberofcolumns=\count143
+\pgfmatrixcurrentrow=\count147
+\pgfmatrixcurrentcolumn=\count148
+\pgf@matrix@numberofcolumns=\count149
 )
-\tikz@expandcount=\count144
+\tikz@expandcount=\count150
 
 (D:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code
 .tex
@@ -650,38 +686,45 @@ File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
 (D:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybabel.code.t
 ex
 File: tikzlibrarybabel.code.tex 2013/06/24 v3.0.1a (rcs-revision 1.1)
-) (D:\MikTex\tex\latex\titlesec\titlesec.sty
+)
+(D:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.
+tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+ (D:\MikTex\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen263
+))
+(D:\MikTex\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box50
-\beforetitleunit=\skip69
-\aftertitleunit=\skip70
-\ttl@plus=\dimen189
-\ttl@minus=\dimen190
-\ttl@toksa=\toks39
-\titlewidth=\dimen191
-\titlewidthlast=\dimen192
-\titlewidthfirst=\dimen193
-)
-(Tarea4_Rivas_Vega_Saul_Ivan.aux
+\beforetitleunit=\skip70
+\aftertitleunit=\skip71
+\ttl@plus=\dimen264
+\ttl@minus=\dimen265
+\ttl@toksa=\toks41
+\titlewidth=\dimen266
+\titlewidthlast=\dimen267
+\titlewidthfirst=\dimen268
+) (Tarea4_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `Tarea4_Rivas_Vega_Saul_Ivan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -717,44 +760,19 @@ LaTeX Font Info:    ... okay on input line 50.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
-\AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring ON on input line 50.
-(D:\MikTex\tex\latex\hyperref\nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(D:\MikTex\tex\generic\oberdiek\gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count145
-)
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
-
-(Tarea4_Rivas_Vega_Saul_Ivan.out) (Tarea4_Rivas_Vega_Saul_Ivan.out)
-\@outlinefile=\write4
-\openout4 = `Tarea4_Rivas_Vega_Saul_Ivan.out'.
-
-
-babelbib extension \btxifchangecaseoff added to \extrasspanish
-babelbib: Set bibliography fall-back language to spanish
-babelbib: Load BibTeX extensions \bibsspanish for spanish
-babelbib: Set language for keywords in the bibliography fixed to spanish
 (D:\MikTex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
-\scratchdimen=\dimen194
-\scratchbox=\box52
-\nofMPsegments=\count147
-\nofMParguments=\count148
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count149
-\MPscratchDim=\dimen195
-\MPnumerator=\count150
-\makeMPintoPDFobject=\count151
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count151
+\scratchdimen=\dimen269
+\scratchbox=\box51
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen270
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks43
 ) (D:\MikTex\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -768,199 +786,254 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+\AtBeginShipoutBox=\box52
+Package hyperref Info: Link coloring ON on input line 57.
+
+(D:\MikTex\tex\latex\hyperref\nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(D:\MikTex\tex\generic\oberdiek\gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count157
+)
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
+
+(Tarea4_Rivas_Vega_Saul_Ivan.out) (Tarea4_Rivas_Vega_Saul_Ivan.out)
+\@outlinefile=\write4
+\openout4 = `Tarea4_Rivas_Vega_Saul_Ivan.out'.
+
+
+babelbib extension \btxifchangecaseoff added to \extrasspanish
+babelbib: Set bibliography fall-back language to spanish
+babelbib: Load BibTeX extensions \bibsspanish for spanish
+babelbib: Set language for keywords in the bibliography fixed to spanish
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
  (D:\MikTex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 (D:\MikTex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/sauli/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
+{C:/Users/sauli/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Overfull \hbox (50.48047pt too wide) in paragraph at lines 141--156
+ [][] 
  []
 
-<./images/excercise2f.png, id=85, 225.84375pt x 159.59625pt>
-File: ./images/excercise2f.png Graphic file (type png)
-<use ./images/excercise2f.png>
-Package pdftex.def Info: ./images/excercise2f.png  used on input line 63.
-(pdftex.def)             Requested size: 186.09488pt x 131.51509pt.
-<./images/excercise2t.png, id=88, 243.15843pt x 133.24782pt>
-File: ./images/excercise2t.png Graphic file (type png)
-<use ./images/excercise2t.png>
-Package pdftex.def Info: ./images/excercise2t.png  used on input line 70.
-(pdftex.def)             Requested size: 186.09488pt x 101.97693pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <./images/excercise2f.png>]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 74.
+[3] [4]
+Overfull \hbox (50.48047pt too wide) in paragraph at lines 255--270
+ [][] 
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 74.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 74.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 74.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[5] [6]
+Overfull \hbox (50.48047pt too wide) in paragraph at lines 366--381
+ [][] 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 75.
+[7]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 75.
+[8] [9]
+<./images/excercise2f.png, id=146, 225.84375pt x 159.59625pt>
+File: ./images/excercise2f.png Graphic file (type png)
+<use ./images/excercise2f.png>
+Package pdftex.def Info: ./images/excercise2f.png  used on input line 412.
+(pdftex.def)             Requested size: 186.09488pt x 131.51509pt.
+<./images/excercise2t.png, id=149, 243.15843pt x 133.24782pt>
+File: ./images/excercise2t.png Graphic file (type png)
+<use ./images/excercise2t.png>
+Package pdftex.def Info: ./images/excercise2t.png  used on input line 419.
+(pdftex.def)             Requested size: 186.09488pt x 101.97693pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 75.
+(hyperref)                removing `math shift' on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 76.
+(hyperref)                removing `\perp' on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 76.
+(hyperref)                removed on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 76.
+(hyperref)                removed on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 76.
+(hyperref)                removed on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 76.
+(hyperref)                removing `\perp' on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
+(hyperref)                removing `math shift' on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 77.
+(hyperref)                removing `math shift' on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 77.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 77.
+(hyperref)                removing `\perp' on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 77.
+(hyperref)                removed on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -1.95872pt
-(hyperref)                removed on input line 77.
+(hyperref)                removed on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\perp' on input line 77.
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 77.
+(hyperref)                removing `\perp' on input line 424.
 
-<./images/excercise3f.png, id=99, 185.19188pt x 177.66376pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 424.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern -1.95872pt
+(hyperref)                removed on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\perp' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 426.
+
+<./images/excercise3f.png, id=151, 185.19188pt x 177.66376pt>
 File: ./images/excercise3f.png Graphic file (type png)
 <use ./images/excercise3f.png>
-Package pdftex.def Info: ./images/excercise3f.png  used on input line 82.
+Package pdftex.def Info: ./images/excercise3f.png  used on input line 431.
 (pdftex.def)             Requested size: 162.83833pt x 156.21988pt.
-[3 <./images/excercise2t.png> <./images/excercise3f.png>] [4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
-
-(Tarea4_Rivas_Vega_Saul_Ivan.aux
+[10 <./images/excercise2f.png> <./images/excercise2t.png>] [11 <./images/excerc
+ise3f.png>] [12] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
+ (Tarea4_Rivas_Vega_Saul_Ivan.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
 Package rerunfilecheck Info: File `Tarea4_Rivas_Vega_Saul_Ivan.out' has not cha
 nged.
 (rerunfilecheck)             Checksum: 83233DB9CE38EFF286945BA1DB0A1CA1;958.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 460.
  ) 
 Here is how much of TeX's memory you used:
- 20090 strings out of 492966
- 358829 string characters out of 3143728
- 466923 words of memory out of 3000000
- 23597 multiletter control sequences out of 15000+200000
- 12403 words of font info for 48 fonts, out of 3000000 for 9000
+ 20912 strings out of 492966
+ 377627 string characters out of 3143728
+ 502583 words of memory out of 3000000
+ 24365 multiletter control sequences out of 15000+200000
+ 14862 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,54p,679b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,54p,868b,949s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MikTex/fonts/type1/p
 ublic/amsfonts/cm/cmmi12.pfb><D:/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pf
 b><D:/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MikTex/fonts/type1/pu
 blic/amsfonts/cm/cmr17.pfb><D:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 >
-Output written on Tarea4_Rivas_Vega_Saul_Ivan.pdf (5 pages, 115139 bytes).
+Output written on Tarea4_Rivas_Vega_Saul_Ivan.pdf (13 pages, 144445 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
  172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
