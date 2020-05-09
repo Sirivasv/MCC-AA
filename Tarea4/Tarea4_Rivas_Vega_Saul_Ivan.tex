@@ -481,18 +481,18 @@ Imagina una clínica que ayuda a pacientes con ébola en un área afectada por e
 	\item $P(D=\text{verdadero}|V=\text{falso})=0.0$
 \end{itemize}
 Con estas probabilidades y el modelo gráfico de la Figura~\ref{fig2}, realiza lo siguiente:
-\subsection{} Escribe la distribución conjunta de la red bayesiana en función de las probabilidades condicionales.
+\subsection{a)} Escribe la distribución conjunta de la red bayesiana en función de las probabilidades condicionales.
 \begin{equation}
 	P(E,F,S,V,C,D)=P(E)P(F|E)P(S|E)P(V|F,S)P(C|S)P(D|V)
 \end{equation}
-\subsection{} Si un paciente es llevado al doctor ($D=\text{verdadero}$), usando un paquete de software calcula la probabilidad de que no tenga ébola  ($P(E=\text{falso}|D=\text{verdadero})$).\\
+\subsection{b)} Si un paciente es llevado al doctor ($D=\text{verdadero}$), usando un paquete de software calcula la probabilidad de que no tenga ébola  ($P(E=\text{falso}|D=\text{verdadero})$).\\
 En la siguiente liga se encuentra un notebook en Colab describiendo el proceso:\\
 \url{https://colab.research.google.com/drive/1BlZamlzMlFqEgX02bqvozlM1_Kb2VQ2D?usp=sharing}\\
 El resultado es:
 \begin{equation}
 P(E=\text{falso}|D=\text{verdadero})=0.9248
 \end{equation}
-\subsection{} Convierte a la red bayesiana en un modelo gráfico no dirigido (campo aleatorio de Markov) y dibújalo. Captura tantas relaciones de independencia condicional como sea posible.
+\subsection{c)} Convierte a la red bayesiana en un modelo gráfico no dirigido (campo aleatorio de Markov) y dibújalo. Captura tantas relaciones de independencia condicional como sea posible.
  \begin{figure}[h!]
 	\begin{center}
 		\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=3cm,
@@ -604,9 +604,274 @@ Observando a $F$ y $S$ obteniendo a la figura \ref{fig:ej2004}, $E$ se desconect
 	\item $D  \perp\!\!\!\perp C | F,S$
 	\item $V  \perp\!\!\!\perp C | F,S$
 \end{itemize}
-\subsection{} Debido a una campaña de concientización de la salud, las personas son alentadas a visitar la clínica en caso de que tengan fiebre. Esto incrementa la cantidad de visitas de personas con fiebre sin importar el estado de cualquier otra variable.
+\subsection{d)} Debido a una campaña de concientización de la salud, las personas son alentadas a visitar la clínica en caso de que tengan fiebre. Esto incrementa la cantidad de visitas de personas con fiebre sin importar el estado de cualquier otra variable.
 \subsubsection{} ¿Qué probabilidades condicionales en la red se modifican debido a este cambio y en qué sentido?
-\subsubsection{} Describe cualquier efecto que esto tenga en la proporción de personas con complicaciones que visiten la clínica. Menciona exactamente qué probabilidades condicionales usaste para llegar a tu conclusión.
-\subsection{} Asume que alguien que no tiene fiebre va al doctor, ¿qué relación de independencia condicional existe en la distribución que no puede ser descubierta a través del grafo solamente?
- \subsection{Opcional} Calcula $P(V|E=\text{verdadero})$ usando el método de eliminación de variables, describiendo de forma detallada el procedimiento que seguiste (2 puntos extras).
+\begin{itemize}
+	\item $P(V=\text{verdadero}|F=\text{verdadero},S)$ aumenta.
+	\item $P(V=\text{falso}|F=\text{verdadero},S)$ disminuye.
+	\item $P(V=\text{verdadero}|F=\text{falso},S=\text{verdadero})$ disminuye.
+\end{itemize}
+\subsubsection{} Describe cualquier efecto que esto tenga en la proporción de personas con complicaciones que visiten la clínica. Menciona exactamente qué probabilidades condicionales usaste para llegar a tu conclusión.\\
+
+Como la probabilidad condicional para que el paciente presente complicaciones es:\\ $P(C=\text{verdadero}|S)$\\
+Esta se ve afectada por la proporción de personas con sangrado ya que $P(C=\text{verdadero}|S=\text{verdadero})$ es mucho mayor a $P(C=\text{verdadero}|S=\text{falso})$.
+Ahora la campaña de concientización directamente afecta las visitas a la clínica con personas con fiebre es decir:\\ $P(V=\text{verdadero}|F=\text{verdadero},S)$\\
+La cual aumenta. Sin embargo como no importa el estado de las demás variables significa que pueden llegar mas pacientes que presenten tanto como fiebre como sangrado, es decir:\\
+$P(V=\text{verdadero}|F=\text{verdadero},S=\text{verdadero})$\\
+Como no se especifica la proporción con la que llegarán pacientes con fiebre y sangrado o sin sangrado, no podemos suponer que habrá un efecto significativo en la proporción de personas con complicaciones.\\
+De existir un efecto se requeriría por ejemplo que la campaña estuviera dirigida a personas con Fiebre pero sin sangrado, esto haría que la presencia de complicaciones estuviera en mayor proporción con:\\
+$P(C=\text{verdadero}|S=\text{falso})$\\
+El cual es bastante bajo.\\
+En el caso contrario donde la campaña estuviera dirigida a personas con Fiebre pero con sangrado, esto haría que la presencia de complicaciones estuviera en mayor proporción con:\\
+$P(C=\text{verdadero}|S=\text{verdadero})$\\
+El cual es mayor.\\
+\subsection{e)} Asume que alguien que no tiene fiebre va al doctor, ¿qué relación de independencia condicional existe en la distribución que no puede ser descubierta a través del grafo solamente?
+ \subsection{Opcional} Calcula $P(V|E=\text{verdadero})$ usando el método de eliminación de variables, describiendo de forma detallada el procedimiento que seguiste (2 puntos extras).\\
+ Del grafo y las probabilidades dadas, podemos obtener las tablas de valores para cada nodo:\\
+ \begin{table}[h!]
+ 	\centering
+ 	\begin{tabular}{|c|c|}
+ 		\hline
+ 		\rowcolor[gray]{.8}
+ 		\multicolumn{2}{|c|}{$P(E)$}  \\\hline %
+ 		$P(E=\text{verdadero})$ & $0.01$\\\hline
+ 		$P(E=\text{falso})$ & $0.99$\\\hline
+ 	\end{tabular}
+ 	\caption{Tabla de valores para la variable $\pmb{E}$, son \textbf{2}.}
+ 	\label{tab:ej3001}
+ \end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$E$&$P(F=\text{verdadero}|E)$&$P(F=\text{falso}|E)$ \\\hline %
+		verdadero & $0.6$ &$0.4$\\\hline
+		falso & $0.1$ &$0.9$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{F}$, son \textbf{4} ($E\times F=2\times 2$).}
+	\label{tab:ej3002}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$E$&$P(S=\text{verdadero}|E)$&$P(S=\text{falso}|E)$ \\\hline %
+		verdadero & $0.8$ &$0.2$\\\hline
+		falso & $0.05$ &$0.95$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{S}$, son \textbf{4} ($E\times S=2\times 2$).}
+	\label{tab:ej3003}
+\end{table}
+ \begin{table}[h!]
+ 	\centering
+ 	\begin{tabular}{|c|c|c|c|}
+ 		\hline
+ 		\rowcolor[gray]{.8}
+ 		$F$&$S$&$P(V=\text{verdadero}|F,S)$&$P(V=\text{falso}|F,S)$ \\\hline %
+ 		verdadero & verdadero & $0.8$ &$0.2$\\\hline
+ 		verdadero & falso & $0.5$ &$0.5$\\\hline
+ 		falso & verdadero & $0.7$ &$0.3$\\\hline
+ 		falso & falso & $0.0$ &$1.0$\\\hline
+ 	\end{tabular}
+ 	\caption{Tabla de valores para la variable $\pmb{V}$, son \textbf{8} ($F\times S\times V=2\times 2 \times 2$).}
+ 	\label{tab:ej3004}
+ \end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$S$&$P(C=\text{verdadero}|S)$&$P(C=\text{falso}|S)$ \\\hline %
+		verdadero & $0.75$ &$0.25$\\\hline
+		falso & $0.1$ &$0.9$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{C}$, son \textbf{4} ($S\times C=2\times 2$).}
+	\label{tab:ej3005}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$V$&$P(D=\text{verdadero}|V)$&$P(D=\text{falso}|V)$ \\\hline %
+		verdadero & $0.6$ &$0.4$\\\hline
+		falso & $0.0$ &$1.0$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para la variable $\pmb{D}$, son \textbf{4} ($V\times D=2\times 2$).}
+	\label{tab:ej3006}
+\end{table}
+\paragraph{} Del inciso a) Obtenemos la distribución Conjunta de toda la red de la cual partimos.
+\begin{equation}
+\begin{split}
+P(E,F,S,V,C,D)&=P(E)P(F|E)P(S|E)P(V|F,S)P(C|S)P(D|V)\\
+& \text{Marginalizamos las variables ocultas($F$,$S$,$C$,$D$)}\\
+P(V,E=\text{verdadero})&=\\
+\sum_{f}\sum_{s}\sum_{c}\sum_{d}[&P(E=\text{verdadero})P(f|E=\text{verdadero})P(s|E=\text{verdadero})P(V|f,s)P(c|s)P(d|V)]\\
+& \text{Redistribuimos}\\
+P(V,E=\text{verdadero})&=\\
+P(E=\text{verdadero})[\sum_{f}&\sum_{s}[P(f|E=\text{verdadero})P(s|E=\text{verdadero})P(V|f,s)\sum_{c}[P(c|s)]\sum_{d}[P(d|V)]]]\\
+\end{split}
+\end{equation}\\
+\paragraph{Eliminamos a $D$}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=\\
+P(E=\text{verdadero})[\sum_{f}&\sum_{s}[P(f|E=\text{verdadero})P(s|E=\text{verdadero})P(V|f,s)\sum_{c}[P(c|s)]\sum_{d}[P(d|V)]]]\\
+\mathcal{F}_d(V)=& \sum_{d}[P(d|V)]\\
+\end{split}
+\end{equation}\\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$V$&$\mathcal{F}_d(V)$ \\\hline %
+		verdadero & $0.6+0.4=1.0$\\\hline
+		falso & $0.0 + 1.0 = 1.0$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para $\mathcal{F}_d(V)$.}
+	\label{tab:ej3007}
+\end{table}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=\\
+P(E=\text{verdadero})[\sum_{f}&\sum_{s}[P(f|E=\text{verdadero})P(s|E=\text{verdadero})P(V|f,s)\sum_{c}[P(c|s)]\mathcal{F}_d(V)]]\\
+\end{split}
+\end{equation}\\
+\paragraph{Eliminamos a $C$}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=\\
+P(E=\text{verdadero})[\sum_{f}&\sum_{s}[P(f|E=\text{verdadero})P(s|E=\text{verdadero})P(V|f,s)\sum_{c}[P(c|s)]\mathcal{F}_d(V)]]\\
+\mathcal{F}_c(s)=& \sum_{c}[P(c|s)]\\
+\end{split}
+\end{equation}\\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$S$&$\mathcal{F}_c(s)$ \\\hline %
+		verdadero & $0.75+0.25=1.0$\\\hline
+		falso & $0.1 +0.9=1.0$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para $\mathcal{F}_c(s)$.}
+	\label{tab:ej3008}
+\end{table}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=\\
+P(E=\text{verdadero})[\sum_{f}[P(f|E=\text{verdadero})&\sum_{s}[P(s|E=\text{verdadero})P(V|f,s)\mathcal{F}_c(s)]\mathcal{F}_d(V)]]\\
+\end{split}
+\end{equation}\\
+\paragraph{Eliminamos a $S$}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=\\
+P(E=\text{verdadero})[\sum_{f}[P(f|E=\text{verdadero})&\sum_{s}[P(s|E=\text{verdadero})P(V|f,s)\mathcal{F}_c(s)]\mathcal{F}_d(V)]]\\
+\mathcal{F}_s(V,f)=& \sum_{s}[P(s|E=\text{verdadero})P(V|f,s)\mathcal{F}_c(s)]\\
+\end{split}
+\end{equation}\\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$S$&$V$&$F$&$P(s|E=\text{verdadero})P(V|f,s)\mathcal{F}_c(s)$ \\\hline %
+		verdadero&verdadero&verdadero & $0.8\times0.8\times1.0=0.64$\\\hline
+		verdadero&verdadero&falso & $0.8\times0.7\times1.0=0.56$\\\hline
+		verdadero&falso&verdadero & $0.8\times0.2\times1.0=0.16$\\\hline
+		verdadero&falso&falso & $0.8\times0.3\times1.0=0.24$\\\hline
+		falso&verdadero&verdadero & $0.2\times0.5\times1.0=0.1$\\\hline
+		falso&verdadero&falso & $0.2\times0.0\times1.0=0.0$\\\hline
+		falso&falso&verdadero & $0.2\times0.5\times1.0=0.1$\\\hline
+		falso&falso&falso & $0.2\times1.0\times1.0=0.2$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para construir $\mathcal{F}_s(V,f)$.}
+	\label{tab:ej3009}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$V$&$F$&$\mathcal{F}_s(V,f)$ \\\hline %
+		verdadero&verdadero & $0.64 + 0.1 = 0.74$\\\hline
+		verdadero&falso & $0.56 + 0.0 = 0.56$\\\hline
+		falso&verdadero & $0.16 + 0.1 = 0.26$\\\hline
+		falso&falso & $0.24 + 0.2 = 0.44$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para $\mathcal{F}_s(V,f)$.}
+	\label{tab:ej3010}
+\end{table}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=\\
+P(E=\text{verdadero})[\sum_{f}[P(f|E=\text{verdadero})&\mathcal{F}_s(V,f)]\mathcal{F}_d(V)]\\
+\end{split}
+\end{equation}\\
+\paragraph{Eliminamos a $F$}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=P(E=\text{verdadero})[\sum_{f}[P(f|E=\text{verdadero})\mathcal{F}_s(V,f)]\mathcal{F}_d(V)]\\
+\mathcal{F}_f(V)=& \sum_{f}[P(f|E=\text{verdadero})\mathcal{F}_s(V,f)]\\
+\end{split}
+\end{equation}\\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$F$&$V$&$P(f|E=\text{verdadero})\mathcal{F}_s(V,f)$ \\\hline %
+		verdadero&verdadero & $0.6\times0.74=0.444$\\\hline
+		verdadero&falso & $0.6\times0.26=0.156$\\\hline
+		falso&verdadero & $0.4\times0.56=0.224$\\\hline
+		falso&falso & $0.4\times0.44=0.176$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para construir $\mathcal{F}_f(V)$.}
+	\label{tab:ej3011}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$V$&$\mathcal{F}_f(V)$ \\\hline %
+		verdadero & $0.444+0.224=0.668$\\\hline
+		falso & $0.156+0.176=0.332$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para $\mathcal{F}_f(V)$.}
+	\label{tab:ej3012}
+\end{table}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=P(E=\text{verdadero})[\mathcal{F}_f(V)\mathcal{F}_d(V)]\\
+\end{split}
+\end{equation}\\
+\paragraph{Calculamos $P(V|E=\text{verdadero})$}
+\begin{equation}
+\begin{split}
+P(V,E=\text{verdadero})&=P(E=\text{verdadero})\mathcal{F}_f(V)\mathcal{F}_d(V)\\
+\end{split}
+\end{equation}\\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$V$&$P(E=\text{verdadero})\mathcal{F}_f(V)\mathcal{F}_d(V)$ \\\hline %
+		verdadero & $0.01\times0.668\times1.0=0.00668$\\\hline
+		falso & $0.01\times0.332\times1.0=0.00332$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para calcular $P(V,E=\text{verdadero})$.}
+	\label{tab:ej3013}
+\end{table}
+\begin{equation}
+\begin{split}
+P(V=\text{verdadero}|E=\text{verdadero})&=\frac{0.00668}{0.00668+0.00332}\approx 0.668\\
+P(V=\text{falso}|E=\text{verdadero})&=\frac{0.00332}{0.00668+0.00332}\approx 0.332\\
+\end{split}
+\end{equation}
 \end{document}  
