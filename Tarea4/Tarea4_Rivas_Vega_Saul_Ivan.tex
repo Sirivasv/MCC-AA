@@ -482,8 +482,128 @@ Imagina una clínica que ayuda a pacientes con ébola en un área afectada por e
 \end{itemize}
 Con estas probabilidades y el modelo gráfico de la Figura~\ref{fig2}, realiza lo siguiente:
 \subsection{} Escribe la distribución conjunta de la red bayesiana en función de las probabilidades condicionales.
-\subsection{} Si un paciente es llevado al doctor ($D=\text{verdadero}$), usando un paquete de software calcula la probabilidad de que no tenga ébola  ($P(E=\text{falso}|D=\text{verdadero})$).
+\begin{equation}
+	P(E,F,S,V,C,D)=P(E)P(F|E)P(S|E)P(V|F,S)P(C|S)P(D|V)
+\end{equation}
+\subsection{} Si un paciente es llevado al doctor ($D=\text{verdadero}$), usando un paquete de software calcula la probabilidad de que no tenga ébola  ($P(E=\text{falso}|D=\text{verdadero})$).\\
+En la siguiente liga se encuentra un notebook en Colab describiendo el proceso:\\
+\url{https://colab.research.google.com/drive/1BlZamlzMlFqEgX02bqvozlM1_Kb2VQ2D?usp=sharing}\\
+El resultado es:
+\begin{equation}
+P(E=\text{falso}|D=\text{verdadero})=0.9248
+\end{equation}
 \subsection{} Convierte a la red bayesiana en un modelo gráfico no dirigido (campo aleatorio de Markov) y dibújalo. Captura tantas relaciones de independencia condicional como sea posible.
+ \begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=3cm,
+		thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+		
+		\node[main node] (1) {$E$};
+		\node[main node] (2) [below left of=1] {$F$};
+		\node[main node] (3) [below right of=1] {$S$};
+		\node[main node] (4) [below left of=3] {$V$};
+		\node[main node] (5) [below right of=3] {$C$};
+		\node[main node] (6) [below left of=4] {$D$};
+		
+		\path[every node/.style={font=\sffamily\small}]
+		(1) edge node [left] {}(2)
+		(1) edge node [left] {}(3)
+		(2) edge node [left] {}(4)
+		(2) edge node [left] {}(3)
+		(3) edge node [left] {}(4)
+		(3) edge node [left] {}(5)
+		(4) edge node [left] {}(6);
+		\end{tikzpicture}
+	\end{center}
+	\caption{Modelo gráfico no dirigido (Campo aleatorio de Markov).}
+	\label{fig:ej2001}
+\end{figure}
+\subsubsection{Algunas independencias condicionales para el Campo aleatorio de Markov de la figura ~\ref{fig:ej2001}}
+Si observamos $S$ y retiramos a $S$ junto con todas sus aristas quedamos con:\\
+ \begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=3cm,
+		thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+		
+		\node[main node] (1) {$E$};
+		\node[main node] (2) [below left of=1] {$F$};
+		\node[main node] (4) [below left of=3] {$V$};
+		\node[main node] (5) [below right of=3] {$C$};
+		\node[main node] (6) [below left of=4] {$D$};
+		
+		\path[every node/.style={font=\sffamily\small}]
+		(1) edge node [left] {}(2)
+		(2) edge node [left] {}(4)
+		(4) edge node [left] {}(6);
+		\end{tikzpicture}
+	\end{center}
+	\caption{Campo aleatorio de Markov observando a $S$.}
+	\label{fig:ej2002}
+\end{figure}\\
+Observando a $S$ obteniendo a la figura \ref{fig:ej2002}, $C$ se desconectó de $E$, $F$, $V$ y $D$, por lo que obtenemos las siguientes independencias condicionales:
+\begin{itemize}
+	\item $E  \perp\!\!\!\perp C | S$
+	\item $F  \perp\!\!\!\perp C | S$
+	\item $V  \perp\!\!\!\perp C | S$
+	\item $D  \perp\!\!\!\perp C | S$
+\end{itemize}
+Si observamos $V$ y retiramos a $V$ junto con todas sus aristas quedamos con:\\
+ \begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=3cm,
+		thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+		
+		\node[main node] (1) {$E$};
+		\node[main node] (2) [below left of=1] {$F$};
+		\node[main node] (3) [below right of=1] {$S$};
+		\node[main node] (5) [below right of=3] {$C$};
+		\node[main node] (6) [below left of=4] {$D$};
+		
+		\path[every node/.style={font=\sffamily\small}]
+		(1) edge node [left] {}(2)
+		(1) edge node [left] {}(3)
+		(2) edge node [left] {}(3)
+		(3) edge node [left] {}(5);
+		\end{tikzpicture}
+	\end{center}
+	\caption{Campo aleatorio de Markov observando a $V$.}
+	\label{fig:ej2003}
+\end{figure}\\
+Observando a $V$ obteniendo a la figura \ref{fig:ej2003}, $D$ se desconectó de $E$, $F$, $S$ y $C$, por lo que obtenemos las siguientes independencias condicionales:\\
+
+\begin{itemize}
+	\item $E  \perp\!\!\!\perp D | V$
+	\item $F  \perp\!\!\!\perp D | V$
+	\item $S  \perp\!\!\!\perp D | V$
+	\item $C  \perp\!\!\!\perp D | V$
+\end{itemize}
+\pagebreak
+Si observamos a $F$ y a $S$, retirándolos junto con todas sus aristas quedamos con:\\
+\begin{figure}[h!]
+	\begin{center}
+		\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=3cm,
+		thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+		
+		\node[main node] (1) {$E$};
+		\node[main node] (4) [below left of=3] {$V$};
+		\node[main node] (5) [below right of=3] {$C$};
+		\node[main node] (6) [below left of=4] {$D$};
+		
+		\path[every node/.style={font=\sffamily\small}]
+		(4) edge node [left] {}(6);
+		\end{tikzpicture}
+	\end{center}
+	\caption{Campo aleatorio de Markov observando a $F$ y $S$.}
+	\label{fig:ej2004}
+\end{figure}\\
+Observando a $F$ y $S$ obteniendo a la figura \ref{fig:ej2004}, $E$ se desconectó de $D$, $V$ y $C$. A su vez se desconectó $C$ de $V$ y $D$, por lo que obtenemos las siguientes independencias condicionales:
+\begin{itemize}
+	\item $C  \perp\!\!\!\perp E | F,S$
+	\item $D  \perp\!\!\!\perp E | F,S$
+	\item $V  \perp\!\!\!\perp E | F,S$
+	\item $D  \perp\!\!\!\perp C | F,S$
+	\item $V  \perp\!\!\!\perp C | F,S$
+\end{itemize}
 \subsection{} Debido a una campaña de concientización de la salud, las personas son alentadas a visitar la clínica en caso de que tengan fiebre. Esto incrementa la cantidad de visitas de personas con fiebre sin importar el estado de cualquier otra variable.
 \subsubsection{} ¿Qué probabilidades condicionales en la red se modifican debido a este cambio y en qué sentido?
 \subsubsection{} Describe cualquier efecto que esto tenga en la proporción de personas con complicaciones que visiten la clínica. Menciona exactamente qué probabilidades condicionales usaste para llegar a tu conclusión.
