@@ -625,7 +625,91 @@ El cual es bastante bajo.\\
 En el caso contrario donde la campaña estuviera dirigida a personas con Fiebre pero con sangrado, esto haría que la presencia de complicaciones estuviera en mayor proporción con:\\
 $P(C=\text{verdadero}|S=\text{verdadero})$\\
 El cual es mayor.\\
-\subsection{e)} Asume que alguien que no tiene fiebre va al doctor, ¿qué relación de independencia condicional existe en la distribución que no puede ser descubierta a través del grafo solamente?
+\subsection{e)} Asume que alguien que no tiene fiebre va al doctor, ¿qué relación de independencia condicional existe en la distribución que no puede ser descubierta a través del grafo solamente?\\
+En este caso estamos observando a $F=falso$ y a $D=verdadero$.\\
+Probemos que $E  \perp\!\!\!\perp V | F=falso,D=verdadero$ es la independencia condicional que no puede ser descubierta a través del grafo solamente.\\
+Dados $ F=falso,D=verdadero$ entre $E$ y $V$ existen 2 caminos, $[\{E,F,V\},\{E,S,V\}]$.
+El camino $\{E,F,V\}$ siendo en si una tripleta, es inactiva puesto que es una cadena causal y la variable observada $F$ esta en medio. El segundo camino $\{E,S,V\}$ también es una cadena causal pero la variable en medio no es observada, por lo tanto es un camino activo.\\
+Al existir al menos un camino activo entre $E$ y $V$ no podemos garantizar la independencia condicional $E  \perp\!\!\!\perp V | F=falso,D=verdadero$ con solo el grafo.\\
+Sin embargo probemos que con los valores en las tablas al marginalizar es verdadero que $E  \perp\!\!\!\perp V | F=falso,D=verdadero$.\\
+Hay que probar:\\
+\begin{equation}
+	\begin{split}
+	P(E,V|F=falso,D=verdadero)&=P(E|F=falso,D=verdadero)P(V|F=falso,D=verdadero)\\
+	&\text{Es decir:}\\
+	\forall{e,v\in \{\text{verdadero}, \text{falso}\}}&P(e,v|F=falso,D=verdadero)=\\
+	&P(e|F=falso,D=verdadero)P(v|F=falso,D=verdadero)\\
+	\end{split}
+\end{equation}
+Utilizando la paqueteria de software obtenemos los siguientes resultados para $P(E,V|F=falso,D=verdadero)$, $P(E|F=falso,D=verdadero)$ y $P(V|F=falso,D=verdadero)$\\
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$E$&$V$&$P(E,V|F=falso,D=verdadero)$ \\\hline %
+		verdadero&verdadero & $0.067$\\\hline
+		verdadero&falso & $0$\\\hline
+		falso&verdadero & $0.9330$\\\hline
+		falso&falso & $0$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para $P(E,V|F=falso,D=verdadero)$.}
+	\label{tab:ej3e010}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$E$&$P(E|F=falso,D=verdadero)$ \\\hline %
+		verdadero & $0.067$\\\hline
+		falso & $0.9330$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para $P(E|F=falso,D=verdadero)$.}
+	\label{tab:ej3e002}
+\end{table}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[gray]{.8}
+		$V$&$P(V|F=falso,D=verdadero)$ \\\hline %
+		verdadero & $1$\\\hline
+		falso & $0$\\\hline
+	\end{tabular}
+	\caption{Tabla de valores para $P(V|F=falso,D=verdadero)$.}
+	\label{tab:ej3e003}
+\end{table}
+Realizamos los cálculos:
+\begin{equation}
+\begin{split}
+P(E=verdadero,V=verdadero|F=falso,D=verdadero)=&0.067\\
+P(E=verdadero|F=falso,D=verdadero)P(V=verdadero|F=falso,D=verdadero)=&\\
+(0.067\times 1) =& 0.067\\
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+P(E=verdadero,V=falso|F=falso,D=verdadero)=&0\\
+P(E=verdadero|F=falso,D=verdadero)P(V=falso|F=falso,D=verdadero)=&\\
+(0.067\times 0) =& 0\\
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+P(E=falso,V=verdadero|F=falso,D=verdadero)=&0.9330\\
+P(E=falso|F=falso,D=verdadero)P(V=verdadero|F=falso,D=verdadero)=&\\
+(0.9330\times 1) =& 0.9330\\
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+P(E=falso,V=falso|F=falso,D=verdadero)=&0\\
+P(E=falso|F=falso,D=verdadero)P(V=falso|F=falso,D=verdadero)=&\\
+(0.9330\times 0) =& 0\\
+\end{split}
+\end{equation}
+Finalmente como en todas las ecuaciones se cumplió la igualdad decimos que $E  \perp\!\!\!\perp V | F=falso,D=verdadero$ y esto no se pudo descubrir usando al grafo únicamente.
  \subsection{Opcional} Calcula $P(V|E=\text{verdadero})$ usando el método de eliminación de variables, describiendo de forma detallada el procedimiento que seguiste (2 puntos extras).\\
  Del grafo y las probabilidades dadas, podemos obtener las tablas de valores para cada nodo:\\
  \begin{table}[h!]
@@ -870,8 +954,8 @@ P(V,E=\text{verdadero})&=P(E=\text{verdadero})\mathcal{F}_f(V)\mathcal{F}_d(V)\\
 \end{table}
 \begin{equation}
 \begin{split}
-P(V=\text{verdadero}|E=\text{verdadero})&=\frac{0.00668}{0.00668+0.00332}\approx 0.668\\
-P(V=\text{falso}|E=\text{verdadero})&=\frac{0.00332}{0.00668+0.00332}\approx 0.332\\
+P(V=\text{verdadero}|E=\text{verdadero})&=\frac{0.00668}{0.00668+0.00332}= 0.668\\
+P(V=\text{falso}|E=\text{verdadero})&=\frac{0.00332}{0.00668+0.00332}= 0.332\\
 \end{split}
 \end{equation}
 \end{document}  
