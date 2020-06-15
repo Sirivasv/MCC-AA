@@ -1,0 +1,155 @@
+\begin{thebibliography}{}
+
+\bibitem[Argenti et~al., 2011]{argenti_automatic_2011}
+Argenti, F., Nesi, P., and Pantaleo, G. (2011).
+\newblock Automatic {Transcription} of {Polyphonic} {Music} {Based} on the
+  {Constant}-{Q} {Bispectral} {Analysis}.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  19(6):1610--1630.
+\newblock Conference Name: IEEE Transactions on Audio, Speech, and Language
+  Processing.
+
+\bibitem[Benetos et~al., 2019]{benetos_automatic_2019}
+Benetos, E., Dixon, S., Duan, Z., and Ewert, S. (2019).
+\newblock Automatic {Music} {Transcription}: {An} {Overview}.
+\newblock {\em IEEE Signal Processing Magazine}, 36(1):20--30.
+\newblock Conference Name: IEEE Signal Processing Magazine.
+
+\bibitem[Benetos et~al., 2013]{benetos_automatic_2013}
+Benetos, E., Dixon, S., Giannoulis, D., Kirchhoff, H., and Klapuri, A. (2013).
+\newblock Automatic music transcription: challenges and future directions.
+\newblock {\em Journal of Intelligent Information Systems}, 41(3):407--434.
+\newblock Company: Springer Distributor: Springer Institution: Springer Label:
+  Springer Number: 3 Publisher: Springer US.
+
+\bibitem[Bogdanov et~al., 2013]{bogdanov_essentia_2013}
+Bogdanov, D., Wack, N., Gómez, E., Gulati, S., Herrera, P., Mayor, O., Roma,
+  G., Salamon, J., Zapata, J., and Serra, X. (2013).
+\newblock {ESSENTIA}: an {Audio} {Analysis} {Library} for {Music} {Information}
+  {Retrieval}.
+\newblock In {\em Proc. International Society for Music Information Retrieval
+  Conference}.
+
+\bibitem[Brown, 1991]{brown_calculation_1991}
+Brown, J.~C. (1991).
+\newblock Calculation of a constant {Q} spectral transform.
+\newblock {\em The Journal of the Acoustical Society of America},
+  89(1):425--434.
+
+\bibitem[Drugman et~al., 2018]{drugman_traditional_2018}
+Drugman, T., Huybrechts, G., Klimkov, V., and Moinet, A. (2018).
+\newblock Traditional {Machine} {Learning} for {Pitch} {Detection}.
+\newblock {\em IEEE Signal Processing Letters}, 25(11):1745--1749.
+\newblock Conference Name: IEEE Signal Processing Letters.
+
+\bibitem[Engel et~al., 2017]{engel_neural_2017}
+Engel, J., Resnick, C., Roberts, A., Dieleman, S., Eck, D., Simonyan, K., and
+  Norouzi, M. (2017).
+\newblock Neural {Audio} {Synthesis} of {Musical} {Notes} with {WaveNet}
+  {Autoencoders}.
+\newblock {\em arXiv:1704.01279 [cs]}.
+\newblock arXiv: 1704.01279.
+
+\bibitem[Fuhrmann, 2012]{fuhrmann_automatic_nodate}
+Fuhrmann, F. (2012).
+\newblock Automatic musical instrument recognition from polyphonic music audio
+  signals.
+\newblock {\em Doctoral dissertation}, page 265.
+
+\bibitem[Gerhard, 2003]{gerhard_pitch_2003}
+Gerhard, D. (2003).
+\newblock {\em Pitch {Extraction} and {Fundamental} {Frequency}: {History} and
+  {Current} {Techniques}}.
+\newblock Department of Computer Science, University of Regina.
+\newblock Journal Abbreviation: Department of Computer Science, University of
+  Regina, Regina, Canada Publication Title: Department of Computer Science,
+  University of Regina, Regina, Canada.
+
+\bibitem[Gururani et~al., 2019]{Gururani2019AnAM}
+Gururani, S., Sharma, M., and Lerch, A. (2019).
+\newblock An attention mechanism for musical instrument recognition.
+\newblock In {\em Proc. International Society for Music Information Retrieval
+  Conference}.
+
+\bibitem[Hall et~al., 2012]{hall_study_2012}
+Hall, G.~E., Ezzaidi, H., and Bahoura, M. (2012).
+\newblock Study of {Feature} {Categories} for {Musical} {Instrument}
+  {Recognition}.
+\newblock In Hassanien, A.~E., Salem, A.-B.~M., Ramadan, R., and Kim, T.-h.,
+  editors, {\em Advanced {Machine} {Learning} {Technologies} and
+  {Applications}}, Communications in {Computer} and {Information} {Science},
+  pages 152--161, Berlin, Heidelberg. Springer.
+
+\bibitem[Herrera-Boyer et~al., 2006]{herrera-boyer_automatic_2006}
+Herrera-Boyer, P., Klapuri, A., and Davy, M. (2006).
+\newblock Automatic {Classification} of {Pitched} {Musical} {Instrument}
+  {Sounds}.
+\newblock In Klapuri, A. and Davy, M., editors, {\em Signal {Processing}
+  {Methods} for {Music} {Transcription}}, pages 163--200. Springer US, Boston,
+  MA.
+
+\bibitem[Kitahara et~al., 2005]{Kitahara2005InstrumentII}
+Kitahara, T., Goto, M., Komatani, K., Ogata, T., and Okuno, H.~G. (2005).
+\newblock Instrument identification in polyphonic music: Feature weighting with
+  mixed sounds, pitch-dependent timbre modeling, and use of musical context.
+\newblock In {\em Proc. International Society for Music Information Retrieval
+  Conference}.
+
+\bibitem[{M}c{F}ee et~al., 2015]{brian_mcfee-proc-scipy-2015}
+{M}c{F}ee, B., {R}affel, C., {L}iang, D., {D}aniel, E., {M}c{V}icar, M.,
+  {B}attenberg, E., and {N}ieto, O. (2015).
+\newblock librosa: {A}udio and {M}usic {S}ignal {A}nalysis in {P}ython.
+\newblock In {K}athryn {H}uff and {J}ames {B}ergstra, editors, {\em
+  {P}roceedings of the 14th {P}ython in {S}cience {C}onference}, pages 18 --
+  24.
+
+\bibitem[Müller and Zalkow, 2019]{muller_fmp_2019}
+Müller, M. and Zalkow, F. (2019).
+\newblock {FMP} {Notebooks}: {Educational} {Material} for {Teaching} and
+  {Learning} {Fundamentals} of {Music} {Processing}.
+\newblock In {\em Proceedings of the {International} {Conference} on {Music}
+  {Information} {Retrieval} ({ISMIR})}, Delft, The Netherlands.
+
+\bibitem[Rao and Ghosh, 2017]{rao_pitch_2017}
+Rao, M. V.~A. and Ghosh, P.~K. (2017).
+\newblock Pitch prediction from {Mel}-frequency cepstral coefficients using
+  sparse spectrum recovery.
+\newblock In {\em 2017 {Twenty}-third {National} {Conference} on
+  {Communications} ({NCC})}, pages 1--6.
+
+\bibitem[Salamon and G{\'o}mez, 2012]{Salamon2012MelodyEF}
+Salamon, J. and G{\'o}mez, E. (2012).
+\newblock Melody extraction from polyphonic music signals using pitch contour
+  characteristics.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  20:1759--1770.
+
+\bibitem[Schnupp et~al., 2011]{schnupp_auditory_2011}
+Schnupp, J., Nelken, I., and King, A. (2011).
+\newblock {\em Auditory neuroscience: {Making} sense of sound}.
+\newblock Auditory neuroscience: {Making} sense of sound. MIT Press, Cambridge,
+  MA, US.
+\newblock Pages: x, 356.
+
+\bibitem[Schoerkhuber and Anssi, 2010]{schoerkhuber_constant-q_2010}
+Schoerkhuber, C. and Anssi, K. (2010).
+\newblock Constant-{Q} transform toolbox for music processing.
+\newblock {\em 7th Sound and Music Computing Conference}.
+
+\bibitem[Siedenburg et~al., 2019]{siedenburg_timbre_2019}
+Siedenburg, K., Saitis, C., McAdams, S., Popper, A.~N., and Fay, R.~R., editors
+  (2019).
+\newblock {\em Timbre: {Acoustics}, {Perception}, and {Cognition}}.
+\newblock Springer {Handbook} of {Auditory} {Research}. Springer International
+  Publishing.
+
+\bibitem[Stol et~al., 2011]{stol_importance_2011}
+Stol, K.-J., Ali~Babar, M., and Avgeriou, P. (2011).
+\newblock The {Importance} of {Architectural} {Knowledge} in {Integrating}
+  {Open} {Source} {Software}.
+\newblock In Hissam, S.~A., Russo, B., de~Mendonça~Neto, M.~G., and Kon, F.,
+  editors, {\em Open {Source} {Systems}: {Grounding} {Research}}, {IFIP}
+  {Advances} in {Information} and {Communication} {Technology}, pages 142--158,
+  Berlin, Heidelberg. Springer.
+
+\end{thebibliography}
