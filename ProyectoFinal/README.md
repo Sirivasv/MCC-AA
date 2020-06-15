@@ -1,4 +1,5 @@
 # Reporte Final Aprendizaje Automatizado
+https://github.com/Sirivasv/MCC-AA/blob/master/ProyectoFinal/latex/TISMIRtemplate.pdf
 
 # Descarga del Dataset Completo (40+GB)
 https://magenta.tensorflow.org/datasets/nsynth#instrument-classes
