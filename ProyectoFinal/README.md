@@ -12,3 +12,6 @@ https://colab.research.google.com/drive/1NcyNzKjgONhlmHEuIdWb67d3MGnz05eI?usp=sh
 
 # Evaluación Empírica
 https://colab.research.google.com/drive/1UqCR0zx6se6Go1ZHXuzgFjn01IHa3-eV?usp=sharing
+
+# Presentación final
+https://docs.google.com/presentation/d/1xMIzk_UIBOG3w5R-Jm9oBevp_OEt8-nWKTHc1Po3FPI/edit?usp=sharing
