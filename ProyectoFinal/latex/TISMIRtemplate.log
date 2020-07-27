@@ -1,34 +1,351 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2020.1.24)  15 JUN 2020 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.7.27)  27 JUL 2020 16:39
 entering extended mode
-**./TISMIRtemplate.tex
-(TISMIRtemplate.tex
-LaTeX2e <2018-04-01> patch level 5
-(D:\MikTex\tex\latex\base\article.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**TISMIRtemplate.tex
+(./TISMIRtemplate.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(D:\MikTex\tex\latex\base\size10.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (D:\MikTex\tex\latex\base\inputenc.sty
-Package: inputenc 2018/04/06 v1.3b Input encoding file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
-(tismir.sty (D:\MikTex\tex\latex\inconsolata\inconsolata.sty
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) (./tismir.sty
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/inconsolata.sty
 Package: inconsolata 2017/01/04 v1.112
 
 `inconsolata-zi4' v1.112, 2017/01/04 Text macros for Inconsolata (msharpe)
-(D:\MikTex\tex\latex\base\textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -42,13 +359,14 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
- (D:\MikTex\tex\latex\base\ts1enc.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(D:\MikTex\tex\latex\base\ts1enc.dfu
-File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -118,7 +436,6 @@ File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+25E6 (decimal 9702)
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+FEFF (decimal 65279)
 ))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
@@ -184,21 +501,21 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(D:\MikTex\tex\latex\xkeyval\xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(D:\MikTex\tex\generic\xkeyval\xkeyval.tex
-(D:\MikTex\tex\generic\xkeyval\xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks16
 \XKV@tempa@toks=\toks17
 
-(D:\MikTex\tex\generic\xkeyval\keyval.tex))
-\XKV@depth=\count88
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count87
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\zifour@ocount=\count89
+\zifour@ocount=\count88
 )
-(D:\MikTex\tex\latex\fourier\fourier.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier.sty
 Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
 Now handling font encoding FML ...
 ... no UTF-8 mapping file for font encoding FML
@@ -206,14 +523,15 @@ Now handling font encoding FMS ...
 ... no UTF-8 mapping file for font encoding FMS
 Now handling font encoding FMX ...
 ... no UTF-8 mapping file for font encoding FMX
- (D:\MikTex\tex\latex\base\fontenc.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(D:\MikTex\tex\latex\base\t1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(D:\MikTex\tex\latex\fourier\fourier-orns.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier-orns.sty
 Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
 )
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
@@ -312,31 +630,31 @@ LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 \symUfutm=\mathgroup5
 )
-(D:\MikTex\tex\latex\quattrocento\quattrocento.sty
+(/usr/share/texlive/texmf-dist/tex/latex/quattrocento/quattrocento.sty
 Package: quattrocento 2012/11/24 (Bob Tennent) Supports Quattrocento(Sans) font
 s for all LaTeX engines. 
 
-(D:\MikTex\tex\generic\ifxetex\ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(D:\MikTex\tex\generic\oberdiek\ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(D:\MikTex\tex\latex\base\fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 )
-(D:\MikTex\tex\latex\fontaxes\fontaxes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 ))
-(D:\MikTex\tex\latex\psnfss\charter.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/charter.sty
 Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
 )
-(D:\MikTex\tex\latex\abstract\abstract.sty
+(/usr/share/texlive/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
 \abstitleskip=\skip43
 \absleftindent=\skip44
@@ -344,13 +662,13 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparindent=\skip46
 \absparsep=\skip47
 )
-(D:\MikTex\tex\latex\titling\titling.sty
+(/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip48
 \thanksmargin=\skip49
 \droptitle=\skip50
 )
-(D:\MikTex\tex\latex\titlesec\titlesec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip51
@@ -362,7 +680,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen106
 \titlewidthfirst=\dimen107
 )
-(D:\MikTex\tex\latex\fancyhdr\fancyhdr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip53
@@ -375,11 +693,11 @@ s
 \f@nch@O@olf=\skip60
 \f@nch@O@orf=\skip61
 )
-(D:\MikTex\tex\latex\footmisc\footmisc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks19
 \footnotemargin=\dimen108
-\c@pp@next@reset=\count90
+\c@pp@next@reset=\count89
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -389,17 +707,19 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-(D:\MikTex\tex\latex\xpatch\xpatch.sty (D:\MikTex\tex\latex\l3kernel\expl3.sty
-Package: expl3 2018-09-24 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/02/21 L3 programming layer (loader) 
 
-(D:\MikTex\tex\latex\l3kernel\expl3-code.tex
-Package: expl3 2018-09-24 L3 programming layer (code)
-\c_max_int=\count91
-\l_tmpa_int=\count92
-\l_tmpb_int=\count93
-\g_tmpa_int=\count94
-\g_tmpb_int=\count95
-\g__kernel_prg_map_int=\count96
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count90
+\l_tmpa_int=\count91
+\l_tmpb_int=\count92
+\g_tmpa_int=\count93
+\g_tmpb_int=\count94
+\g__intarray_font_int=\count95
+\g__prg_map_int=\count96
 \c_log_iow=\count97
 \l_iow_line_count_int=\count98
 \l__iow_line_target_int=\count99
@@ -424,32 +744,31 @@ Package: expl3 2018-09-24 L3 programming layer (code)
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
 \l_keys_choice_int=\count102
-\l__intarray_loop_int=\count103
-\c__intarray_sp_dim=\dimen115
-\g__intarray_font_int=\count104
-\c__fp_leading_shift_int=\count105
-\c__fp_middle_shift_int=\count106
-\c__fp_trailing_shift_int=\count107
-\c__fp_big_leading_shift_int=\count108
-\c__fp_big_middle_shift_int=\count109
-\c__fp_big_trailing_shift_int=\count110
-\c__fp_Bigg_leading_shift_int=\count111
-\c__fp_Bigg_middle_shift_int=\count112
-\c__fp_Bigg_trailing_shift_int=\count113
-\c__kernel_randint_max_int=\count114
-\g__fp_array_int=\count115
-\l__fp_array_loop_int=\count116
-\l__sort_length_int=\count117
-\l__sort_min_int=\count118
-\l__sort_top_int=\count119
-\l__sort_max_int=\count120
-\l__sort_true_max_int=\count121
-\l__sort_block_int=\count122
-\l__sort_begin_int=\count123
-\l__sort_end_int=\count124
-\l__sort_A_int=\count125
-\l__sort_B_int=\count126
-\l__sort_C_int=\count127
+\c__fp_leading_shift_int=\count103
+\c__fp_middle_shift_int=\count104
+\c__fp_trailing_shift_int=\count105
+\c__fp_big_leading_shift_int=\count106
+\c__fp_big_middle_shift_int=\count107
+\c__fp_big_trailing_shift_int=\count108
+\c__fp_Bigg_leading_shift_int=\count109
+\c__fp_Bigg_middle_shift_int=\count110
+\c__fp_Bigg_trailing_shift_int=\count111
+\c__fp_rand_size_int=\count112
+\c__fp_rand_four_int=\count113
+\c__fp_rand_eight_int=\count114
+\l__sort_length_int=\count115
+\l__sort_min_int=\count116
+\l__sort_top_int=\count117
+\l__sort_max_int=\count118
+\l__sort_true_max_int=\count119
+\l__sort_block_int=\count120
+\l__sort_begin_int=\count121
+\l__sort_end_int=\count122
+\l__sort_A_int=\count123
+\l__sort_B_int=\count124
+\l__sort_C_int=\count125
+\l__tl_build_start_index_int=\count126
+\l__tl_build_index_int=\count127
 \l__tl_analysis_normal_int=\count128
 \l__tl_analysis_index_int=\count129
 \l__tl_analysis_nesting_int=\count130
@@ -500,23 +819,23 @@ Package: expl3 2018-09-24 L3 programming layer (code)
 \l_tmpb_box=\box29
 \g_tmpa_box=\box30
 \g_tmpb_box=\box31
-\l__box_top_dim=\dimen116
-\l__box_bottom_dim=\dimen117
-\l__box_left_dim=\dimen118
-\l__box_right_dim=\dimen119
-\l__box_top_new_dim=\dimen120
-\l__box_bottom_new_dim=\dimen121
-\l__box_left_new_dim=\dimen122
-\l__box_right_new_dim=\dimen123
+\l__box_top_dim=\dimen115
+\l__box_bottom_dim=\dimen116
+\l__box_left_dim=\dimen117
+\l__box_right_dim=\dimen118
+\l__box_top_new_dim=\dimen119
+\l__box_bottom_new_dim=\dimen120
+\l__box_left_new_dim=\dimen121
+\l__box_right_new_dim=\dimen122
 \l__box_internal_box=\box32
 \l__coffin_internal_box=\box33
-\l__coffin_internal_dim=\dimen124
-\l__coffin_offset_x_dim=\dimen125
-\l__coffin_offset_y_dim=\dimen126
-\l__coffin_x_dim=\dimen127
-\l__coffin_y_dim=\dimen128
-\l__coffin_x_prime_dim=\dimen129
-\l__coffin_y_prime_dim=\dimen130
+\l__coffin_internal_dim=\dimen123
+\l__coffin_offset_x_dim=\dimen124
+\l__coffin_offset_y_dim=\dimen125
+\l__coffin_x_dim=\dimen126
+\l__coffin_y_dim=\dimen127
+\l__coffin_x_prime_dim=\dimen128
+\l__coffin_y_prime_dim=\dimen129
 \c_empty_coffin=\box34
 \l__coffin_aligned_coffin=\box35
 \l__coffin_aligned_internal_coffin=\box36
@@ -525,37 +844,35 @@ Package: expl3 2018-09-24 L3 programming layer (code)
 \l__coffin_display_coffin=\box39
 \l__coffin_display_coord_coffin=\box40
 \l__coffin_display_pole_coffin=\box41
-\l__coffin_display_offset_dim=\dimen131
-\l__coffin_display_x_dim=\dimen132
-\l__coffin_display_y_dim=\dimen133
-\g__file_internal_ior=\read1
-\l__coffin_bounding_shift_dim=\dimen134
-\l__coffin_left_corner_dim=\dimen135
-\l__coffin_right_corner_dim=\dimen136
-\l__coffin_bottom_corner_dim=\dimen137
-\l__coffin_top_corner_dim=\dimen138
-\l__coffin_scaled_total_height_dim=\dimen139
-\l__coffin_scaled_width_dim=\dimen140
-\l__seq_internal_a_int=\count173
-\l__seq_internal_b_int=\count174
+\l__coffin_display_offset_dim=\dimen130
+\l__coffin_display_x_dim=\dimen131
+\l__coffin_display_y_dim=\dimen132
+\l__coffin_bounding_shift_dim=\dimen133
+\l__coffin_left_corner_dim=\dimen134
+\l__coffin_right_corner_dim=\dimen135
+\l__coffin_bottom_corner_dim=\dimen136
+\l__coffin_top_corner_dim=\dimen137
+\l__coffin_scaled_total_height_dim=\dimen138
+\l__coffin_scaled_width_dim=\dimen139
 )
-(D:\MikTex\tex\latex\l3kernel\l3pdfmode.def
-File: l3pdfmode.def 2018-09-24 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count175
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count173
+\l__driver_tmp_box=\box42
 ))
 Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
 
-(D:\MikTex\tex\latex\l3packages\xparse\xparse.sty
-Package: xparse 2018-09-24 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count176
-\g__xparse_grabber_int=\count177
-\l__xparse_m_args_int=\count178
-\l__xparse_mandatory_args_int=\count179
-\l__xparse_v_nesting_int=\count180
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count174
+\g__xparse_grabber_int=\count175
+\l__xparse_m_args_int=\count176
+\l__xparse_mandatory_args_int=\count177
+\l__xparse_v_nesting_int=\count178
 )
-(D:\MikTex\tex\latex\etoolbox\etoolbox.sty
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count181
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count179
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -738,94 +1055,94 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 . Defining command \xshowbibdriver with sig. 'm' on line 193.
 .................................................
 )
-(D:\MikTex\tex\latex\endnotes\endnotes.sty
-\c@endnote=\count182
-\endnotesep=\dimen141
+(/usr/share/texlive/texmf-dist/tex/latex/endnotes/endnotes.sty
+\c@endnote=\count180
+\endnotesep=\dimen140
 \@enotes=\write3
 )
-(D:\MikTex\tex\latex\caption\caption.sty
-Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(D:\MikTex\tex\latex\caption\caption3.sty
-Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen142
-\captionmargin@=\dimen143
-\captionwidth=\dimen144
-\caption@tempdima=\dimen145
-\caption@indent=\dimen146
-\caption@parindent=\dimen147
-\caption@hangindent=\dimen148
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen141
+\captionmargin@=\dimen142
+\captionwidth=\dimen143
+\caption@tempdima=\dimen144
+\caption@indent=\dimen145
+\caption@parindent=\dimen146
+\caption@hangindent=\dimen147
 )
-\c@ContinuedFloat=\count183
+\c@ContinuedFloat=\count181
 )
-(D:\MikTex\tex\latex\enumitem\enumitem.sty
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks20
 \labelindent=\skip68
-\enit@outerparindent=\dimen149
+\enit@outerparindent=\dimen148
 \enit@toks=\toks21
-\enit@inbox=\box42
-\enitdp@description=\count184
+\enit@inbox=\box43
+\enitdp@description=\count182
 )
-(D:\MikTex\tex\latex\natbib\natbib.sty
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip69
 \bibsep=\skip70
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count185
+\c@NAT@ctr=\count183
 ))
-(D:\MikTex\tex\latex\amsmath\amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip71
 
 For additional information on amsmath, use the `?' option.
-(D:\MikTex\tex\latex\amsmath\amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(D:\MikTex\tex\latex\amsmath\amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
-\ex@=\dimen150
+\ex@=\dimen149
 ))
-(D:\MikTex\tex\latex\amsmath\amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen151
+\pmbraise@=\dimen150
 )
-(D:\MikTex\tex\latex\amsmath\amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count186
+\inf@bad=\count184
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count187
-\leftroot@=\count188
+\uproot@=\count185
+\leftroot@=\count186
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count189
-\DOTSCASE@=\count190
+\classnum@=\count187
+\DOTSCASE@=\count188
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box43
-\strutbox@=\box44
-\big@size=\dimen152
+\Mathstrutbox@=\box44
+\strutbox@=\box45
+\big@size=\dimen151
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count191
-\c@MaxMatrixCols=\count192
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
 \dotsspace@=\muskip16
-\c@parentequation=\count193
-\dspbrk@lvl=\count194
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
 \tag@help=\toks23
-\row@=\count195
-\column@=\count196
-\maxfields@=\count197
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
 \andhelp@=\toks24
-\eqnshift@=\dimen153
-\alignsep@=\dimen154
-\tagshift@=\dimen155
-\tagwidth@=\dimen156
-\totwidth@=\dimen157
-\lineht@=\dimen158
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
 \@envbody=\toks25
 \multlinegap=\skip72
 \multlinetaggap=\skip73
@@ -833,14 +1150,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(D:\MikTex\tex\latex\hyperref\hyperref.sty
-Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-(D:\MikTex\tex\generic\oberdiek\hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(D:\MikTex\tex\generic\oberdiek\hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -849,7 +1166,7 @@ Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -857,7 +1174,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -878,114 +1195,116 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(D:\MikTex\tex\latex\oberdiek\auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(D:\MikTex\tex\latex\oberdiek\kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen159
-\Hy@linkcounter=\count198
-\Hy@pagecounter=\count199
+\@linkdim=\dimen158
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
 
-(D:\MikTex\tex\latex\hyperref\pd1enc.def
-File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count266
+\Hy@SavedSpaceFactor=\count198
 
-(D:\MikTex\tex\latex\00miktex\hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4535.
-Package hyperref Info: Link nesting OFF on input line 4540.
-Package hyperref Info: Hyper index ON on input line 4543.
-Package hyperref Info: Plain pages OFF on input line 4550.
-Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count267
- (D:\MikTex\tex\latex\url\url.sty
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count199
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5141.
-\XeTeXLinkMargin=\dimen160
-\Fld@menulength=\count268
-\Field@Width=\dimen161
-\Fld@charsize=\dimen162
-Package hyperref Info: Hyper figures OFF on input line 6396.
-Package hyperref Info: Link nesting OFF on input line 6401.
-Package hyperref Info: Hyper index ON on input line 6404.
-Package hyperref Info: backreferencing OFF on input line 6411.
-Package hyperref Info: Link coloring OFF on input line 6416.
-Package hyperref Info: Link coloring with OCG OFF on input line 6421.
-Package hyperref Info: PDF/A mode OFF on input line 6426.
-LaTeX Info: Redefining \ref on input line 6466.
-LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count269
-\c@Item=\count270
-\c@Hfootnote=\count271
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen159
+\Fld@menulength=\count266
+\Field@Width=\dimen160
+\Fld@charsize=\dimen161
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(D:\MikTex\tex\latex\hyperref\hpdftex.def
-File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count272
-\c@bookmark@seq@number=\count273
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
 
-(D:\MikTex\tex\latex\oberdiek\rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip74
 )
-(D:\MikTex\tex\latex\graphics\graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(D:\MikTex\tex\latex\graphics\graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(D:\MikTex\tex\latex\graphics\trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(D:\MikTex\tex\latex\graphics-cfg\graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(D:\MikTex\tex\latex\graphics-def\pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen163
-\Gin@req@width=\dimen164
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 )
-(D:\MikTex\tex\latex\booktabs\booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen165
-\lightrulewidth=\dimen166
-\cmidrulewidth=\dimen167
-\belowrulesep=\dimen168
-\belowbottomsep=\dimen169
-\aboverulesep=\dimen170
-\abovetopsep=\dimen171
-\cmidrulesep=\dimen172
-\cmidrulekern=\dimen173
-\defaultaddspace=\dimen174
-\@cmidla=\count274
-\@cmidlb=\count275
-\@aboverulesep=\dimen175
-\@belowrulesep=\dimen176
-\@thisruleclass=\count276
-\@lastruleclass=\count277
-\@thisrulewidth=\dimen177
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen164
+\lightrulewidth=\dimen165
+\cmidrulewidth=\dimen166
+\belowrulesep=\dimen167
+\belowbottomsep=\dimen168
+\aboverulesep=\dimen169
+\abovetopsep=\dimen170
+\cmidrulesep=\dimen171
+\cmidrulekern=\dimen172
+\defaultaddspace=\dimen173
+\@cmidla=\count272
+\@cmidlb=\count273
+\@aboverulesep=\dimen174
+\@belowrulesep=\dimen175
+\@thisruleclass=\count274
+\@lastruleclass=\count275
+\@thisrulewidth=\dimen176
 )
-(D:\MikTex\tex\latex\lipsum\lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count278
-) (TISMIRtemplate.aux)
+\c@lips@count=\count276
+)
+(./TISMIRtemplate.aux)
 \openout1 = `TISMIRtemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1002,15 +1321,14 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
-
-(D:\MikTex\tex\latex\base\ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 67.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 67.
 
- (D:\MikTex\tex\latex\fourier\fmlfutm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 67.
@@ -1018,7 +1336,7 @@ LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 67.
 LaTeX Font Info:    Try loading font information for FMS+futm on input line 67.
 
 
-(D:\MikTex\tex\latex\fourier\fmsfutm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
 LaTeX Font Info:    ... okay on input line 67.
@@ -1026,61 +1344,63 @@ LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 67.
 LaTeX Font Info:    Try loading font information for FMX+futm on input line 67.
 
 
-(D:\MikTex\tex\latex\fourier\fmxfutm.fd
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Try loading font information for T1+bch on input line 67.
- (D:\MikTex\tex\latex\psnfss\t1bch.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 )
-(D:\MikTex\tex\latex\upquote\upquote.sty
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-\c@mv@tabular=\count279
-\c@mv@boldtabular=\count280
+\c@mv@tabular=\count277
+\c@mv@boldtabular=\count278
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box45
+\AtBeginShipoutBox=\box46
 Package hyperref Info: Link coloring OFF on input line 67.
 
-(D:\MikTex\tex\latex\hyperref\nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(D:\MikTex\tex\generic\oberdiek\gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count281
+\c@section@level=\count279
 )
 LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
- (TISMIRtemplate.out)
-(TISMIRtemplate.out)
+
+(./TISMIRtemplate.out) (./TISMIRtemplate.out)
 \@outlinefile=\write4
 \openout4 = `TISMIRtemplate.out'.
 
- (D:\MikTex\tex\context\base\supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen178
-\scratchbox=\box46
-\nofMPsegments=\count283
-\nofMParguments=\count284
+\scratchcounter=\count280
+\scratchdimen=\dimen177
+\scratchbox=\box47
+\nofMPsegments=\count281
+\nofMParguments=\count282
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen179
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen178
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
 \everyMPtoPDFconversion=\toks28
-) (D:\MikTex\tex\latex\oberdiek\epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(D:\MikTex\tex\latex\oberdiek\grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1089,11 +1409,15 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for T1+QuattrocentoSans-TLF on
  input line 84.
 
-(D:\MikTex\tex\latex\quattrocento\t1quattrocentosans-tlf.fd
+(/usr/share/texlive/texmf-dist/tex/latex/quattrocento/T1QuattrocentoSans-TLF.fd
 File: T1QuattrocentoSans-TLF.fd 2012/11/07 (autoinst) Font definitions for T1/Q
 uattrocentoSans-TLF.
 )
@@ -1108,14 +1432,13 @@ LaTeX Font Info:    Font shape `T1/QuattrocentoSans-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/QuattrocentoSans-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 84.
 LaTeX Font Info:    Try loading font information for T1+futs on input line 84.
-
-(D:\MikTex\tex\latex\fourier\t1futs.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 84
 .
 
-(D:\MikTex\tex\latex\fourier\fmlfutmi.fd
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1131,7 +1454,8 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 84.
 LaTeX Font Info:    Try loading font information for TS1+bch on input line 84.
- (D:\MikTex\tex\latex\psnfss\ts1bch.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1155,7 +1479,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<tismir.png, id=70, 534.99875pt x 134.5025pt>
+<tismir.png, id=71, 534.99875pt x 134.5025pt>
 File: tismir.png Graphic file (type png)
 <use tismir.png>
 Package pdftex.def Info: tismir.png  used on input line 109.
@@ -1171,11 +1495,11 @@ Package Fancyhdr Warning: \headheight is too small (40.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1{C:/Users/sauli/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./tismir.png>]
-<ExampleConstantQ.png, id=101, 419.5675pt x 281.05pt>
+<ExampleConstantQ.png, id=102, 419.5675pt x 281.05pt>
 File: ExampleConstantQ.png Graphic file (type png)
 <use ExampleConstantQ.png>
 Package pdftex.def Info: ExampleConstantQ.png  used on input line 114.
@@ -1185,7 +1509,7 @@ Package pdftex.def Info: ExampleConstantQ.png  used on input line 114.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2 <./ExampleConstantQ.png>]
-<FurtherTestingScore.png, id=133, 347.04657pt x 69.25874pt>
+<FurtherTestingScore.png, id=134, 347.04657pt x 69.25874pt>
 File: FurtherTestingScore.png Graphic file (type png)
 <use FurtherTestingScore.png>
 Package pdftex.def Info: FurtherTestingScore.png  used on input line 152.
@@ -1195,7 +1519,7 @@ Underfull \hbox (badness 1112) in paragraph at lines 153--153
 [] []|\T1/bch/m/n/10 Score used for fur-ther test-ing, the note
  []
 
-<download.png, id=134, 417.56pt x 714.67pt>
+<download.png, id=135, 417.56pt x 714.67pt>
 File: download.png Graphic file (type png)
 <use download.png>
 Package pdftex.def Info: download.png  used on input line 159.
@@ -1205,7 +1529,7 @@ Overfull \hbox (12.95741pt too wide) in paragraph at lines 159--160
  [] 
  []
 
-<download2.png, id=135, 417.56pt x 714.67pt>
+<download2.png, id=136, 417.56pt x 714.67pt>
 File: download2.png Graphic file (type png)
 <use download2.png>
 Package pdftex.def Info: download2.png  used on input line 166.
@@ -1222,7 +1546,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Try loading font information for T1+zi4 on input line 184.
-(D:\MikTex\tex\latex\inconsolata\t1zi4.fd
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
@@ -1233,7 +1557,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 r /
  []
 
-[3 <./FurtherTestingScore.png> <./download.png>] (TISMIRtemplate.ent
+[3 <./FurtherTestingScore.png> <./download.png>] (./TISMIRtemplate.ent
 Underfull \hbox (badness 3826) in paragraph at lines 17--22
  [][]\T1/bch/m/n/10 GarageBand for iOS, []$\T1/zi4/m/n/10 https : / / www . app
 le . com /
@@ -1249,7 +1573,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--38
  []$\T1/zi4/m/n/10 https : / / www . spitfireaudio . com / shop / a-[]z /
  []
 
-) (TISMIRtemplate.bbl
+) (./TISMIRtemplate.bbl
 Underfull \hbox (badness 1048) in paragraph at lines 13--17
 \T1/bch/m/n/10 Au-to-matic Mu-sic Tran-scrip-tion: An Overview.
  []
@@ -1269,36 +1593,41 @@ Underfull \hbox (badness 1968) in paragraph at lines 60--67
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
  [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
- (TISMIRtemplate.aux)
+ (./TISMIRtemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `TISMIRtemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 4887584D3692B2E6E7D1AC2B8AC11105;413.
+(rerunfilecheck)             Checksum: 6AB34B374B35C5FA9D584585A9D062BE;405.
  ) 
 Here is how much of TeX's memory you used:
- 19503 strings out of 492966
- 332556 string characters out of 3143728
- 494988 words of memory out of 3000000
- 23087 multiletter control sequences out of 15000+200000
- 696582 words of font info for 126 fonts, out of 3000000 for 9000
+ 18909 strings out of 492982
+ 330547 string characters out of 6134896
+ 485754 words of memory out of 5000000
+ 22171 multiletter control sequences out of 15000+600000
+ 694516 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,17n,94p,1462b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MikTex/fonts/enc/dvips/base/8r.enc}{D:/MikTex/fonts/enc/dvips/inconsolata
-/i4-t1-0.enc}{D:/MikTex/fonts/enc/dvips/quattrocento/qtrcnt_tevtmb.enc}{D:/MikT
-ex/fonts/enc/dvips/quattrocento/qtrcnt_xt7yz2.enc}<D:/MikTex/fonts/type1/public
-/inconsolata/Inconsolata-zi4r.pfb><D:/MikTex/fonts/type1/impallari/quattrocento
-/QuattrocentoSans-Bold.pfb><D:/MikTex/fonts/type1/impallari/quattrocento/Quattr
-ocentoSans-Italic.pfb><D:/MikTex/fonts/type1/impallari/quattrocento/Quattrocent
-oSans.pfb><D:/MikTex/fonts/type1/bitstrea/charter/bchb8a.pfb><D:/MikTex/fonts/t
-ype1/bitstrea/charter/bchr8a.pfb><D:/MikTex/fonts/type1/bitstrea/charter/bchri8
-a.pfb><D:/MikTex/fonts/type1/public/fourier/fourier-mcl.pfb><D:/MikTex/fonts/ty
-pe1/public/fourier/fourier-mex.pfb><D:/MikTex/fonts/type1/public/fourier/fourie
-r-mlit.pfb><D:/MikTex/fonts/type1/public/fourier/fourier-ms.pfb><D:/MikTex/font
-s/type1/adobe/utopia/putr8a.pfb><D:/MikTex/fonts/type1/adobe/utopia/putri8a.pfb
->
-Output written on TISMIRtemplate.pdf (5 pages, 492855 bytes).
+ 60i,17n,94p,10432b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/quattrocento/qtrcnt_tevtmb.enc}{/usr/share/texlive/texmf-d
+ist/fonts/enc/dvips/quattrocento/qtrcnt_xt7yz2.enc}</usr/share/texlive/texmf-di
+st/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/impallari/quattrocento/QuattrocentoSans-Bold.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/impallari/quattrocento/QuattrocentoSans-Italic.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/quattrocento/Quattroce
+ntoSans.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+adobe/utopia/putri8a.pfb>
+Output written on TISMIRtemplate.pdf (5 pages, 467425 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
  42 named destinations out of 1000 (max. 500000)
  90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
