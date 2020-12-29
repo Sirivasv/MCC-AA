@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{
+	left=20mm,
+	top=20mm,
+}
+\usepackage[utf8]{inputenc}
+\usepackage[shortlabels]{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\setlength{\arrayrulewidth}{1.5pt}
+%\usepackage[xcdraw]{xcolor}
+
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage[spanish,es-nodecimaldot]{babel}
+ \usepackage{url}
+ \usepackage{hyperref}
+ \hypersetup{
+ 	colorlinks=true,
+ 	linkcolor=blue,
+ 	filecolor=magenta,      
+ 	urlcolor=cyan,
+ }
+ 
+ \urlstyle{same}
+\usepackage[spanish, fixlanguage]{babelbib}
+\bibliographystyle{IEEEtran}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\graphicspath{ {./images/} }
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage[linesnumbered]{algorithm2e}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+\usepackage{tikz}
+\usetikzlibrary{positioning, fit}
+\usetikzlibrary{babel}
+\usetikzlibrary{arrows}
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{5.5ex plus 1ex minus .2ex}{.3ex plus .1ex}
+\titlespacing*{\subsection}
+{0pt}{5.5ex plus 1ex minus .2ex}{2.3ex plus .1ex}
+\title{Tarea 2: redes convolucionales, recurrentes y transferencia}
+\newcommand{\otoprule}{\midrule[\heavyrulewidth]}
+\author{
+	Saul Ivan Rivas Vega \\
+	\\
+	Aprendizaje Profundo\\
+}
+
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\pagebreak
+	\section{Ejercicio 1}
+		\subsection{Versión 1}
+	  \paragraph{} En la siguiente liga se encuentra un notebook en Colab describiendo el ejercicio 1, en el cual se interpreta el problema como una clasificación en alguna de las 116 edades posibles:\\
+	  \url{https://colab.research.google.com/drive/1JcTYJ37umlAnisLwhgZXY52KJm_7Q0o2?usp=sharing}\\
+	  
+		\subsection{Versión 2}
+	  En una segunda versión se realizó la clasificación en alguna de 4 categorías de edades. Los grupos son:
+	  \begin{enumerate}
+	  	\item  0 a 17 años.
+	  	\item 18 a 35 años.
+	  	\item 36 a 71 años.
+	  	\item 72 años en adelante.
+	  \end{enumerate}
+	   \url{https://colab.research.google.com/drive/1q2h482zrzljXUJOPjn2cnp0yXQ2VtXoc?usp=sharing}\\
+	  \subsection{Discusión}
+	  \paragraph{} Se realizó la experimentación con una segunda versión en grupos de edades al obtener resultados particularmente malos para las 116 categorías, lo cual podría explicarse con la partición del conjunto donde quizás no todas las 116 edades tenían la misma cantidad de fotos o si fueran las suficientes. De igual forma al evaluarlo con solo equivocarse por un año la penalización era significativa. Al realizar una segunda versión por grupos de edades se mejoró considerablemente el desempeño del modelo.
+	  \paragraph{} Tanto como en la primera como en la segunda versión la comparación entre entrenar la última capa y entrenar toda la red tuvo un comportamiento similar. En ambos casos se presentó un sobreajuste para el conjunto de entrenamiento al reentrenar toda la red, ya que se obtenían significativamente mejores resultados en el conjunto de entrenamiento pero no tanto para el conjunto de prueba. En ambos casos se mejoraron de igual forma la exactitud, tanto para el conjunto de entrenamiento como para el conjunto de prueba. 
+	  \section{Ejercicio 2}
+	  \paragraph{} En la siguiente liga se encuentra un notebook en Colab describiendo el ejercicio 2:\\
+	  \url{https://colab.research.google.com/drive/11bwaxRnTnnycvJm0HLm7082F_PQTPDFN?usp=sharing}\\
+	  \subsection{Discusión}
+	  \paragraph{} En este ejercicio ambas arquitecturas tuvieron una diferencia considerable entre su exactitud en el conjunto de entrenamiento con respecto al conjunto de prueba. Para el caso de la arquitectura recurrente se tuvo una exactitud del $\approx90\%$ y $\approx60\%$ respectivamente. En la arquitectura convolucional no fue mejor con $\approx90\%$ y $\approx40\%$. Una explicación puede obtenerse de la arquitectura misma, en la arquitectura convolucional no se logran modelar tantas interacciones en las secuencias como lo hace la arquitectura recurrente. En ambas arquitecturas la época de entrenamiento con mejor exactitud para el conjunto de prueba fueron la época 7 para el caso de la arquitectura recurrente y 3 para la arquitectura convolucional, ambas muy prontas considerando las 20 épocas de entrenamiento pero dejando ver que la arquitectura recurrente tarda mas en estancarse y con un mejor resultado. Sin embargo la simplicidad de la arquitectura convolucional fue lo que propició el aumentar 10 veces más la cantidad de canales para la capa convolucional además de tener una complejidad computacional menor a la hora de entrenar el modelo.  Finalmente para ambos casos podrían beneficiarse en considerar incluir elementos como capas Dropout y para el caso particular de la arquitectura convolucional el distribuir los parametros en distintas capas para no concentrar toda la carga en la única capa convolucional.
+\end{document}  
